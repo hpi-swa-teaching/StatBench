@@ -1,0 +1,14 @@
+{
+	"category" : "StatBench-Data",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SBTable",
+	"pools" : [
+		 ],
+	"super" : "Matrix",
+	"type" : "normal" }
