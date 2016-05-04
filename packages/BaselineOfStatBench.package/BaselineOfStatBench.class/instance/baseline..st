@@ -6,13 +6,19 @@ baseline: spec
 	do: [ 
 		spec
 			package: 'StatBench-Core';
-			package: 'StatBench-Tests' with: [ spec requires: #('default') ];
+			package: 'StatBench-Tests' with: [ spec requires: #('full') ];
 			package: 'StatBench-Data';
+			package: 'StatBench-Diagrams';
 			package: 'StatBench-IO';
 			package: 'StatBench-UI';
-			package: 'StatBench-Diagrams';
 			package: 'StatBench-Math'.
 
 		spec
-			group: 'default' with: #('StatBench-Core' . 'StatBench-Data');
-			group: 'Tests' with: #('StatBench-Tests')]
+			group: 'default' with: #('StatBench-Core');
+			group: 'Tests' with: #('StatBench-Tests');
+			group: 'data' with: #('StatBench-Data');
+			group: 'diagrams' with: #('StatBench-Diagrams');
+			group: 'io' with: #('StatBench-IO');
+			group: 'ui' with: #('StatBench-UI');
+			group: 'math' with: #('StatBench-Math');
+			group: 'full' with: #('default' 'data' 'diagrams' 'io' 'ui' 'math')]
