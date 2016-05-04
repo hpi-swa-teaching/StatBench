@@ -2,4 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		 } }
+		"setUp" : "je 5/4/2016 15:36",
+		"statbench" : "je 5/4/2016 15:36",
+		"statbench:" : "je 5/4/2016 15:37",
+		"testStatBench" : "je 5/4/2016 15:38" } }

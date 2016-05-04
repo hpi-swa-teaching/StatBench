@@ -1,1 +1,1 @@
-(name 'StatBench-Tests-je.1' message 'tests init commit' id '67912c7a-783e-41b9-a5ae-5012e7cec6f0' date '4 May 2016' time '2:40:05.075049 pm' author 'je' ancestors () stepChildren ())
+(name 'StatBench-Tests-je.2' message 'adds 2 simple tests' id '9cd5e1f7-2626-4d7e-aaf2-1c805c75d18c' date '4 May 2016' time '4:00:05.223125 pm' author 'je' ancestors ((name 'StatBench-Tests-je.1' message 'tests init commit' id '67912c7a-783e-41b9-a5ae-5012e7cec6f0' date '4 May 2016' time '2:40:05.075049 pm' author 'je' ancestors () stepChildren ())) stepChildren ())

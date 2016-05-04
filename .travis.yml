@@ -1,7 +1,9 @@
 nguage: smalltalk
 sudo: false
-
 smalltalk:
-  - Squeak-trunk
-  - Squeak-5.0
-  - Squeak-4.6
+- Squeak-trunk
+- Squeak-5.0
+- Squeak-4.6
+notifications:
+  slack:
+    secure: OVsGUveCL/gbKuzw0ObD84icxTQV3YNa0terpFA+c9P1OaYnazpaPsXKmfKZKabJi2hyVfLwbEim6aLWXczSGug5WMq/IF6GlLgcjlRB+OcWTqrkTEGJRXi9fARoBOU9/OGZ16EjGyK5OF5Xmv+5pAzW2MMh3LSDEm6tkLs2SdG9LxGb6rJegdrX7rmbJ0cIV/4YmyVR5XYz1k8ZHq7UrTnQTuGhPnknImuLqMMkhdWhnoJmOpH/1OnmpIJ2aUeN6kidqCkkAF2NJqZoTHd+crlkRriOpO2NKPNDrmTtuu4XWmPW2uA3R2TE5GkWSJ+ukPC3o8wCr9M+ZUGq4U9MgZo0GCQw0nH21oXkZ+v9KGCzYDSJwFIL0pzt54F+QpROFYHI3XDziCYpqYg8Q3wm+BMbEE/HzycGnR4JwFajOfexrVdpSYK9Feo1W5dmjZ9cPXd/jLJR53+D5mK9YdFvPLm53EEODeS+a9E/QfXAlOuirBgfowIJ8N8zklfBby9kFiOfntGUyPNQTpikE1tCs47wbvJh4XlkpjRWkNJd7Dx6Zpi0nhbaoJM7qTYBeXQL1Hkp+VHLUWOxPFnxYwz5L21hJ+s9y3ssOs6JMNeQ4CPSdAwiQ5Cl5dyxzRZJuuXeqtOt/+ImjWnXFi81IPmBTOOEkK8T8rOVvfkKVtdEZlM=
