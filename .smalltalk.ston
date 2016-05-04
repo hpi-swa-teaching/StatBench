@@ -1,0 +1,10 @@
+malltalkCISpec {
+  #loading : [
+    SCIMetacelloLoadSpec {
+      #baseline : 'StatBench',
+      #directory : 'packages',
+      #load : 'Tests',
+      #platforms : [ #squeak ]
+    }
+  ]
+}
