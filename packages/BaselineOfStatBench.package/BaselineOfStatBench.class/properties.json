@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfStatBench",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfStatBench",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }
