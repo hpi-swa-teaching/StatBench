@@ -1,0 +1,14 @@
+{
+	"category" : "StatBench-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "StatBenchTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }
