@@ -11,7 +11,9 @@ baseline: spec
 			package: 'StatBench-Diagrams';
 			package: 'StatBench-IO';
 			package: 'StatBench-UI';
-			package: 'StatBench-Math'.
+			package: 'StatBench-Math';
+			package: 'ArbitraryPrecisionFloat';
+			package: 'ArbitraryPrecisionFloatTests' with: [ spec requires: #('float') ]. 
 
 		spec
 			group: 'default' with: #('StatBench-Core');
@@ -21,4 +23,6 @@ baseline: spec
 			group: 'io' with: #('StatBench-IO');
 			group: 'ui' with: #('StatBench-UI');
 			group: 'math' with: #('StatBench-Math');
-			group: 'full' with: #('default' 'data' 'diagrams' 'io' 'ui' 'math')]
+			group: 'float' with: #('ArbitraryPrecisionFloat');
+			group: 'float-tests' with: #('ArbitraryPrecisionFloatTests');
+			group: 'full' with: #('default' 'data' 'diagrams' 'io' 'ui' 'math' 'float')]

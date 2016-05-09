@@ -1,0 +1,14 @@
+{
+	"category" : "ArbitraryPrecisionFloat",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "nice 3/16/2014 23:32",
+	"instvars" : [
+		"pi" ],
+	"name" : "ArbitraryPrecisionFloatForTrigonometry",
+	"pools" : [
+		 ],
+	"super" : "ArbitraryPrecisionFloat",
+	"type" : "normal" }

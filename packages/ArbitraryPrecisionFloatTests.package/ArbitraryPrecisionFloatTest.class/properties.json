@@ -1,0 +1,20 @@
+{
+	"category" : "ArbitraryPrecisionFloatTests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "nice 4/29/2006 01:28",
+	"instvars" : [
+		"zero",
+		"one",
+		"two",
+		"half",
+		"minusOne",
+		"minusTwo",
+		"huge" ],
+	"name" : "ArbitraryPrecisionFloatTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }
