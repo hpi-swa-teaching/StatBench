@@ -17,12 +17,11 @@ baseline: spec
 
 		spec
 			group: 'default' with: #('StatBench-Core');
-			group: 'Tests' with: #('StatBench-Tests');
+			group: 'Tests' with: #('StatBench-Tests' 'ArbitraryPrecisionFloatTests');
 			group: 'data' with: #('StatBench-Data');
 			group: 'diagrams' with: #('StatBench-Diagrams');
 			group: 'io' with: #('StatBench-IO');
 			group: 'ui' with: #('StatBench-UI');
 			group: 'math' with: #('StatBench-Math');
 			group: 'float' with: #('ArbitraryPrecisionFloat');
-			group: 'float-tests' with: #('ArbitraryPrecisionFloatTests');
 			group: 'full' with: #('default' 'data' 'diagrams' 'io' 'ui' 'math' 'float')]
