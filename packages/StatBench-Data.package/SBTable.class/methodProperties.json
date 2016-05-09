@@ -2,4 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		 } }
+		"getRow:column:" : "dk 5/10/2016 00:22",
+		"initialize" : "dk 5/10/2016 00:22",
+		"setRow:column:value:" : "dk 5/10/2016 00:22" } }

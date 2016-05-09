@@ -1,1 +1,1 @@
-(name 'StatBench-Data-je.1' message 'initial commit data package' id '2f3c6d52-ec21-4b06-86ac-6583c0e7f906' date '4 May 2016' time '2:56:49.473968 pm' author 'je' ancestors () stepChildren ())
+(name 'StatBench-Data-dk.2' message 'Matrix implemented' id '5193be96-c02a-6240-b819-807f37b28d2e' date '10 May 2016' time '12:23:52.337013 am' author 'dk' ancestors ((name 'StatBench-Data-je.1' message 'initial commit data package' id '2f3c6d52-ec21-4b06-86ac-6583c0e7f906' date '4 May 2016' time '2:56:49.473968 pm' author 'je' ancestors () stepChildren ())) stepChildren ())
