@@ -1,0 +1,15 @@
+{
+	"category" : "StatBench-Math",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"floatValue",
+		"intValue" ],
+	"name" : "SBNumber",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

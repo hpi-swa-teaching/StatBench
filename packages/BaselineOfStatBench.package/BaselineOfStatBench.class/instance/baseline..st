@@ -17,7 +17,7 @@ baseline: spec
 
 		spec
 			group: 'default' with: #('StatBench-Core');
-			group: 'Tests' with: #('StatBench-Tests' 'ArbitraryPrecisionFloatTests');
+			group: 'Tests' with: #('StatBench-Tests');
 			group: 'data' with: #('StatBench-Data');
 			group: 'diagrams' with: #('StatBench-Diagrams');
 			group: 'io' with: #('StatBench-IO');
