@@ -4,7 +4,9 @@
 	"instance" : {
 		"addColumnName:" : "mg 5/11/2016 14:09",
 		"addRowName:" : "mg 5/11/2016 14:07",
+		"anomalyWarning" : "dk 5/12/2016 00:09",
 		"columnNames" : "mg 5/11/2016 14:04",
+		"getAverage" : "dk 5/12/2016 00:08",
 		"getMax" : "ht 5/11/2016 14:53",
 		"getMin" : "ht 5/11/2016 14:53",
 		"initialize" : "mg 5/11/2016 13:53",
