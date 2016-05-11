@@ -1,16 +1,14 @@
 {
-	"category" : "StatBench-Data",
+	"category" : "StatBench-IO",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"rows",
-		"rowNames",
-		"columnNames" ],
-	"name" : "SBTable",
+		 ],
+	"name" : "SBCSVParser",
 	"pools" : [
 		 ],
-	"super" : "Matrix",
+	"super" : "Object",
 	"type" : "normal" }

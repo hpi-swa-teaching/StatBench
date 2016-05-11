@@ -1,3 +1,5 @@
-as yet unclassified
+initialization
 initialize
-    rows := OrderedCollection new
+	rows := OrderedCollection new.
+	rowNames := [].
+	columnNames := []

@@ -1,5 +1,5 @@
-as yet unclassified
-setRow: aRow column: aColumn value: aValue
+accessing rows/columns
+row: aRow column: aColumn value: aValue
     | row |
     rows size < aRow ifTrue: [
         (aRow - rows size) timesRepeat: [rows add: OrderedCollection new]].

@@ -1,16 +1,14 @@
 {
-	"category" : "StatBench-Data",
+	"category" : "StatBench-Tests",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"rows",
-		"rowNames",
-		"columnNames" ],
-	"name" : "SBTable",
+		 ],
+	"name" : "CSVTest",
 	"pools" : [
 		 ],
-	"super" : "Matrix",
+	"super" : "Object",
 	"type" : "normal" }

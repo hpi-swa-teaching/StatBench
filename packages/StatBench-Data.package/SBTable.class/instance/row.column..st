@@ -1,5 +1,5 @@
-as yet unclassified
-getRow: aRow column: aColumn
+accessing rows/columns
+row: aRow column: aColumn
     aRow <= rows size ifTrue: [
         |row|
         row := rows at: aRow.
