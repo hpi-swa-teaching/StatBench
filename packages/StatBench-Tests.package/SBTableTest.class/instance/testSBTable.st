@@ -6,3 +6,4 @@ testSBTable
 	table row: 2 column: 1 value: 1.
 	table row: 2 column: 2 value: 4.
 	self assert: (self table getMin = 1).
+	self assert: (self table getMax = 4).
