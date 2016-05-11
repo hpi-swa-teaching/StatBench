@@ -12,5 +12,5 @@
 	"name" : "SBTable",
 	"pools" : [
 		 ],
-	"super" : "Matrix",
+	"super" : "Object",
 	"type" : "normal" }
