@@ -1,0 +1,3 @@
+constants
+defaultPrecision
+	^ 62

@@ -1,0 +1,23 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"expectedFailures" : "je 5/12/2016 18:11",
+		"number" : "je 5/12/2016 14:35",
+		"number:" : "je 5/12/2016 14:35",
+		"setUp" : "je 5/12/2016 14:35",
+		"testNumberAddition" : "je 5/12/2016 17:24",
+		"testNumberComparisonEqual" : "je 5/12/2016 17:30",
+		"testNumberComparisonGreaterOrEqual" : "je 5/12/2016 17:27",
+		"testNumberComparisonGreaterThan" : "je 5/12/2016 17:33",
+		"testNumberComparisonLessOrEqual" : "je 5/12/2016 17:33",
+		"testNumberComparisonLessThan" : "je 5/12/2016 17:33",
+		"testNumberComparisonNotEqual" : "je 5/12/2016 17:35",
+		"testNumberConversion" : "je 5/12/2016 14:36",
+		"testNumberCreation" : "je 5/12/2016 14:38",
+		"testNumberDivision" : "je 5/12/2016 18:02",
+		"testNumberDivisionFloat" : "je 5/12/2016 18:01",
+		"testNumberMultiplication" : "je 5/12/2016 17:14",
+		"testNumberSquareRoot" : "je 5/12/2016 18:10",
+		"testNumberSquared" : "je 5/12/2016 17:16",
+		"testNumberSubtraction" : "je 5/12/2016 17:15" } }

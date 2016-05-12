@@ -1,9 +1,4 @@
-accessing rows/columns
+table management
 row: aRow column: aColumn value: aValue
-    | row |
-    rows size < aRow ifTrue: [
-        (aRow - rows size) timesRepeat: [rows add: OrderedCollection new]].
-    row := rows at: aRow.
-    row size < aColumn ifTrue: [
-        (aColumn - row size) timesRepeat: [row add: 0]].
-    row at: aColumn put: aValue
+	((aRow between: 1 and: rows size) and: [ aColumn between: 1 and: (rows at: aRow) size ])
+		ifTrue: [ (rows at: aRow) at: aColumn put: aValue ]

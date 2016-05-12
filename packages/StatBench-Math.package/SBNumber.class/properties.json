@@ -6,8 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
+		"intValue",
 		"floatValue",
-		"intValue" ],
+		"isAPFloat" ],
 	"name" : "SBNumber",
 	"pools" : [
 		 ],

@@ -1,5 +1,5 @@
 initialization
 initialize
-	rows := OrderedCollection new.
-	rowNames := [].
-	columnNames := []
+	self
+		rows: OrderedCollection new;
+		columnNames: OrderedCollection new

@@ -7,7 +7,6 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"rows",
-		"rowNames",
 		"columnNames" ],
 	"name" : "SBTable",
 	"pools" : [

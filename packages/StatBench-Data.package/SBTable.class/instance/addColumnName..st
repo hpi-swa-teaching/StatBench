@@ -1,3 +1,3 @@
-accessing
+table management
 addColumnName: aString
-	self rowNames addLast: aString.
+	self columnNames add: aString

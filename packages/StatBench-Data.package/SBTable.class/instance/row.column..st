@@ -1,9 +1,5 @@
-accessing rows/columns
+table management
 row: aRow column: aColumn
-	(aRow <= rows size)
-		ifTrue: [ |row|
-			row := rows at: aRow.
-			(aColumn <= (rows at: aRow) size)
-				ifTrue: [
-					^ row at: aColumn]].
+	((aRow between: 1 and: rows size) and: [ aColumn between: 1 and: (rows at: aRow) size ])
+		ifTrue: [ ^ (rows at: aRow) at: aColumn ].
 	^ nil

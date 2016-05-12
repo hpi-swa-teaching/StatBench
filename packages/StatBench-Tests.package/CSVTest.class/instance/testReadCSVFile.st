@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testReadCSVFile
 	| csvString stream table |
 	csvString := 'a,b,c,d', Character linefeed, '1,2,3,4', Character linefeed, '5,6,7,8'.
