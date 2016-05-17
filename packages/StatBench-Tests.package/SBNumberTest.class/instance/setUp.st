@@ -1,4 +1,4 @@
 running
 setUp
 	super setUp.
-	self number: SBNumber new
+	self number: SBNumber new.
