@@ -5,8 +5,9 @@
 		"setUp" : "ht 5/17/2016 21:51",
 		"table" : "je 5/4/2016 15:44",
 		"table:" : "je 5/4/2016 15:44",
-		"testAverage" : "ht 5/17/2016 21:52",
-		"testMax" : "ht 5/17/2016 21:52",
-		"testMin" : "ht 5/17/2016 21:51",
+		"testAverage" : "ht 5/17/2016 22:36",
+		"testMax" : "ht 5/17/2016 22:32",
+		"testMin" : "ht 5/17/2016 22:43",
 		"testSBTable" : "ht 5/17/2016 21:52",
-		"testVariance" : "ht 5/17/2016 21:52" } }
+		"testStandardDeviation" : "ht 5/17/2016 22:49",
+		"testVariance" : "ht 5/17/2016 22:47" } }
