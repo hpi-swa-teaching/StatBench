@@ -1,4 +1,4 @@
-fileIn/Out
+file IO
 readCSVStream: inStream withHeader: hasHeader
 	| myLine table x y header row |
 	table := SBTable new.
@@ -8,12 +8,10 @@ readCSVStream: inStream withHeader: hasHeader
 	row := 1.
 	
 	[ inStream atEnd ] whileFalse: [
-		"myLine := (inStream upTo: Character cr) readStream."
-		myLine := (inStream upTo: Character linefeed) readStream.
+		myLine := (inStream upTo: SBFileParser newline) readStream.
 		x := 1.
 		[ myLine atEnd ] whileFalse: [ | myCell |
  			myCell := myLine upTo: self separator.
-			
 			((y = 1) and: [ hasHeader ])
 				ifTrue: [ header addLast: myCell ]
 				ifFalse: [

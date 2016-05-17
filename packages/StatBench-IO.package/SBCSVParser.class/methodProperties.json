@@ -1,8 +1,0 @@
-{
-	"class" : {
-		"openStream:" : "mg 5/10/2016 11:08",
-		"readCSVFile:withHeader:" : "mg 5/11/2016 16:00",
-		"readCSVStream:withHeader:" : "je 5/12/2016 18:38",
-		"separator" : "mg 5/10/2016 10:48" },
-	"instance" : {
-		 } }

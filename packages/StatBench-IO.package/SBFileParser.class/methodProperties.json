@@ -1,0 +1,10 @@
+{
+	"class" : {
+		"newline" : "je 5/17/2016 11:22",
+		"openStream:" : "je 5/17/2016 11:37",
+		"readCSVFile:withHeader:" : "je 5/13/2016 13:48",
+		"readCSVStream:withHeader:" : "je 5/17/2016 11:23",
+		"separator" : "je 5/13/2016 13:48",
+		"writeTable:toCSVFile:withHeader:" : "je 5/17/2016 11:40" },
+	"instance" : {
+		 } }

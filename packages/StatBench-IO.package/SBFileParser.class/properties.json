@@ -1,5 +1,5 @@
 {
-	"category" : "StatBench-Tests",
+	"category" : "StatBench-IO",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
@@ -7,8 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "CSVTest",
+	"name" : "SBFileParser",
 	"pools" : [
 		 ],
-	"super" : "TestCase",
+	"super" : "Object",
 	"type" : "normal" }
