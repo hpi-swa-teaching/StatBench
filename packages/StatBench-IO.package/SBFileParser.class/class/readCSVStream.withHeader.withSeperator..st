@@ -1,8 +1,9 @@
 file IO
-readCSVStream: inStream withHeader: hasHeader
-	| myLine table x y header row |
+readCSVStream: inStream withHeader: hasHeader withSeperator: aCharacter
+	| myLine table x y header row seperator |
 	table := SBTable new.
 	header := OrderedCollection new.
+	seperator := aCharacter.
 	x := 1.
 	y := 1.
 	row := 1.
@@ -11,7 +12,7 @@ readCSVStream: inStream withHeader: hasHeader
 		myLine := (inStream upTo: SBFileParser newline) readStream.
 		x := 1.
 		[ myLine atEnd ] whileFalse: [ | myCell |
- 			myCell := myLine upTo: self separator.
+ 			myCell := myLine upTo: seperator.
 			((y = 1) and: [ hasHeader ])
 				ifTrue: [ header addLast: myCell ]
 				ifFalse: [

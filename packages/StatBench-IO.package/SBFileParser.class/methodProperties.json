@@ -1,10 +1,14 @@
 {
 	"class" : {
+		"csvSeparator" : "je 5/18/2016 15:45",
 		"newline" : "je 5/17/2016 11:22",
 		"openStream:" : "je 5/17/2016 11:37",
-		"readCSVFile:withHeader:" : "je 5/13/2016 13:48",
-		"readCSVStream:withHeader:" : "je 5/17/2016 11:23",
-		"separator" : "je 5/13/2016 13:48",
-		"writeTable:toCSVFile:withHeader:" : "je 5/17/2016 11:40" },
+		"readCSVFile:withHeader:" : "je 5/18/2016 16:06",
+		"readCSVStream:withHeader:withSeperator:" : "je 5/18/2016 15:50",
+		"readTSVFile:withHeader:" : "je 5/18/2016 15:50",
+		"tsvSeparator" : "je 5/18/2016 15:46",
+		"writeTable:toCSVFile:withHeader:" : "je 5/18/2016 16:04",
+		"writeTable:toCSVStream:withHeader:withSeperator:" : "je 5/18/2016 16:04",
+		"writeTable:toTSVFile:withHeader:" : "je 5/18/2016 16:09" },
 	"instance" : {
 		 } }
