@@ -2,14 +2,15 @@
 	"class" : {
 		 },
 	"instance" : {
-		"setUp" : "ht 5/17/2016 21:51",
+		"setUp" : "je 5/17/2016 22:50",
 		"table" : "je 5/4/2016 15:44",
 		"table:" : "je 5/4/2016 15:44",
-		"testAverage" : "ht 5/17/2016 22:36",
-		"testMax" : "ht 5/17/2016 22:32",
-		"testMedian" : "dk 5/18/2016 00:53",
-		"testMin" : "ht 5/17/2016 22:43",
-		"testSBTable" : "ht 5/17/2016 21:52",
+		"testAverage" : "je 5/18/2016 18:23",
+		"testMax" : "je 5/18/2016 18:23",
+		"testMedian" : "je 5/18/2016 16:57",
+		"testMin" : "je 5/18/2016 16:50",
+		"testPrintTable" : "je 5/18/2016 16:14",
+		"testSBTable" : "je 5/17/2016 22:49",
 		"testSearching" : "ht 5/18/2016 16:44",
-		"testStandardDeviation" : "ht 5/17/2016 22:49",
-		"testVariance" : "ht 5/17/2016 22:47" } }
+		"testStandardDeviation" : "je 5/18/2016 18:22",
+		"testVariance" : "je 5/18/2016 18:22" } }

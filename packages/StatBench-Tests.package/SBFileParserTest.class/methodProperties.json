@@ -2,5 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testReadCSVFile" : "je 5/17/2016 11:23",
-		"testWriteCSVFile" : "je 5/17/2016 11:42" } }
+		"setUp" : "je 5/17/2016 11:55",
+		"table" : "je 5/17/2016 11:55",
+		"table:" : "je 5/17/2016 11:55",
+		"testReadCSVFile" : "je 5/18/2016 15:51",
+		"testReadTSVFile" : "je 5/18/2016 16:08",
+		"testWriteCSVFile" : "je 5/18/2016 16:06",
+		"testWriteTSVFile" : "je 5/18/2016 16:07" } }

@@ -1,3 +1,3 @@
 testing
 testSBTable
-	self assert: self table class = SBTable.
+	self assert: self table class = SBTable
