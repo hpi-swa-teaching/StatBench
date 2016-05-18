@@ -1,7 +1,7 @@
 math functions
 median
 	"compute median"
-	| sorted n row |
+	| sorted row n|
 	sorted := SortedCollection new.
 	1 to: rows size do: [ :currentRow |
 		row := rows at: currentRow.
@@ -11,3 +11,4 @@ median
 	((n \\ 2)=0)
 		ifTrue:  [^(((sorted at: (n/2)) + (sorted at: ((n/2)+1)))/2)]
 		ifFalse: [^(sorted at: ((n +1)/2))]
+		
