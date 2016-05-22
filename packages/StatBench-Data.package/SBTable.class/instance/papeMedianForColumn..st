@@ -1,7 +1,9 @@
 math functions
 papeMedianForColumn: aColumn
-	| sorted |
-	sorted := SortedCollection new.
+	| sortedValues currentValue |
+	sortedValues := SortedCollection new.
 	self rows do: [ :currentRow |
-		sorted add: (currentRow at: aColumn) ].
-	^ sorted median
+		currentValue := currentRow at: aColumn.
+		currentValue ifNotNil: [
+			sortedValues add: currentValue ]].
+	^ sortedValues median

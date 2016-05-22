@@ -4,8 +4,9 @@ maxForColumn: aColumn
 	max := nil.
 	self rows do: [ :currentRow |
 		currentValue := currentRow at: aColumn.
-		max
-			ifNil: [ max := currentValue ]. 
-		currentValue > max ifTrue: [
-			max := currentValue ]].
+		currentValue ifNotNil: [
+			max
+				ifNil: [ max := currentValue ]. 
+			currentValue > max ifTrue: [
+				max := currentValue ]]].
 	^ max

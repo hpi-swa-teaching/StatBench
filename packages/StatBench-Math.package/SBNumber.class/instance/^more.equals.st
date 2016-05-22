@@ -1,5 +1,5 @@
 comparing
 >= aNumber
 	aNumber class = self class
-		ifTrue: [ ^ self value >= aNumber value ]
+		ifTrue: [ ^ super >= aNumber ]
 		ifFalse: [ ^ self value >= aNumber ]

@@ -12,5 +12,5 @@
 	"name" : "SBNumber",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "Magnitude",
 	"type" : "normal" }

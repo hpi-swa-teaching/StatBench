@@ -1,13 +1,12 @@
 math functions
-varianceForColumn: aColumn
-	| mean sum counter currentValue |
+meanForColumn: aColumn
+	| sum currentValue counter |
 	sum := 0.
-	mean := self meanForColumn: aColumn.
 	counter := 0.
 	self rows do: [ :currentRow |
 		currentValue := currentRow at: aColumn.
 		currentValue ifNotNil: [
-			sum := (currentValue - mean) squared + sum.
+			sum := currentValue + sum.
 			counter := counter + 1 ]].
 	counter strictlyPositive
 		ifTrue: [ ^ sum / counter ]
