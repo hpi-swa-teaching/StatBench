@@ -1,5 +1,5 @@
 table management
-search: aValue inColumn: aColumn
+searchForAll: aValue inColumn: aColumn
 	| foundAt value |
 	foundAt := Dictionary new.
 	self rows do: [ :currentRow | 
