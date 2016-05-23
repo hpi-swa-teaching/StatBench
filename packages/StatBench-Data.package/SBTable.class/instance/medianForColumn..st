@@ -1,11 +1,12 @@
 math functions
 medianForColumn: aColumn
-	| sortedValues currentValue |
+		| sortedValues columnValues |
 	sortedValues := SortedCollection new.
-	self rows do: [ :currentRow |
-		currentValue := currentRow at: aColumn.
-		currentValue ifNotNil: [
-			sortedValues add: currentValue ]].
+	columnValues := OrderedCollection new.
+	self rows collect: [ :currentRow |
+		(currentRow at: aColumn) isNil not
+			ifTrue: [ currentRow at: aColumn ]] into: columnValues.
+	sortedValues addAll: (columnValues select: [ :element | element isNil not ]).
 	sortedValues size \\ 2 = 0
 		ifTrue:  [ ^ (sortedValues at: (sortedValues size / 2)) + (sortedValues at: (sortedValues size / 2 + 1)) / 2 ]
 		ifFalse: [ ^ sortedValues median ]

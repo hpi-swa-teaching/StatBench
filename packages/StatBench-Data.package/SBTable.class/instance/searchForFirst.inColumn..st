@@ -1,4 +1,6 @@
 table management
 searchForFirst: aValue inColumn: aColumn
-	^ (self rows at: aColumn) detect: [ :element | 
-		element = aValue ]
+	^ self rows detect: [ :currentRow |
+		  (currentRow at: aColumn) = aValue ]
+	ifFound: [ :currentRow | self rows indexOf: currentRow ]
+	ifNone: [ nil ]

@@ -1,9 +1,9 @@
 table management
 searchForAll: aValue inColumn: aColumn
-	| foundAt value |
-	foundAt := Dictionary new.
-	self rows do: [ :currentRow | 
-		value := currentRow at: aColumn.
-		value = aValue ifTrue: [
-			  foundAt at: (self rows indexOf: currentRow)  put: currentRow ]].
-	^ foundAt
+	| rowDictionary |
+	rowDictionary := Dictionary new.
+	self rows select: [ :currentRow |
+		(currentRow at: aColumn) = aValue ]
+	thenDo: [ :currentRow |
+		rowDictionary at: (self rows indexOf: currentRow) put: currentRow ].
+	^ rowDictionary

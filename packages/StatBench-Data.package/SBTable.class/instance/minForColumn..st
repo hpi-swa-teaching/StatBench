@@ -1,12 +1,10 @@
 math functions
 minForColumn: aColumn
-	| min currentValue |
-	min := nil.
-	self rows do: [ :currentRow |
-		currentValue := currentRow at: aColumn.
-		currentValue ifNotNil: [
-			min
-				ifNil: [ min := currentValue ]. 
-			currentValue < min ifTrue: [
-				min := currentValue ]]].
+	| min |
+	min := (self rows select: [ :currentRow |
+		(currentRow at: aColumn) isNil not ])
+	detectMin: [ :currentRow |
+		currentRow at: aColumn].
 	^ min
+		ifNil: [ min ]
+		ifNotNil: [ min at: aColumn ]

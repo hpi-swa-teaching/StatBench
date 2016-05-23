@@ -1,9 +1,11 @@
 math functions
 papeMedianForColumn: aColumn
-	| sortedValues currentValue |
+	"Assures that the resulting value is element of the Collection"
+	| sortedValues columnValues |
 	sortedValues := SortedCollection new.
-	self rows do: [ :currentRow |
-		currentValue := currentRow at: aColumn.
-		currentValue ifNotNil: [
-			sortedValues add: currentValue ]].
+	columnValues := OrderedCollection new.
+	self rows collect: [ :currentRow |
+		(currentRow at: aColumn) isNil not
+			ifTrue: [ currentRow at: aColumn ]] into: columnValues.
+	sortedValues addAll: (columnValues select: [ :element | element isNil not ]).
 	^ sortedValues median
