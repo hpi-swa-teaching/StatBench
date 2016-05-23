@@ -1,5 +1,5 @@
 testing
-testSearchForFirst
+testSearchForLast
 	| dict |
 	self table: SBTable new.
 	dict := Dictionary new.
@@ -17,6 +17,6 @@ testSearchForFirst
 		row: 4 column: 1 value: 1;
 		row: 4 column: 2 value: 8;
 		row: 4 column: 3 value: 5.
-	self assert: (self table searchForFirst: 1 inColumn: 1) equals: 1.
-	self assert: (self table searchForFirst: 4 inColumn: 2) equals: 2.
-	self assert: (self table searchForFirst: 4 inColumn: 1) equals: nil.
+	self assert: (self table searchForLast: 1 inColumn: 1) equals: 4.
+	self assert: (self table searchForLast: 4 inColumn: 2) equals: 3.
+	self assert: (self table searchForLast: 4 inColumn: 1) equals: nil.
