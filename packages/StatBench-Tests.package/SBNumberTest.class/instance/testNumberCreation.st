@@ -2,10 +2,10 @@ testing
 testNumberCreation
 	| val |
 	val := 5.5.
-	self number: (SBNumber newFromFloat: val).
+	self number: (SBNumber newFromNumber: val).
 	self assert: self number value = val.
 	val := 2.
-	self number: (SBNumber newFromInt: val).
+	self number: (SBNumber newFromNumber: val).
 	self assert: self number value = val.
 	val := '1.123'.
 	self number: (SBNumber newFromString: val).

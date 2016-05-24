@@ -10,7 +10,7 @@ printToTranscript
 		ifTrue: [ string := string allButLast, newline ].
 	self rows do: [ :currentRow |
 		currentRow do: [ :element |
-			string := string, element, tab ].
+			string := string, element asString, tab ].
 		string size strictlyPositive
 			ifTrue: [ string := string allButLast, newline ]].
 	string size strictlyPositive

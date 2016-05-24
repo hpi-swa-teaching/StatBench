@@ -1,15 +1,10 @@
 instance creation
 newFromString: aString
-	(aString includesSubString: '.')
+	^ (aString includesSubString: '.')
 		ifTrue: [
-			^ self basicNew
+			self basicNew
 				initialize;
 				floatValueAsString: aString;
 				isAPFloat: true;
 				yourself ]
-		ifFalse: [
-			^ self basicNew
-				initialize;
-				intValue:  aString asInteger;
-				isAPFloat: false;
-				yourself ]
+		ifFalse: [ self newFromInt: aString asInteger ]

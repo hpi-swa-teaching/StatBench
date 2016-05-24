@@ -8,10 +8,10 @@ testWriteCSVFile
 		addRows: 2 withSize: 2;
 		addColumnName: 'a';
 		addColumnName: 'b';
-		row: 1 column: 1 value: (SBNumber newFromInt: 1);
-		row: 1 column: 2 value: (SBNumber newFromInt: 2);
-		row: 2 column: 1 value: (SBNumber newFromInt: 3);
-		row: 2 column: 2 value: (SBNumber newFromInt: 4).
+		row: 1 column: 1 value: (SBNumber newFromNumber: 1);
+		row: 1 column: 2 value: (SBNumber newFromNumber: 2.2);
+		row: 2 column: 1 value: (SBNumber newFromNumber: 3);
+		row: 2 column: 2 value: (SBNumber newFromNumber: 4).
 	SBFileParser writeTable: self table toCSVFile: fileName withHeader: true.
 	
 	readTable := SBFileParser readCSVFile: fileName, '.csv' withHeader: true.

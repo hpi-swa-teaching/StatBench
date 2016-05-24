@@ -1,5 +1,5 @@
 arithmetic
 - aNumber
-	^ (self isAPFloat not and: [ aNumber isInteger ])
-		ifTrue: [ SBNumber newFromInt: self value - aNumber ]
-		ifFalse: [ SBNumber newFromFloat: self value - aNumber ]
+	^ aNumber class = self class
+		ifTrue: [SBNumber newFromNumber: self value - aNumber value ]
+		ifFalse: [ SBNumber newFromNumber: self value - aNumber ]

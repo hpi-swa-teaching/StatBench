@@ -12,7 +12,7 @@ writeTable: aTable toCSVStream: fileStream withHeader: aBoolean withSeperator: a
 	aTable rows do: [ :row |
 		line := ''.
 		row do: [ :element |
-			line := line, element value asString, seperator ].
+			line := line, element asString, seperator ].
 		line := line allButLast, self newline.
 		fileStream nextPutAll: line ].
 	fileStream close
