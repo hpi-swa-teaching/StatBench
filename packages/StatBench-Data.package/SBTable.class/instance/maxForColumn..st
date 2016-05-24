@@ -6,5 +6,5 @@ maxForColumn: aColumn
 	detectMax: [ :currentRow |
 		currentRow at: aColumn].
 	^ max
-		ifNil: [ max]
+		ifNil: [ max ]
 		ifNotNil: [ max at: aColumn ]

@@ -1,3 +1,3 @@
 accessing
 columnNames
-	^ columnNames
+	^ columnNames ifNil: [ columnNames := OrderedCollection new ]

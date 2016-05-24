@@ -1,5 +1,5 @@
 table management
 row: aRow column: aColumn
-	((aRow between: 1 and: rows size) and: [ aColumn between: 1 and: (rows at: aRow) size ])
-		ifTrue: [ ^ (rows at: aRow) at: aColumn ].
-	^ nil
+	^ ((aRow between: 1 and: self rows size) and: [ aColumn between: 1 and: (self rows at: aRow) size ])
+		ifTrue: [ (self rows at: aRow) at: aColumn ]
+		ifFalse:  [ nil ]

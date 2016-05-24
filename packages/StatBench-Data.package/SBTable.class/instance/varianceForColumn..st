@@ -9,6 +9,6 @@ varianceForColumn: aColumn
 		currentValue ifNotNil: [
 			sum := (currentValue - mean) squared + sum.
 			counter := counter + 1 ]].
-	counter strictlyPositive
-		ifTrue: [ ^ sum / counter ]
-		ifFalse: [ ^ 0 ]
+	^ counter strictlyPositive
+		ifTrue: [ sum / counter ]
+		ifFalse: [ 0 ]

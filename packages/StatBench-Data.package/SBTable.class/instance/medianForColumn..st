@@ -7,6 +7,6 @@ medianForColumn: aColumn
 		(currentRow at: aColumn) isNil not
 			ifTrue: [ currentRow at: aColumn ]] into: columnValues.
 	sortedValues addAll: (columnValues select: [ :element | element isNil not ]).
-	sortedValues size \\ 2 = 0
-		ifTrue:  [ ^ (sortedValues at: (sortedValues size / 2)) + (sortedValues at: (sortedValues size / 2 + 1)) / 2 ]
-		ifFalse: [ ^ sortedValues median ]
+	^ sortedValues size \\ 2 = 0
+		ifTrue:  [ (sortedValues at: (sortedValues size / 2)) + (sortedValues at: (sortedValues size / 2 + 1)) / 2 ]
+		ifFalse: [ sortedValues median ]

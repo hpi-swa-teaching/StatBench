@@ -1,3 +1,3 @@
 accessing
 rows
-	^ rows
+	^ rows ifNil: [ rows := OrderedCollection new ]
