@@ -15,8 +15,9 @@ testWriteCSVFile
 	SBFileParser writeTable: self table toCSVFile: fileName withHeader: true.
 	
 	readTable := SBFileParser readCSVFile: fileName, '.csv' withHeader: true.
-	self assert: (self table row: 1 column: 1) equals: (readTable row: 1 column: 1).
-	self assert: (self table row: 1 column: 2) equals: (readTable row: 1 column: 2).
-	self assert: (self table row: 2 column: 1) equals: (readTable row: 2 column: 1).
-	self assert: (self table row: 2 column: 2) equals: (readTable row: 2 column: 2).
-	self assert: self table columnNames equals: readTable columnNames
+	self
+		assert: (self table row: 1 column: 1) equals: (readTable row: 1 column: 1);
+		assert: (self table row: 1 column: 2) equals: (readTable row: 1 column: 2);
+		assert: (self table row: 2 column: 1) equals: (readTable row: 2 column: 1);
+		assert: (self table row: 2 column: 2) equals: (readTable row: 2 column: 2);
+		assert: self table columnNames equals: readTable columnNames

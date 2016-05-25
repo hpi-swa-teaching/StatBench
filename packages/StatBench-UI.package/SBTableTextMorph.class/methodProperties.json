@@ -1,0 +1,11 @@
+{
+	"class" : {
+		"newWrappedToString:" : "je 5/25/2016 16:22" },
+	"instance" : {
+		"data" : "je 5/25/2016 16:25",
+		"data:" : "je 5/25/2016 16:23",
+		"header" : "je 5/25/2016 16:25",
+		"header:" : "je 5/25/2016 16:23",
+		"initialize" : "je 5/25/2016 22:17",
+		"updateContent" : "je 5/25/2016 16:49",
+		"wantsHaloFromClick" : "je 5/25/2016 16:11" } }

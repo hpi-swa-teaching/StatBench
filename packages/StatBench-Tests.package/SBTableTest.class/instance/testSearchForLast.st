@@ -17,6 +17,7 @@ testSearchForLast
 		row: 4 column: 1 value: (SBNumber newFromNumber: 1);
 		row: 4 column: 2 value: (SBNumber newFromNumber: 8.5);
 		row: 4 column: 3 value: (SBNumber newFromNumber: 5).
-	self assert: (self table searchForLast: 1 inColumn: 1) equals: (self table rowAt: 4).
-	self assert: (self table searchForLast: 4 inColumn: 2) equals: (self table rowAt: 3).
-	self assert: (self table searchForLast: 4 inColumn: 1) equals: nil
+	self
+		assert: (self table searchForLast: 1 inColumn: 1) equals: (self table rowAt: 4);
+		assert: (self table searchForLast: 4 inColumn: 2) equals: (self table rowAt: 3);
+		assert: (self table searchForLast: 4 inColumn: 1) equals: nil

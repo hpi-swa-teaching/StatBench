@@ -4,14 +4,16 @@ testNumberComparisonNotEqual
 	val := 5.5.
 	self number: (SBNumber newFromNumber: val).
 	val := 4.
-	self assert: self number ~= (SBNumber newFromNumber: val).
-	self assert: self number ~= val.
+	self
+		assert: self number ~= (SBNumber newFromNumber: val);
+		assert: self number ~= val.
 	
 	val := 2.
 	self number: (SBNumber newFromNumber: val).
 	val := 1.
-	self assert: self number ~= (SBNumber newFromNumber: val).
-	self assert: self number ~= val.
+	self
+		assert: self number ~= (SBNumber newFromNumber: val);
+		assert: self number ~= val.
 	
 	val := '1.123'.
 	self number: (SBNumber newFromString: val).

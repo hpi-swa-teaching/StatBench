@@ -18,18 +18,22 @@ testSearchForAll
 		row: 4 column: 2 value: (SBNumber newFromNumber: 8.5);
 		row: 4 column: 3 value: (SBNumber newFromNumber: 3.3).
 	dict := self table searchForAll: 1 inColumn: 1. 
-	self assert: (dict at: 1) = (self table rowAt: 1).
-	self assert: (dict at: 2) = (self table rowAt: 2).
+	self
+		assert: (dict at: 1) = (self table rowAt: 1);
+		assert: (dict at: 2) = (self table rowAt: 2).
 	
 	dict := self table searchForAll: (SBNumber newFromNumber: 1) inColumn: 1. 
-	self assert: (dict at: 1) = (self table rowAt: 1).
-	self assert: (dict at: 2) = (self table rowAt: 2).
+	self
+		assert: (dict at: 1) = (self table rowAt: 1);
+		assert: (dict at: 2) = (self table rowAt: 2).
 	
 	dict := self table searchForAll: 3.3 inColumn: 3. 
-	self assert: (dict at: 2) = (self table rowAt: 2).
-	self assert: (dict at: 4) = (self table rowAt: 4).
+	self
+		assert: (dict at: 2) = (self table rowAt: 2);
+		assert: (dict at: 4) = (self table rowAt: 4).
 	
 	dict := self table searchForAll: (SBNumber newFromNumber: 3.3) inColumn: 3. 
-	self assert: (dict at: 2) = (self table rowAt: 2).
-	self assert: (dict at: 4) = (self table rowAt: 4)
+	self
+		assert: (dict at: 2) = (self table rowAt: 2);
+		assert: (dict at: 4) = (self table rowAt: 4)
 	
