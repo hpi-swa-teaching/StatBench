@@ -10,8 +10,8 @@ printToTextMorphs
 	size := contentStrings size max: headerStrings size.
 	size strictlyPositive
 		ifTrue: [
-			1 to: size do: [ :index |
-				textMorph := SBTableTextMorph new.
+			1 to: (self rowLength) do: [ :index |
+			textMorph := SBTableTextMorph new.
 				textMorph
 					header: (headerStrings at: index ifAbsent: [ String new ]);
 					data: (contentStrings at: index ifAbsent: [ String new ]);
