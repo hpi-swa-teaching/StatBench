@@ -1,3 +1,3 @@
 math functions
-standardDeviationColumn: aColumn
+standardDeviationForColumn: aColumn
 	^ self varianceForColumn: aColumn sqrt

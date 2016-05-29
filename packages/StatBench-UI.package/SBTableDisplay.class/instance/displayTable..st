@@ -1,22 +1,22 @@
-as yet unclassified
+display
 displayTable: aSBTable
-	| morphCollection statsCollection tablebegin |
-	morphCollection := aSBTable printToTextMorphs.
-	statsCollection := aSBTable printStatsToTextMorph.
-	self extent: 0@0.
-	statsCollection do: [ :currentMorph |
-		self addMorph: currentMorph.
-		currentMorph position: self position + ((self extent x + 1) @ 0).
-		self extent: self extent + (currentMorph extent x @ 0) + self padding.
-		currentMorph extent y > self extent y
-			ifTrue: [	self extent: (self extent x @ currentMorph extent y) ]].
-			
-	tablebegin := 0@(self extent y)+ self paddingY.
-	self extent: self extent + self paddingY.
-	morphCollection do: [ :currentMorph |
-		self addMorph: currentMorph.
-		currentMorph position: self position + ((tablebegin x + 1) @ tablebegin y).
-		tablebegin := tablebegin + ((currentMorph extent x)@0) + self padding.
-		(currentMorph extent y + tablebegin y - self paddingY y) > (self extent y - self paddingY y)
-			ifTrue: [ 
-		self extent: self extent + (0 @ (currentMorph extent y)). ]]
+	| morphCollection statMorphs newline sMorph cMorph |
+	self
+		table: aSBTable;
+		fillStatDictionary;
+		addStatDescriptionMorph.
+	newline := Character cr.
+	morphCollection := self table printToTextMorphs.
+	statMorphs := self printStatsToTextMorphs.
+
+	1 to: self table rowLength do: [ :index |
+		sMorph := statMorphs at: index.
+		cMorph := morphCollection at: index.
+		sMorph position: self position + (self width@0).
+		cMorph position: self position + (self width@(sMorph height + self padding)).
+		self
+			height: (self height max: (sMorph height + self padding + cMorph height));
+			width: self width + (sMorph width max: cMorph width) + self padding;
+			addMorph: sMorph;
+			addContentMorph: cMorph ].
+	self center: World center

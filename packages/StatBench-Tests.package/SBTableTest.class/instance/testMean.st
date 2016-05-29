@@ -1,5 +1,6 @@
 testing
 testMean
+	self table: SBTable new.
 	self table
 		addRows: 2 withSize: 3;
 		row: 1 column: 1 value: (SBNumber newFromNumber: 3);

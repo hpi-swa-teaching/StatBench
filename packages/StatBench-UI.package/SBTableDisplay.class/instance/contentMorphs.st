@@ -1,3 +1,3 @@
 accessing
 contentMorphs
-	^ contentMorphs
+	^ contentMorphs ifNil: [ contentMorphs := OrderedCollection new ]

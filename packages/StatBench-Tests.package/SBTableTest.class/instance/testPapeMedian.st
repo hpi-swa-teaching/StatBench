@@ -1,5 +1,6 @@
 testing
 testPapeMedian
+	self table: SBTable new.
 	self table
 		addRows: 4 withSize: 2;
 		row: 1 column: 1 value: (SBNumber newFromNumber: 1);

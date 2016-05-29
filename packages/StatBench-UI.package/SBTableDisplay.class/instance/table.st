@@ -1,3 +1,3 @@
 accessing
 table
-	^ table
+	^ table ifNil: [ table := SBTable new ]
