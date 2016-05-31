@@ -1,13 +1,22 @@
 display
 displayTable: aSBTable
-	| morphCollection statMorphs newline sMorph cMorph |
+	| morphCollection statMorphs newline sMorph cMorph valueCollection morph |
 	self
 		table: aSBTable;
 		fillStatDictionary;
 		addStatDescriptionMorph.
 	newline := Character cr.
-	morphCollection := self table printToTextMorphs.
+	morphCollection := OrderedCollection new.
 	statMorphs := self printStatsToTextMorphs.
+	valueCollection := self table printColumnDataToCollection.
+	valueCollection do: [ :currentColumn |
+		morph := SBTableColumnMorph new.
+		morph
+			column: (valueCollection indexOf: currentColumn);
+			columnContents: currentColumn;
+			updateContent;
+			colorStatisticValues: self statDictionary.
+		morphCollection add: morph ].
 
 	1 to: self table rowLength do: [ :index |
 		sMorph := statMorphs at: index.
