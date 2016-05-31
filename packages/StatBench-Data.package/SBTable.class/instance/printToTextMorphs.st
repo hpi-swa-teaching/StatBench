@@ -1,20 +1,20 @@
 printing
 printToTextMorphs
-	| newline morphCollection contentStrings headerStrings textMorph size |
+	| newline morphCollection rowMorphCollection submorphCollection headerStrings textMorph size |
 	newline := Character cr.
-	contentStrings := self printColumnDataToStrings.
+	submorphCollection := self printStringsToSubMorphs.
 	morphCollection := OrderedCollection new.
 	headerStrings := OrderedCollection new.
 	self columnNames do: [ :currentName |
 		headerStrings add: currentName, newline ].
-	size := contentStrings size max: headerStrings size.
+	size := submorphCollection size max: headerStrings size.
 	size strictlyPositive
 		ifTrue: [
-			1 to: (self rowLength) do: [ :index |
+			1 to: self rowLength do: [ :columnIndex |
+				rowMorphCollection := OrderedCollection new.
+				1 to:  self rows size do: [ :rowIndex |
 			textMorph := SBTableTextMorph new.
-				textMorph
-					header: (headerStrings at: index ifAbsent: [ String new ]);
-					data: (contentStrings at: index ifAbsent: [ String new ]);
-					updateContent.
-				morphCollection add: textMorph ]].
+				textMorph := submorphCollection at: columnIndex*rowIndex.
+				rowMorphCollection add: textMorph ].
+			morphCollection add: rowMorphCollection ]].
 	^ morphCollection
