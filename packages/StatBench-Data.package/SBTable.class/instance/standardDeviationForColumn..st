@@ -1,3 +1,3 @@
 math functions
 standardDeviationForColumn: aColumn
-	^ self varianceForColumn: aColumn sqrt
+	^ (self varianceForColumn: aColumn) sqrt
