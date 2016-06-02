@@ -5,4 +5,4 @@ colorStatisticValues: aDictionary
 		statValue := (aDictionary at: key) at: self column.
 		textMorph := self submorphs detect: [ :currentTextMorph |
 			currentTextMorph contents = statValue asString ].
-		textMorph color: value ]
+		textMorph backgroundColor: value ]

@@ -2,12 +2,17 @@
 	"class" : {
 		 },
 	"instance" : {
-		"colorStatisticValues:" : "je 5/31/2016 15:56",
+		"addColumnEntryMorph:" : "je 6/1/2016 14:12",
+		"colorStatisticValues:" : "je 6/1/2016 14:17",
 		"colorsForStatisicValues" : "je 5/31/2016 15:54",
 		"column" : "je 5/31/2016 15:51",
 		"column:" : "je 5/31/2016 15:51",
 		"columnContents" : "je 5/31/2016 16:00",
 		"columnContents:" : "je 5/31/2016 15:59",
-		"initialize" : "je 5/31/2016 15:50",
-		"updateContent" : "je 5/31/2016 16:00",
-		"wantsHaloFromClick" : "je 5/31/2016 15:50" } }
+		"createTextMorphFor:" : "je 6/1/2016 14:09",
+		"header" : "je 6/1/2016 14:04",
+		"header:" : "je 6/1/2016 14:04",
+		"initialize" : "je 6/1/2016 14:58",
+		"padding" : "je 6/1/2016 14:02",
+		"updateContent" : "je 6/1/2016 15:01",
+		"wantsHaloFromClick" : "je 6/1/2016 14:28" } }
