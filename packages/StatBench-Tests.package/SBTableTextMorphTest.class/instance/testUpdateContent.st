@@ -1,12 +1,10 @@
 testing
 testUpdateContent
-	| testHeader testColumn newline |
+	| testData newline |
 	newline := Character cr.
 	self textmorph: SBTableTextMorph new.
-	testHeader := 'a'.
-	testColumn := '1', newline, '2', newline, '3.3'.
+	testData := '1', newline, '2', newline, '3.3'.
 	self textmorph
-		header: testHeader;
-		data: testColumn;
+		data: testData;
 		updateContent.
-	self assert: self textmorph contents equals: testHeader, newline, testColumn
+	self assert: self textmorph contents equals: testData
