@@ -6,6 +6,4 @@ displayTable: aSBTable
 		fillStatDictionary;
 		addStatDescriptionMorph.
 	columnMorphs := self createColumnMorphsFor: self table printColumnDataToCollection.
-	self
-		buildTableDisplayWithStats: self printStatsToTextMorphs andColumns: columnMorphs;
-		center: World center
+	self buildTableDisplayWithStats: self printStatsToTextMorphs andColumns: columnMorphs
