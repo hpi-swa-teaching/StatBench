@@ -3,4 +3,5 @@ addRowWithSize: rowSize
 	| newRow |
 	newRow := OrderedCollection new.
 	rowSize timesRepeat: [ newRow add: nil ].
-	self rows add: newRow
+	self rows add: newRow.
+	self columnNumberState add: true withOccurrences: (rowSize - self columnNumberState size)

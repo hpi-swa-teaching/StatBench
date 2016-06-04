@@ -1,10 +1,13 @@
 instance creation
 newFromString: aString
-	^ (aString includesSubString: '.')
+	(SBTable isEntryANumber: aString)
 		ifTrue: [
-			self basicNew
-				initialize;
-				floatValueAsString: aString;
-				isAPFloat: true;
-				yourself ]
-		ifFalse: [ self newFromInt: aString asInteger ]
+			^ (aString includesSubString: '.')
+				ifTrue: [
+					self basicNew
+						initialize;
+						floatValueAsString: aString;
+						isAPFloat: true;
+						yourself ]
+				ifFalse: [ self newFromInt: aString asInteger ]]
+		ifFalse: [ self error: 'String: ', aString, ' is not a number.' ]

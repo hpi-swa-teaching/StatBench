@@ -1,6 +1,8 @@
 math functions
 varianceForColumn: aColumn
 	| mean counter sum currentValue |
+	(self containsColumnNumbers: aColumn)
+		ifFalse: [ ^ nil ].
 	sum := 0.
 	counter := 0.
 	mean := self meanForColumn: aColumn.

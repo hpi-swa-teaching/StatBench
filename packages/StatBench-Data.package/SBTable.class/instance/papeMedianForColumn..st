@@ -2,6 +2,8 @@ math functions
 papeMedianForColumn: aColumn
 	"Assures that the resulting value is element of the Collection"
 	| sortedValues columnValues |
+	(self containsColumnNumbers: aColumn)
+		ifFalse: [ ^ nil ].
 	sortedValues := SortedCollection new.
 	columnValues := OrderedCollection new.
 	self rows collect: [ :currentRow |

@@ -6,6 +6,8 @@
 		"table" : "je 5/17/2016 11:55",
 		"table:" : "je 5/17/2016 11:55",
 		"testReadCSVFile" : "je 5/25/2016 22:27",
+		"testReadCSVFileWithCharacterCr" : "je 6/4/2016 19:11",
+		"testReadCSVFileWithString" : "je 6/4/2016 19:11",
 		"testReadTSVFile" : "je 5/25/2016 22:27",
 		"testWriteCSVFile" : "je 5/25/2016 22:27",
 		"testWriteTSVFile" : "je 5/25/2016 22:26" } }

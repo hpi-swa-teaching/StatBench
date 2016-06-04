@@ -1,13 +1,12 @@
 display
 updateContent
-	| headerMorph text |
+	| headerMorph |
 	self extent: 0@0.
 	self header ifNotNil: [
 		headerMorph := self createTextMorphFor: self header.
-		text := Text fromString: self header.
-		text allBold.
 		headerMorph
-			contents: text;
+			bold;
+			updateContent;
 			centered.
 		self addColumnEntryMorph: headerMorph ].
 	self columnContents do: [ :currentElement |

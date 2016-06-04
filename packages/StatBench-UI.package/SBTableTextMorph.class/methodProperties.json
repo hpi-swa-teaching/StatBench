@@ -2,10 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
+		"bold" : "je 6/4/2016 19:58",
 		"data" : "je 5/25/2016 16:25",
 		"data:" : "je 5/25/2016 16:23",
-		"header" : "je 5/25/2016 16:25",
-		"header:" : "je 5/25/2016 16:23",
 		"initialize" : "je 6/1/2016 14:57",
-		"updateContent" : "je 6/1/2016 14:26",
+		"updateContent" : "je 6/4/2016 19:56",
 		"wantsHaloFromClick" : "je 5/25/2016 16:11" } }

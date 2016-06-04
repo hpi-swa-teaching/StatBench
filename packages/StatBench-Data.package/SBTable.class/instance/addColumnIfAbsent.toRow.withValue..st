@@ -1,9 +1,5 @@
 table management
 addColumnIfAbsent: columnIndex toRow: rowIndex withValue: aValue
-	| row |
-	row  := self rowAt: rowIndex.
-	row size < columnIndex
-		ifTrue: [
-			(columnIndex - row size - 1) timesRepeat: [ row add: nil ].
-			row add: aValue. ]
-		ifFalse: [ row at: columnIndex put: aValue ]
+	self
+		addColumnIfAbsent: columnIndex toRow: rowIndex;
+		row: rowIndex column: columnIndex value: aValue

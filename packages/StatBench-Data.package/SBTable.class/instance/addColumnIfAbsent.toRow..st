@@ -3,4 +3,5 @@ addColumnIfAbsent: columnIndex toRow: rowIndex
 	| row |
 	row  := self rowAt: rowIndex.
 	row size < columnIndex
-		ifTrue: [ (columnIndex - row size) timesRepeat: [ row add: nil ]]
+		ifTrue: [ (columnIndex - row size) timesRepeat: [ row add: nil ]].
+	self columnNumberState add: true withOccurrences: (columnIndex - self columnNumberState size)

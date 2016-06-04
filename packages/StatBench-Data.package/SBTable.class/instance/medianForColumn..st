@@ -1,6 +1,8 @@
 math functions
 medianForColumn: aColumn
-		| sortedValues columnValues |
+	| sortedValues columnValues |
+	(self containsColumnNumbers: aColumn)
+		ifFalse: [ ^ nil ].
 	sortedValues := SortedCollection new.
 	columnValues := OrderedCollection new.
 	self rows collect: [ :currentRow |

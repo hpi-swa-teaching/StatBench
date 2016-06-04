@@ -1,6 +1,8 @@
 math functions
 minForColumn: aColumn
 	| min |
+	(self containsColumnNumbers: aColumn)
+		ifFalse: [ ^ nil ].
 	min := (self rows select: [ :currentRow |
 		(currentRow at: aColumn) isNil not ])
 	detectMin: [ :currentRow |
