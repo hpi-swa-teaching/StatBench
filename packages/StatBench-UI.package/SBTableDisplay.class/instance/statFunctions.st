@@ -1,3 +1,3 @@
 constants
 statFunctions
-	^ { #min . #max . #mean . #papeMedian . #standardDeviation . #variance }
+	^ { #min . #max . #mean . #papeMedian . #standardDeviation . #variance . #detectFactors }

@@ -16,7 +16,7 @@ readCSVStream: inStream withHeader: hasHeader withSeperator: aCharacter
 		[ myLine atEnd ] whileFalse: [ | myCell |
  			myCell := myLine upTo: seperator.
 			((y = 1) and: [ hasHeader ])
-				ifTrue: [ header addLast: myCell ]
+				ifTrue: [ header add: myCell asString withBlanksTrimmed ]
 				ifFalse: [
 					hasHeader
 						ifTrue: [ row := y - 1 ]
@@ -26,7 +26,7 @@ readCSVStream: inStream withHeader: hasHeader withSeperator: aCharacter
 					(table class isEntryANumber: myCell)
 						ifTrue: [ table addColumnIfAbsent: x toRow: row withValue: (SBNumber newFromString: myCell) ]
 						ifFalse: [
-							table addColumnIfAbsent: x toRow: row withValue: myCell.
+							table addColumnIfAbsent: x toRow: row withValue: myCell asString withBlanksTrimmed.
 							table columnNumberState at: x put: false ]].
 			x := x + 1 ].
 		y := y + 1 ].
