@@ -8,7 +8,7 @@ createColumnMorphsFor: aCollection
 		columnMorph
 			column: columnIndex;
 			columnContents: currentColumn;
-			header: (self table columnNames at: columnIndex);
+			header: (self table columnNames at: columnIndex ifAbsent: [ nil ]);
 			updateContent;
 			colorStatisticValues: self statDictionary.
 		morphCollection add: columnMorph ].

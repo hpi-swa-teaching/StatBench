@@ -1,6 +1,8 @@
 file IO
 readCSVStream: inStream withHeader: hasHeader withSeperator: aCharacter
 	| myLine table x y header row seperator linebreak |
+	inStream
+		ifNil: [ ^ SBTable new ].
 	table := SBTable new.
 	header := OrderedCollection new.
 	seperator := aCharacter.

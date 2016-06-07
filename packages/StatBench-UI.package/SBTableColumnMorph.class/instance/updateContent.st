@@ -13,4 +13,4 @@ updateContent
 		self addColumnEntryMorph: (self createTextMorphFor: currentElement) ].
 	self submorphsDo: [ :currentElement |
 		currentElement width: self width ].
-	headerMorph width: self width
+	headerMorph ifNotNil: [ headerMorph width: self width ]

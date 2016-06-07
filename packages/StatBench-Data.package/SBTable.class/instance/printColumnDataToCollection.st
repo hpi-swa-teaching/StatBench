@@ -7,6 +7,8 @@ printColumnDataToCollection
 	self rows do: [ :currentRow |
 		counter := 1.
 		currentRow do: [ :element |
-			(dataCollection at: counter ifAbsent: [ self error: 'Bad table format' ]) add: element asString.
+			(element isNil or: [ element = '' ])
+				ifTrue: [ (dataCollection at: counter ifAbsent: [ self error: 'Bad table format' ]) add: ' ' ]
+				ifFalse: [ (dataCollection at: counter ifAbsent: [ self error: 'Bad table format' ]) add: element asString ].
 			counter := counter + 1 ]].
 	^ dataCollection
