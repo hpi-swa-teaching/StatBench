@@ -1,3 +1,3 @@
 accessing
 tableDisplay
-	^ tableDisplay
+	^ tableDisplay ifNil: [ tableDisplay := SBTableDisplay new ]
