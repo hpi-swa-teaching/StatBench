@@ -1,3 +1,3 @@
 constants
 padding
-	^ 20
+	^ 10

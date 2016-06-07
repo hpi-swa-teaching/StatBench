@@ -3,6 +3,8 @@ updateContent
 	| headerMorph |
 	self extent: 0@0.
 	self header ifNotNil: [
+		self header = ''
+			ifTrue: [ self header: ' ' ].
 		headerMorph := self createTextMorphFor: self header.
 		headerMorph
 			bold;
