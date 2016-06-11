@@ -1,0 +1,15 @@
+{
+	"category" : "StatBench-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"scrollPane",
+		"contentMorph" ],
+	"name" : "SBWindow",
+	"pools" : [
+		 ],
+	"super" : "SystemWindow",
+	"type" : "normal" }

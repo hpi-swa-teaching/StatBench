@@ -2,9 +2,8 @@ printing
 printColumnDataToCollection
 	| counter dataCollection |
 	dataCollection := OrderedCollection new.
-	self rowLength timesRepeat: [
-		dataCollection add: OrderedCollection new ].
-	self rows do: [ :currentRow |
+	self rowLength timesRepeat: [ dataCollection add: OrderedCollection new ].
+	self rowsDo: [ :currentRow |
 		counter := 1.
 		currentRow do: [ :element |
 			(element isNil or: [ element = '' ])

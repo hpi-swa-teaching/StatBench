@@ -6,5 +6,5 @@ searchForAll: aValue inColumn: aColumn
 	self rows select: [ :currentRow |
 		(currentRow at: aColumn) = searchValue ]
 	thenDo: [ :currentRow |
-		rowDictionary at: (self rows indexOf: currentRow) put: currentRow ].
+		rowDictionary at: (self indexOfRow: currentRow) put: currentRow ].
 	^ rowDictionary

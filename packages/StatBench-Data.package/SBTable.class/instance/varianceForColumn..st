@@ -6,7 +6,7 @@ varianceForColumn: aColumn
 	sum := 0.
 	counter := 0.
 	mean := self meanForColumn: aColumn.
-	self rows do: [ :currentRow |
+	self rowsDo: [ :currentRow |
 		currentValue := currentRow at: aColumn.
 		currentValue ifNotNil: [
 			sum := (currentValue - mean) squared + sum.

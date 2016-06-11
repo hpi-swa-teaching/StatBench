@@ -9,9 +9,9 @@ writeTable: aTable toCSVStream: fileStream withHeader: aBoolean withSeperator: a
 			header := header, columnName, seperator ].
 			header := header allButLast, self newline.
 			fileStream nextPutAll: header ].
-	aTable rows do: [ :row |
+	aTable rowsDo: [ :currentRow |
 		line := ''.
-		row do: [ :element |
+		currentRow do: [ :element |
 			line := line, element asString, seperator ].
 		line := line allButLast, self newline.
 		fileStream nextPutAll: line ].

@@ -1,0 +1,21 @@
+{
+	"category" : "StatBench-Diagrams",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"formMorph",
+		"domain",
+		"function",
+		"form",
+		"maxRange",
+		"annotationInterval",
+		"entryWidth",
+		"diagramSize" ],
+	"name" : "SBDiagram",
+	"pools" : [
+		 ],
+	"super" : "PasteUpMorph",
+	"type" : "normal" }

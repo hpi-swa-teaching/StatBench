@@ -1,5 +1,5 @@
 display
 clearContents
 	self
-		tableDisplay: SBTableDisplay new;
+		contentMorph: SBTableDisplay new;
 		scrollPane: ScrollPane new

@@ -1,0 +1,3 @@
+constants
+defaultDiagramPenSize
+	^ 10

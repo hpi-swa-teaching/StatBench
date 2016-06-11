@@ -1,0 +1,3 @@
+constants
+defaultEntryWidth
+	^ 50

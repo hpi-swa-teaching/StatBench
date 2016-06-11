@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"tableDisplay",
-		"scrollPane" ],
+		"tableDisplay" ],
 	"name" : "SBTableWindow",
 	"pools" : [
 		 ],
-	"super" : "SystemWindow",
+	"super" : "SBWindow",
 	"type" : "normal" }

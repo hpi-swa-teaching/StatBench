@@ -3,7 +3,7 @@ minForColumn: aColumn
 	| min |
 	(self containsColumnNumbers: aColumn)
 		ifFalse: [ ^ nil ].
-	min := (self rows select: [ :currentRow |
+	min := (self rowsSelect: [ :currentRow |
 		(currentRow at: aColumn) isNil not ])
 	detectMin: [ :currentRow |
 		currentRow at: aColumn].

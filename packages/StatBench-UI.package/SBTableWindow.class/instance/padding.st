@@ -1,3 +1,0 @@
-constants
-padding
-	^ 5
