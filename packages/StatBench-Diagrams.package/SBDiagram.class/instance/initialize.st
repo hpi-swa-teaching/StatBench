@@ -3,4 +3,5 @@ initialize
 	super initialize.
 	self
 		borderWidth: 0;
-		lock
+		lock;
+		diagramType: #bar

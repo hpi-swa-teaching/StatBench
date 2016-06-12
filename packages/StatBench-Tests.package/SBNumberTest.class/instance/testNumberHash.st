@@ -1,9 +1,9 @@
 testing
 testNumberHash
 	| val |
-	val := 1.
-	self number: (SBNumber newFromNumber: val).
+	val := 1. 
 	self
+		number: (SBNumber newFromNumber: val);
 		assert: self number hash = val hash;
 		assert: self number hash = (SBNumber newFromNumber: val) hash;
 		assert: self number hash = (SBNumber newFromNumber: val asFloat) hash.

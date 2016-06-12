@@ -1,4 +1,6 @@
 as yet unclassified
 initialize
 	super initialize.
-	self setLabel: 'SBDiagram UI'
+	self
+		setLabel: 'SBDiagram UI';
+		contentMorph: SBDiagram new

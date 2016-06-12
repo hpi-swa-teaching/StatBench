@@ -13,7 +13,10 @@
 		"maxRange",
 		"annotationInterval",
 		"entryWidth",
-		"diagramSize" ],
+		"diagramSize",
+		"diagramType",
+		"drawWidth",
+		"hasNumericalDomain" ],
 	"name" : "SBDiagram",
 	"pools" : [
 		 ],

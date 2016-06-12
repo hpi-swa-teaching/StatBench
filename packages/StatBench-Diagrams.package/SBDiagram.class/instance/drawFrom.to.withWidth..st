@@ -7,4 +7,5 @@ drawFrom: startPoint to: endPoint withWidth: aNumber
 		up;
 		goto: startPoint;
 		down;
-		goto: endPoint
+		goto: endPoint;
+		up

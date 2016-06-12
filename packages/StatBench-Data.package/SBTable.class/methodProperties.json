@@ -1,5 +1,6 @@
 {
 	"class" : {
+		"indexCollectionFor:" : "je 6/12/2016 17:41",
 		"isEntryANumber:" : "je 6/4/2016 19:52" },
 	"instance" : {
 		"addColumnIfAbsent:toRow:" : "je 6/10/2016 11:28",

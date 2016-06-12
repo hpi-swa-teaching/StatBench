@@ -1,0 +1,3 @@
+constants
+defaultNumericalEntryWidth
+	^ 5
