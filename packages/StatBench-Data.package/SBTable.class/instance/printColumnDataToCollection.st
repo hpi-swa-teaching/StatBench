@@ -1,13 +1,10 @@
 printing
 printColumnDataToCollection
-	| counter dataCollection |
+	| dataCollection |
 	dataCollection := OrderedCollection new.
-	self rowLength timesRepeat: [ dataCollection add: OrderedCollection new ].
-	self rowsDo: [ :currentRow |
-		counter := 1.
-		currentRow do: [ :element |
-			(element isNil or: [ element = '' ])
-				ifTrue: [ (dataCollection at: counter ifAbsent: [ self error: 'Bad table format' ]) add: ' ' ]
-				ifFalse: [ (dataCollection at: counter ifAbsent: [ self error: 'Bad table format' ]) add: element asString ].
-			counter := counter + 1 ]].
+	1 to: self rowLength do: [ :index |
+		dataCollection add: ((self columnAt: index) collect: [ :element |
+			element notNil
+				ifTrue: [ element asString ]
+				ifFalse: [ ' ' ]]) ].
 	^ dataCollection

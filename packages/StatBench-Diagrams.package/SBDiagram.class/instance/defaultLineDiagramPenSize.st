@@ -1,3 +1,0 @@
-constants
-defaultLineDiagramPenSize
-	^ 1

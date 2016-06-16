@@ -1,3 +1,4 @@
 accessing
 maxRange: anObject
-	maxRange := anObject
+	maxRange := anObject.
+	self redrawContent

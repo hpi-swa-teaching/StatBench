@@ -1,3 +1,4 @@
 accessing
 annotationInterval: anObject
-	annotationInterval := anObject
+	annotationInterval := anObject.
+	self redrawContent

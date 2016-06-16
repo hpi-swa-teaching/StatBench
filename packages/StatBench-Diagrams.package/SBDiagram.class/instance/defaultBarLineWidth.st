@@ -1,0 +1,3 @@
+constants
+defaultBarLineWidth
+	^ 10

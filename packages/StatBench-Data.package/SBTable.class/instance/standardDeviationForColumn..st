@@ -1,5 +1,4 @@
 math functions
 standardDeviationForColumn: aColumn
-	(self containsColumnNumbers: aColumn)
-		ifFalse: [ ^ nil ].
-	^ (self varianceForColumn: aColumn) sqrt
+	^ (self containsColumnNumbers: aColumn)
+		ifTrue: [ (self varianceForColumn: aColumn) sqrt ]

@@ -3,5 +3,6 @@ initialize
 	super initialize.
 	self
 		borderWidth: 0;
-		lock;
-		diagramType: #bar
+		diagramType: #line;
+		color: Color white;
+		reDraw: true

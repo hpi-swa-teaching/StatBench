@@ -1,16 +1,11 @@
 math functions
 varianceForColumn: aColumn
-	| mean counter sum currentValue |
+	| mean relevantValues |
 	(self containsColumnNumbers: aColumn)
 		ifFalse: [ ^ nil ].
-	sum := 0.
-	counter := 0.
 	mean := self meanForColumn: aColumn.
-	self rowsDo: [ :currentRow |
-		currentValue := currentRow at: aColumn.
-		currentValue ifNotNil: [
-			sum := (currentValue - mean) squared + sum.
-			counter := counter + 1 ]].
-	^ counter strictlyPositive
-		ifTrue: [ sum / counter ]
-		ifFalse: [ 0 ]
+	relevantValues := self columnWithoutNilValuesAt: aColumn.
+	^ relevantValues size strictlyPositive
+		ifTrue: [
+			(relevantValues inject: 0 into: [ :totalSum :next |
+				(next - mean) squared + totalSum]) / relevantValues size ]

@@ -1,3 +1,4 @@
 accessing
 entryWidth: anObject
-	entryWidth := anObject
+	entryWidth := anObject.
+	self redrawContent

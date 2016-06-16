@@ -1,4 +1,3 @@
-as yet unclassified
+display
 clearContents
-	self
-		scrollPane: ScrollPane new
+	self scrollPane: ScrollPane new

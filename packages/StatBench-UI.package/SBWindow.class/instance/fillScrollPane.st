@@ -1,4 +1,4 @@
-as yet unclassified
+display
 fillScrollPane
 	self scrollPane scroller
 		addMorph: self contentMorph;

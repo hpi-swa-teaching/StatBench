@@ -1,3 +1,3 @@
 accessing
 diagramSize
-	^ diagramSize ifNil: [ diagramSize := self defaultDiagramSize ]
+	^ diagramSize ifNil: [ diagramSize := 0@self defaultDiagramHeight ]

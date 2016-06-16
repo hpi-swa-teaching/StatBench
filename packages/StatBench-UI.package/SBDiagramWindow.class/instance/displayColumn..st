@@ -1,3 +1,3 @@
-as yet unclassified
+display
 displayColumn: yValues
 	self displayColumn: (SBTable indexCollectionFor: yValues) with: yValues

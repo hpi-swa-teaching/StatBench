@@ -1,10 +1,10 @@
 table management
 searchForAll: aValue inColumn: aColumn
-	| rowDictionary searchValue |
+	| column rowDictionary searchValue |
 	searchValue := SBNumber newFromNumber: aValue.
 	rowDictionary := Dictionary new.
-	self rows select: [ :currentRow |
-		(currentRow at: aColumn) = searchValue ]
-	thenDo: [ :currentRow |
-		rowDictionary at: (self indexOfRow: currentRow) put: currentRow ].
+	column := self columnAt: aColumn.
+	1 to: column size do: [ :index |
+		((column at: index) = searchValue)
+			ifTrue: [ rowDictionary at: index put: (self rowAt: index) ]].
 	^ rowDictionary

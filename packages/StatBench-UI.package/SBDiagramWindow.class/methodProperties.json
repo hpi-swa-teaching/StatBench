@@ -9,9 +9,10 @@
 		"openLineDiagramWithTable:withColumn:" : "je 6/12/2016 20:21",
 		"openLineDiagramWithTable:withColumn:and:" : "je 6/12/2016 20:20" },
 	"instance" : {
-		"changeTypeTo:" : "je 6/12/2016 19:41",
-		"changeYRangeTo:" : "je 6/11/2016 23:49",
-		"clearContents" : "je 6/12/2016 20:09",
+		"changeTypeTo:" : "je 6/16/2016 01:21",
+		"changeYRangeTo:" : "je 6/16/2016 01:21",
+		"clearContents" : "je 6/15/2016 00:06",
 		"displayColumn:" : "je 6/12/2016 17:42",
-		"displayColumn:with:" : "je 6/11/2016 23:57",
-		"initialize" : "je 6/12/2016 20:09" } }
+		"displayColumn:with:" : "je 6/16/2016 01:25",
+		"initialize" : "je 6/12/2016 20:09",
+		"updateContent" : "je 6/16/2016 01:24" } }

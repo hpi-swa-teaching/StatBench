@@ -1,7 +1,9 @@
 display
 displayColumn: xValues withColumn: yValues
 	self
-		clearContents;
 		domain: xValues;
 		fillFunctionForDomainAndValues: yValues;
-		drawFunction
+		calculateDiagramSize;
+		canvas: self defaultCanvas;
+		redrawContent;
+		drawOn: self canvas

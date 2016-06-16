@@ -1,3 +1,0 @@
-constants
-defaultBarDiagramPenSize
-	^ 10

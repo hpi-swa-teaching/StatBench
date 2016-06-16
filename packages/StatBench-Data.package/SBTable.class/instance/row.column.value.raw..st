@@ -9,5 +9,7 @@ row: aRow column: aColumn value: aValue raw: aBoolean
 			value isString
 				ifTrue: [ value := SBNumber newFromString: value ]
 				ifFalse: [ value := SBNumber newFromNumber: value ]].
-	self columnNumberState at: aColumn put: ((self columnNumberState at: aColumn) and: [ self class isEntryANumber: value ] and: [ value isString not ]).
+	self columnNumberState
+		at: aColumn
+		put: ((self columnNumberState at: aColumn) and: [ self class isEntryANumber: value ] and: [ value isString not ]).
 	(self rowAt: aRow) at: aColumn put: value

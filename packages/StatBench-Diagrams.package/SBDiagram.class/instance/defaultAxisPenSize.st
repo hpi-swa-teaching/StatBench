@@ -1,3 +1,0 @@
-constants
-defaultAxisPenSize
-	^ 4

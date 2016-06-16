@@ -1,0 +1,3 @@
+constants
+defaultDiagramHeight
+	^ 500

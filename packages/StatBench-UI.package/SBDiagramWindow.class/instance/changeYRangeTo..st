@@ -1,4 +1,5 @@
-as yet unclassified
+display
 changeYRangeTo: aNumber
-	self contentMorph maxRange: aNumber.
+	self contentMorph
+		maxRange: aNumber.
 	self updateContent

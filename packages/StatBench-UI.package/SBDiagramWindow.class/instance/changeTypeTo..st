@@ -1,4 +1,5 @@
-as yet unclassified
+display
 changeTypeTo: aSymbol
-	self contentMorph diagramType: aSymbol.
+	self contentMorph
+		diagramType: aSymbol.
 	self updateContent

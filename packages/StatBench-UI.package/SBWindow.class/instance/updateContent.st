@@ -1,3 +1,3 @@
-as yet unclassified
+display
 updateContent
-	self contentMorph updateContent
+	self subclassResponsibility 
