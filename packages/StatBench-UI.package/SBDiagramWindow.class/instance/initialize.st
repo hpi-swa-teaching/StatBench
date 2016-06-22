@@ -1,6 +1,5 @@
 initialization
 initialize
 	super initialize.
-	self
-		setLabel: 'SBDiagram UI';
-		contentMorph: SBDiagram new
+	self window setLabel: 'SBDiagram UI'.
+	self contentMorph: SBDiagram new

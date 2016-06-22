@@ -3,5 +3,5 @@ openTable: aTable
 	^ self basicNew
 		initialize;
 		displayTable: aTable;
-		openInWorld;
+		openWindow;
 		yourself

@@ -2,7 +2,7 @@
 	"class" : {
 		"openBarDiagramWithTable:withColumn:" : "je 6/12/2016 20:21",
 		"openBarDiagramWithTable:withColumn:and:" : "je 6/12/2016 20:20",
-		"openDiagramWithColumn:with:withType:" : "je 6/12/2016 20:07",
+		"openDiagramWithColumn:with:withType:" : "je 6/22/2016 15:31",
 		"openDiagramWithColumn:withType:" : "je 6/12/2016 19:43",
 		"openDiagramWithTable:withColumn:and:withType:" : "je 6/12/2016 20:19",
 		"openDiagramWithTable:withColumn:withType:" : "je 6/12/2016 20:19",
@@ -14,5 +14,5 @@
 		"clearContents" : "je 6/15/2016 00:06",
 		"displayColumn:" : "je 6/12/2016 17:42",
 		"displayColumn:with:" : "je 6/16/2016 01:25",
-		"initialize" : "je 6/12/2016 20:09",
-		"updateContent" : "je 6/16/2016 01:24" } }
+		"initialize" : "je 6/22/2016 15:29",
+		"updateContent" : "je 6/22/2016 15:30" } }

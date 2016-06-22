@@ -7,9 +7,10 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"scrollPane",
-		"contentMorph" ],
+		"contentMorph",
+		"window" ],
 	"name" : "SBWindow",
 	"pools" : [
 		 ],
-	"super" : "SystemWindow",
+	"super" : "Object",
 	"type" : "normal" }
