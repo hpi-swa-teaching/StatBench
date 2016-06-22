@@ -1,4 +1,4 @@
 math functions
 standardDeviationForColumn: aColumn
 	^ (self containsColumnNumbers: aColumn)
-		ifTrue: [ (self varianceForColumn: aColumn) sqrt ]
+		ifTrue: [ SBStatFunctions standardDeviation value: (self columnWithoutNilValuesAt: aColumn) ]

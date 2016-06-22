@@ -18,8 +18,8 @@ testGroupByColumnsAndCalculate
 		row: 4 column: 3 value: 4 raw: false.
 	
 	groupedTable := self table groupByColumns: {1} andCalculate: {
-		{ 'sum'. 2. [ :el | el inject: 0 into: [ :total :next | next + total ]] }.
-		{ 'sum'. 3. [ :el | el inject: 0 into: [ :total :next | next + total ]] } }.
+		self table tupleForColumn: 2 name: 'sum' function: SBStatFunctions sum .
+		self table tupleForColumn: 3 name: 'sum' function: SBStatFunctions sum }.
 	
 	self assert: (groupedTable row: 1 column: 2) equals: 2.
 	self assert: (groupedTable row: 1 column: 3) equals: 4.

@@ -1,6 +1,4 @@
 math functions
 minForColumn: aColumn
 	^ (self containsColumnNumbers: aColumn)
-		ifTrue: [
-			(self columnWithoutNilValuesAt: aColumn) detectMin: [ :element |
-				element ]]
+		ifTrue: [ SBStatFunctions min value: (self columnWithoutNilValuesAt: aColumn) ]
