@@ -1,5 +1,5 @@
 as yet unclassified
-openDiagramWithColumn: xValues with: yValues withType: aSymbol
+openDiagramWithXValues: xValues yValues: yValues type: aSymbol
 	| instance |
 	instance := self basicNew
 		initialize.

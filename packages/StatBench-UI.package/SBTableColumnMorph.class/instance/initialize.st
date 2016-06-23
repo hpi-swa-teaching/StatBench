@@ -3,5 +3,5 @@ initialize
 	super initialize.
 	self
 		borderWidth: 0;
-		borderColor: Color black;
+		color: Color white;
 		lock

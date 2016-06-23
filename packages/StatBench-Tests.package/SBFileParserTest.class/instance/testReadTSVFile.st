@@ -4,7 +4,7 @@ testReadTSVFile
 	tab := SBFileParser tsvSeparator.
 	tsvString := 'a', tab, 'b', tab, 'c', tab, 'd', SBFileParser newline, '1', tab, '2', tab, '3', tab, '4', SBFileParser newline, '5', tab, '6', tab, '7.7', tab, '8'.
 	stream := ReadStream on: tsvString.
-	self table: (SBFileParser readCSVStream: stream withHeader: true withSeperator: tab).
+	self table: (SBFileParser readCSVStream: stream header: true seperator: tab).
 	
 	self
 		assert: (self table row: 1 column: 1) equals: (SBNumber newFromNumber: 1);

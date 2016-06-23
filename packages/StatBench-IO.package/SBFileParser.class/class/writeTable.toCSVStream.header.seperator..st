@@ -1,5 +1,5 @@
 file IO
-writeTable: aTable toCSVStream: fileStream withHeader: aBoolean withSeperator: aCharacter
+writeTable: aTable toCSVStream: fileStream header: aBoolean seperator: aCharacter
 	| header line seperator |
 	seperator := aCharacter.
 	aBoolean

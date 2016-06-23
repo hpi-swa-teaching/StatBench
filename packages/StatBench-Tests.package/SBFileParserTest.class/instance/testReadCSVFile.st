@@ -3,7 +3,7 @@ testReadCSVFile
 	| csvString stream |
 	csvString := 'a,b,c,d', SBFileParser newline, '1,2,3,4', SBFileParser newline, '5,6,7,8'.
 	stream := ReadStream on: csvString.
-	self table: (SBFileParser readCSVStream: stream withHeader: true withSeperator: SBFileParser csvSeparator).
+	self table: (SBFileParser readCSVStream: stream header: true seperator: SBFileParser csvSeparator).
 	
 	self
 		assert: (self table row: 1 column: 1) equals: (SBNumber newFromNumber: 1);

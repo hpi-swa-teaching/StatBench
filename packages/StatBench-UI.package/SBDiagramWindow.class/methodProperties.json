@@ -1,13 +1,13 @@
 {
 	"class" : {
-		"openBarDiagramWithTable:withColumn:" : "je 6/12/2016 20:21",
-		"openBarDiagramWithTable:withColumn:and:" : "je 6/12/2016 20:20",
-		"openDiagramWithColumn:with:withType:" : "je 6/22/2016 15:31",
-		"openDiagramWithColumn:withType:" : "je 6/12/2016 19:43",
-		"openDiagramWithTable:withColumn:and:withType:" : "je 6/12/2016 20:19",
-		"openDiagramWithTable:withColumn:withType:" : "je 6/12/2016 20:19",
-		"openLineDiagramWithTable:withColumn:" : "je 6/12/2016 20:21",
-		"openLineDiagramWithTable:withColumn:and:" : "je 6/12/2016 20:20" },
+		"openBarDiagramWithTable:xColumn:yColumn:" : "je 6/23/2016 17:00",
+		"openBarDiagramWithTable:yColumn:" : "je 6/23/2016 17:00",
+		"openDiagramWithTable:xColumn:yColumn:type:" : "je 6/23/2016 17:25",
+		"openDiagramWithTable:yColumn:type:" : "je 6/23/2016 17:25",
+		"openDiagramWithXValues:yValues:type:" : "je 6/23/2016 17:07",
+		"openDiagramWithYValues:type:" : "je 6/23/2016 17:06",
+		"openLineDiagramWithTable:xColumn:yColumn:" : "je 6/23/2016 17:02",
+		"openLineDiagramWithTable:yColumn:" : "je 6/23/2016 17:02" },
 	"instance" : {
 		"changeTypeTo:" : "je 6/16/2016 01:21",
 		"changeYRangeTo:" : "je 6/16/2016 01:21",

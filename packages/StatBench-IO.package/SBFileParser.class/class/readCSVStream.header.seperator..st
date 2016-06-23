@@ -1,5 +1,5 @@
 file IO
-readCSVStream: inStream withHeader: hasHeader withSeperator: aCharacter
+readCSVStream: inStream header: hasHeader seperator: aCharacter
 	| myLine table x y header row seperator linebreak |
 	inStream
 		ifNil: [ ^ SBTable new ].
