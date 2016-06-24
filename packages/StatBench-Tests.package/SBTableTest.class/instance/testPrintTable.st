@@ -6,7 +6,7 @@ testPrintTable
 	testString := 'a', tab, 'b', newline, '1', tab, '2', newline, '3.5', tab, '4'.
 	self table: SBTable new.
 	self table
-		addRows: 2 withSize: 2;
+		addRows: 2 size: 2;
 		addColumnName: 'a';
 		addColumnName: 'b';
 		row: 1 column: 1 value: (SBNumber newFromNumber: 1);

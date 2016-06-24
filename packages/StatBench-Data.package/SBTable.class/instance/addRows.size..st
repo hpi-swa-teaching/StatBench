@@ -1,3 +1,3 @@
 table management
-addRows: rowNumber withSize: rowSize
+addRows: rowNumber size: rowSize
 	rowNumber timesRepeat: [ self addRowWithSize: rowSize ]

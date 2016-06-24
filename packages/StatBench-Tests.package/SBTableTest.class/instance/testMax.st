@@ -2,7 +2,7 @@ testing
 testMax
 	self table: SBTable new.
 	self table
-		addRows: 3 withSize: 3;
+		addRows: 3 size: 3;
 		row: 1 column: 1 value: (SBNumber newFromNumber: 3);
 		row: 1 column: 2 value: (SBNumber newFromNumber: 2);
 		row: 2 column: 1 value: (SBNumber newFromNumber: 1);

@@ -4,7 +4,7 @@ testSearchForAll
 	self table: SBTable new.
 	dict := Dictionary new.
 	self table
-		addRows: 4 withSize: 3;
+		addRows: 4 size: 3;
 		row: 1 column: 1 value: (SBNumber newFromNumber: 1);
 		row: 1 column: 2 value: (SBNumber newFromNumber: 2);
 		row: 1 column: 3 value: (SBNumber newFromNumber: 7);

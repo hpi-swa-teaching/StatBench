@@ -1,5 +1,5 @@
 display
-buildTableDisplayWithStats: statCollection andColumns: columnCollection
+buildTableDisplayWithStats: statCollection columns: columnCollection
 	| statisticValueMorph columnMorph |
 	
 	1 to: self table rowLength do: [ :index |

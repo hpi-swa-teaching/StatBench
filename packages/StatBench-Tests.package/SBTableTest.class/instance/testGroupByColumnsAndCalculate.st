@@ -3,7 +3,7 @@ testGroupByColumnsAndCalculate
 	| groupedTable |
 	self table: SBTable new.
 	self table
-		addRows: 4 withSize: 3;
+		addRows: 4 size: 3;
 		row: 1 column: 1 value: 'a';
 		row: 1 column: 2 value: 1 raw: false;
 		row: 1 column: 3 value: 2 raw: false;

@@ -6,7 +6,7 @@ testDetectFactors
 	testLengths do: [ :length |
 		self table: SBTable new.
 		self table
-			addRows: length withSize: 2.
+			addRows: length size: 2.
 		
 		1 to: length do: [ :index |
 			self table

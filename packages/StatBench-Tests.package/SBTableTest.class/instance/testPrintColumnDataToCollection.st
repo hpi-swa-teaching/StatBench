@@ -3,7 +3,7 @@ testPrintColumnDataToCollection
 	| columnData |
 	self table: SBTable new.
 	self table
-		addRows: 4 withSize: 2;
+		addRows: 4 size: 2;
 		row: 1 column: 1 value: (SBNumber newFromNumber: 1);
 		row: 1 column: 2 value: (SBNumber newFromNumber: 2);
 		row: 2 column: 1 value: (SBNumber newFromNumber: 3.5);

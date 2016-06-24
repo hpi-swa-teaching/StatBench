@@ -1,5 +1,5 @@
 display
-displayColumn: xValues withColumn: yValues
+displayXValues: xValues yValues: yValues
 	self
 		domain: xValues;
 		fillFunctionForDomainAndValues: yValues;

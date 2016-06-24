@@ -1,5 +1,5 @@
 aggregation
-createTableWithColumnNamesFor: aColumnIndexList with: tupleList
+createTableWithColumnNamesForColumns: aColumnIndexList tuples: tupleList
 	| table |
 	table := SBTable new.
 	aColumnIndexList do: [ :index |

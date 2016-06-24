@@ -5,6 +5,6 @@ openDiagramWithXValues: xValues yValues: yValues type: aSymbol
 		initialize.
 	instance contentMorph diagramType: aSymbol.	
 	^ instance
-		displayColumn: xValues with: yValues;
+		displayXValues: xValues yValues: yValues;
 		openWindow;
 		yourself

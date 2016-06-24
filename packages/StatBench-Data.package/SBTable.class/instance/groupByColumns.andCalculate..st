@@ -1,7 +1,7 @@
 aggregation
 groupByColumns: aColumnIndexList andCalculate: aNameColumnIndexBlockCollection
 	| groupedTable rowCounter columnCounter rowSize |
-	groupedTable := self createTableWithColumnNamesFor: aColumnIndexList with: aNameColumnIndexBlockCollection.
+	groupedTable := self createTableWithColumnNamesForColumns: aColumnIndexList tuples: aNameColumnIndexBlockCollection.
 	rowSize := aColumnIndexList size + aNameColumnIndexBlockCollection size.
 	rowCounter := 1.
 	(self createDictionaryFor: aColumnIndexList) keysAndValuesDo: [ :keyCollection :rowIndices |

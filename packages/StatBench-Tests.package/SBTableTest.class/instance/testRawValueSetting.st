@@ -2,7 +2,7 @@ testing
 testRawValueSetting
 	self table: SBTable new.
 	self table
-		addRows: 4 withSize: 2;
+		addRows: 4 size: 2;
 		row: 1 column: 1 value: 1 raw: false;
 		row: 1 column: 2 value: 2.2 raw: false;
 		row: 2 column: 1 value: '1.1' raw: false;

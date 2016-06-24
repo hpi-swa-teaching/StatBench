@@ -26,9 +26,9 @@ readCSVStream: inStream header: hasHeader seperator: aCharacter
 					table addRowIfAbsent: row.
 					table columnNumberState at: x ifAbsentPut: [ true ].
 					(table class isEntryANumber: myCell)
-						ifTrue: [ table addColumnIfAbsent: x toRow: row withValue: myCell raw: false ]
+						ifTrue: [ table addColumnIfAbsent: x toRow: row value: myCell raw: false ]
 						ifFalse: [
-							table addColumnIfAbsent: x toRow: row withValue: myCell raw: true.
+							table addColumnIfAbsent: x toRow: row value: myCell raw: true.
 							table columnNumberState at: x put: false ]].
 			x := x + 1 ].
 		y := y + 1 ].
