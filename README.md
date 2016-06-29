@@ -9,9 +9,9 @@
 ```
 git clone https://github.com/HPI-SWA-Teaching/SWT16-Project-10
 ```
-- import into Squeak: Tools -> Monticello Browser -> +Repository -> filetree://
+- import into Squeak: Tools => Monticello Browser => +Repository => filetree://
 - choose the cloned repository's folder "packages"
-- -> ok -> click on "Open" and load all Packeges
+- => ok => click on "Open" and load all Packeges
 
 #### Open a CSV/TSV file
 Use the following code to open a SBTable:
@@ -19,7 +19,7 @@ Use the following code to open a SBTable:
 | yourTable |
 yourTable := SBFileParser readCSVFile: '<filename>' header: <boolean>.
 ```
-<filename> is a relative (to `Contents/Resources` in the image) or absolute path to your CSV or TSV file.
+`<filename>` is a relative (to `Contents/Resources` in the image) or absolute path to your CSV or TSV file.
 If you have a TSV file, use `readTSVFile: ...` instead of `readCSVFile: ...`.
 
 #### Display a SBTable:
