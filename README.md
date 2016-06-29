@@ -46,4 +46,4 @@ aggregatedTable := yourTable
 SBTableWindow openTable: aggregatedTable.
 ```
 
-`<block>` can be a predefined block (e.g. SBStatFunctions sum) or a self-defined one that accepts an aggregated collection of values and returns a new value.
+`<block>` can be a predefined block (e.g. `SBStatFunctions sum`) or a self-defined one that accepts an aggregated collection of values and returns a new value. The parameter for groupByColumns of one or more column indices.
