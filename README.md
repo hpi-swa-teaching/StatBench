@@ -22,7 +22,7 @@ yourTable := SBFileParser readCSVFile: '<filename>' header: <boolean>.
 `<filename>` is a relative (to `Contents/Resources` in the image) or absolute path to your CSV or TSV file.
 If you have a TSV file, use `readTSVFile: ...` instead of `readCSVFile: ...`.
 
-#### Display a SBTable:
+#### Display a SBTable
 To display the values in a table:
 ```
 SBTableWindow openTable: yourTable.
