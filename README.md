@@ -1,68 +1,49 @@
 # SWT16-Project-10 [![Build Status](https://travis-ci.org/HPI-SWA-Teaching/SWT16-Project-10.svg?branch=master)](https://travis-ci.org/HPI-SWA-Teaching/SWT16-Project-10)
 
-# Statistics Workbench (StatBench)
-Squeak is an interactive environment which allows the direct manipulation of graphical environments. 
-This could be leveraged to create an interactive workbench for statistical analysis
-
 ### Requirements
-- [Squeakimage](https://hpi.de/internalfiles/materialien/FG_SoftwareArchitekturen/SoftwareEngineering1_V/Image/v5/SWT2016.zip)
+- Squeak 4, 5 or Trunk Image
 
-### How to run
-
-#### import Statbench
-- clone GitHub Repository: https://github.com/HPI-SWA-Teaching/SWT16-Project-10
+### How to use it
+#### Import Statbench
+- clone this GitHub Repository (https://github.com/HPI-SWA-Teaching/SWT16-Project-10)
 ```
 git clone https://github.com/HPI-SWA-Teaching/SWT16-Project-10
 ```
--import Into Squeak: Tools->Monticello Browser->+Repository->filetree://->
-[choose the cloned Repository "packages"]->ok->klick on "Open" and load all Packeges
+- import into Squeak: Tools -> Monticello Browser -> +Repository -> filetree://
+- choose the cloned repository's folder "packages"
+- -> ok -> click on "Open" and load all Packeges
 
-#### import csv/tsv
-- you should copy the file into "[...]\SWT2016.app\Contents\Resources\StatBench"
-- open Workspace
-- import by using SBFileParser readTSVFile
-- import example:
+#### Open a CSV/TSV file
+Use the following code to open a SBTable:
 ```
-| [YOURTABLENAME] |
-[YOURTABLENAME] := SBFileParser readTSVFile: 'StatBench/[FILENAME].tsv[/.csv]' header: false.
+| yourTable |
+yourTable := SBFileParser readCSVFile: '<filename>' header: <boolean>.
+```
+<filename> is a relative (to `Contents/Resources` in the image) or absolute path to your CSV or TSV file.
+If you have a TSV file, use `readTSVFile: ...` instead of `readCSVFile: ...`.
+
+#### Display a SBTable:
+To display the values in a table:
+```
+SBTableWindow openTable: yourTable.
+```
+The median (yellow), minimum (green) and maximum (red) are visually highlighted by default
+
+To display values in a diagram, use one of the following (depending on the desired diagram type):
+```
+SBDiagramWindow openBarDiagramWithTable: table xColumn: <columnNumber> yColumn: <columnNumber>.
+SBDiagramWindow openLineDiagramWithTable: table xColumn: <columnNumber> yColumn: <columnNumber>.
 ```
 
-#### display Imported Context:
-- To display  Values in a Tabel:
-- open Workspace
+### Create an aggregatedTable
+- execute the following code in your Workspace
 ```
-SBTableWindow openTable: [YOURTABLENAME].
-```
-- Median (yellow), Min (green) and Max (red) are color highlighted by default
-
-- To display Values in a Diagram:
-- open Workspace
-```
-SBDiagramWindow openBarDiagramWithTable: table xColumn: [aNumber] yColumn: [aNumber].
-```
-### Use Statistic Functions
-- In SBStatFunctions there are the following functions:
-	- sum
-	- mean
-	- min
-	- max
-	- 
-
-### How to create an aggregatedTable
-- call the following command in your Workspace
-```
-aggregatedTable := [YOURTABLENAME]
-	groupByColumns: { [aNumber] }
+aggregatedTable := yourTable
+	groupByColumns: { <columnNumber1> . <columnNumber2> . <...> }
 	andCalculate: {
-		table tupleForColumn: [aNumber] name: 'sum(time)' function: SBStatFunctions sum.
-		table tupleForColumn: [aNumber] name: 'mean(time)' function: SBStatFunctions mean.
-		table tupleForColumn: [aNumber] name: 'min(time)' function: SBStatFunctions min.
-		table tupleForColumn: [aNumber] name: 'max(time)' function: SBStatFunctions max.
-		table tupleForColumn: [aNumber] name: 'squareSum(time)' function: [ :collection |
-			collection inject: 0 into: [ :subTotal :next |
-				next squared + subTotal ]]}.
+		table tupleForColumn: <columnNumber> name: '<columnName>' function: <block> .
+		<...> }.
 SBTableWindow openTable: aggregatedTable.
-SBDiagramWindow openLineDiagramWithTable: aggregatedTable xColumn: [aNumber] yColumn: [aNumber].
 ```
 
-
+`<block>` can be a predefined block (e.g. SBStatFunctions sum) or a self-defined one that accepts an aggregated collection of values and returns a new value.
