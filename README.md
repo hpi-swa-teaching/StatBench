@@ -5,7 +5,7 @@
 
 ### How to use it
 #### Import Statbench
-- clone this GitHub Repository (https://github.com/HPI-SWA-Teaching/SWT16-Project-10)
+- clone this [GitHub Repository](https://github.com/HPI-SWA-Teaching/SWT16-Project-10)
 ```
 git clone https://github.com/HPI-SWA-Teaching/SWT16-Project-10
 ```
@@ -45,5 +45,5 @@ aggregatedTable := yourTable
 		<...> }.
 SBTableWindow openTable: aggregatedTable.
 ```
-
-`<block>` can be a predefined block (e.g. `SBStatFunctions sum`) or a self-defined one that accepts an aggregated collection of values and returns a new value. The parameter for groupByColumns of one or more column indices.
+The parameter for groupByColumns is a collection of one or more column indices.
+`<block>` can be a predefined block (e.g. `SBStatFunctions sum`) or a self-defined one that accepts a collection of values and returns a new value.
