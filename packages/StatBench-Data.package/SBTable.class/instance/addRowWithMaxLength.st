@@ -1,4 +1,4 @@
-accessing
+table management
 addRowWithMaxLength
 	| newRow |
 	newRow := OrderedCollection new.

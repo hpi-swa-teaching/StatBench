@@ -1,4 +1,4 @@
-accessing
+table management
 rowLength
 	^ self rows size strictlyPositive
 		ifTrue: [ (self rowAt: 1) size ]

@@ -3,5 +3,5 @@ changeToArbitraryPrecisionFloat
 	self isAPFloat
 		ifFalse: [
 			self
-				floatValue: (ArbitraryPrecisionFloat readFrom: self intValue asString numBits: self defaultBitSize);
+				floatValue: (ArbitraryPrecisionFloat readFrom: self asString numBits: self defaultBitSize);
 				isAPFloat: true ]
