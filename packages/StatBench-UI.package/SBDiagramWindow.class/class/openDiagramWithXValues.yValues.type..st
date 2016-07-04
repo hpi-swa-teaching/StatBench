@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 openDiagramWithXValues: xValues yValues: yValues type: aSymbol
 	| instance |
 	instance := self basicNew

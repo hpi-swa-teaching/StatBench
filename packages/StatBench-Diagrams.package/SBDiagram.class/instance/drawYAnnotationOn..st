@@ -13,7 +13,7 @@ drawYAnnotationOn: aCanvas
 	textPosition := 0@0.
 	graphWidthOffset := self defaultDrawWidth + (self defaultFont height / 2).
 	1 to: self annotationInterval y do: [ :index |
-		annotation := self scientificNotationFor: (annotationValue * index)" asString".
+		annotation := self scientificNotationFor: (annotationValue * index).
 		annotationExtent := (self defaultFont widthOfString: annotation) @ self defaultFont height.
 		textPosition := self axisStartPoint - ((annotationExtent x + self defaultAnnotationPadding)@(self drawArea y / self annotationInterval y * index + graphWidthOffset)).
 		aCanvas 

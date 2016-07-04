@@ -1,3 +1,3 @@
 mathematical functions
 squared
-	^ SBNumber newFromNumber: self value squared
+	^ self class newFromNumber: self value squared

@@ -1,4 +1,4 @@
 math functions
 standardDeviationForColumn: aColumn
-	^ (self containsColumnNumbers: aColumn)
+	^ (self isColumnNumeric: aColumn)
 		ifTrue: [ SBStatFunctions standardDeviation value: (self columnWithoutNilValuesAt: aColumn) ]

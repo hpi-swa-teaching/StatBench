@@ -1,11 +1,7 @@
 display
 scientificNotationFor: aNumber
 	| exponent factor factorString subStrings |
-	(aNumber >= 1 or: [ aNumber <= -1 ])
-		ifTrue: [
-			exponent := aNumber abs log floor ]
-		ifFalse: [
-			exponent := aNumber abs log floor ].
+	exponent := aNumber abs log floor.
 	factor := (aNumber / (10 raisedTo: exponent)) asFloat.
 	factorString := factor asString.
 	subStrings := factorString subStrings: '.'.

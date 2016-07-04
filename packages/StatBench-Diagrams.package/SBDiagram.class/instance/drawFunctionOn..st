@@ -6,9 +6,9 @@ drawFunctionOn: aCanvas
 	lastPoint := base.
 	axisOffset := self drawWidth - self defaultAxisLineWidth.
 	self domain do: [ :element |
-		self chooseNumericalLimits
-			ifTrue: [ base := (start x + (self entryWidth * element)) @ self axisStartPoint y ]
-			ifFalse: [ base := (base x + self entryWidth) @ self axisStartPoint y ].
+		base := self hasNumericalScaling
+			ifTrue: [ (start x + (self entryWidth * element)) @ self axisStartPoint y ]
+			ifFalse: [ (base x + self entryWidth) @ self axisStartPoint y ].
 		position := base - (0@(self yScaling * (self functionAt: element))).
 		self diagramType = #bar
 			ifTrue: [

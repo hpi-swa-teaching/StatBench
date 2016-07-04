@@ -1,7 +1,7 @@
 testing
-testIsEntryANumber
-	self table: SBTable new.
+testIsEntryANumber 
 	self
+		table: SBTable new;
 		assert: (self table class isEntryANumber: '123') equals: true;
 		assert: (self table class isEntryANumber: '123.1') equals: true;
 		assert: (self table class isEntryANumber: '-3123') equals: true;

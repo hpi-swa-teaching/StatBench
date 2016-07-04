@@ -1,8 +1,6 @@
 testing
 testSearchForFirst
-	| dict |
 	self table: SBTable new.
-	dict := Dictionary new.
 	self table
 		addRows: 4 size: 3;
 		row: 1 column: 1 value: (SBNumber newFromNumber: 1);

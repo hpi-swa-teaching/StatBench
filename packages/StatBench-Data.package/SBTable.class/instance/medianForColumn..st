@@ -1,4 +1,4 @@
 math functions
 medianForColumn: aColumn
-	^ (self containsColumnNumbers: aColumn)
+	^ (self isColumnNumeric: aColumn)
 		ifTrue: [ SBStatFunctions median value: (self columnWithoutNilValuesAt: aColumn) ]

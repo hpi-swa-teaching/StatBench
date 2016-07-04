@@ -1,4 +1,4 @@
 math functions
 maxForColumn: aColumn
-	^ (self containsColumnNumbers: aColumn)
+	^ (self isColumnNumeric: aColumn)
 		ifTrue: [ SBStatFunctions max value: (self columnWithoutNilValuesAt: aColumn) ]

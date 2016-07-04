@@ -1,7 +1,6 @@
 testing
 testWriteCSVFile
-	| fileName delimter readTable |
-	delimter := SBFileParser csvSeparator.
+	| fileName readTable |
 	fileName := 'csvwritetest'.
 	self table: SBTable new.
 	self table

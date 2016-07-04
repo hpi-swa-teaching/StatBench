@@ -1,7 +1,6 @@
 testing
 testWriteTSVFile
-	| fileName seperator readTable |
-	seperator := SBFileParser tsvSeparator.
+	| fileName readTable |
 	fileName := 'tsvwritetest'.
 	self table: SBTable new.
 	self table

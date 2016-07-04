@@ -1,15 +1,12 @@
 display
 createColumnMorphsFor: aCollection
-	| morphCollection columnIndex columnMorph |
-	morphCollection := OrderedCollection new.
-	aCollection do: [ :currentColumn |
+	| columnIndex |
+	^ aCollection collect: [ :currentColumn |
 		columnIndex := aCollection indexOf: currentColumn.
-		columnMorph := SBTableColumnMorph new.
-		columnMorph
+		SBTableColumnMorph new
 			column: columnIndex;
 			columnContents: currentColumn;
 			header: (self table columnNames at: columnIndex ifAbsent: [ nil ]);
 			updateContent;
-			colorStatisticValues: self statDictionary.
-		morphCollection add: columnMorph ].
-	^ morphCollection
+			colorStatisticValues: self statDictionary;
+			yourself ]

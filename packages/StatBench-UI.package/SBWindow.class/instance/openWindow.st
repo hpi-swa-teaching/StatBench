@@ -1,3 +1,3 @@
-as yet unclassified
+display
 openWindow
 	self window openInWorld

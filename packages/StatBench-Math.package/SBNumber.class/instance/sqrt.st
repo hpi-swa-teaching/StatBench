@@ -1,3 +1,3 @@
 mathematical functions
 sqrt
-	^ SBNumber newFromNumber: self value sqrt
+	^ self class newFromNumber: self value sqrt

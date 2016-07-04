@@ -1,3 +1,3 @@
 accessing
 floatValueAsString: aString
-	floatValue := ArbitraryPrecisionFloat readFrom: aString numBits: self defaultBitSize
+	self floatValue: (ArbitraryPrecisionFloat readFrom: aString numBits: self defaultBitSize)

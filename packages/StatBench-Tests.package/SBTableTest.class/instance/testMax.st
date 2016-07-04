@@ -12,4 +12,4 @@ testMax
 		assert: (self table maxForColumn: 1) = (SBNumber newFromNumber: 3);
 		assert: (self table maxForColumn: 2) = 4.5;
 		assert: (self table maxForColumn: 2) = (SBNumber newFromNumber: 4.5);
-		assert: (self table maxForColumn: 3) = nil
+		assert: (self table maxForColumn: 3) isNil

@@ -1,5 +1,5 @@
 arithmetic
 / aNumber
 	^ aNumber class = self class
-		ifTrue: [SBNumber newFromNumber: self value / aNumber value ]
-		ifFalse: [ SBNumber newFromNumber: self value / aNumber ]
+		ifTrue: [ self class newFromNumber: self value / aNumber value ]
+		ifFalse: [ self class newFromNumber: self value / aNumber ]

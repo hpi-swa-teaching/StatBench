@@ -2,7 +2,5 @@ table management
 does: aValue existInColumn: aColumn
 	| searchValue |
 	searchValue := SBNumber newFromNumber: aValue.
-	^ (self columnAt: aColumn) detect: [ :element |
+	^ (self columnAt: aColumn) anySatisfy: [ :element |
 		  element = searchValue ]
-		ifFound: [ :element | true ]
-		ifNone: [ false ]

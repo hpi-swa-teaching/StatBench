@@ -10,6 +10,6 @@ calculateEntryWidth
 	collection do: [ :element |
 		maxWidth := maxWidth max: (self defaultFont widthOfString: element asString) ].
 	maxWidth := maxWidth + self defaultAnnotationPadding.
-	self chooseNumericalLimits
+	self hasNumericalScaling
 		ifFalse: [ maxWidth := maxWidth min: self maxStringEntryWidth ].
 	self entryWidth: maxWidth

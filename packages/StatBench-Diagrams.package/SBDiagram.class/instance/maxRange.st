@@ -2,8 +2,7 @@ accessing
 maxRange
 	^ maxRange
 		ifNil: [
-			maxRange := self function values detectMax: [ :element |
-				element ].
+			maxRange := SBStatFunctions max value: self function values.
 			maxRange class = SBNumber
 				ifTrue: [ maxRange := maxRange value ].
 			maxRange strictlyPositive

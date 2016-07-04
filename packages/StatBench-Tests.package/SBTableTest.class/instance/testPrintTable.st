@@ -13,4 +13,4 @@ testPrintTable
 		row: 1 column: 2 value: (SBNumber newFromNumber: 2);
 		row: 2 column: 1 value: (SBNumber newFromNumber: 3.5);
 		row: 2 column: 2 value: (SBNumber newFromNumber: 4).
-	self assert: self table printToTranscript = testString
+	self assert: self table printToTranscript equals: testString

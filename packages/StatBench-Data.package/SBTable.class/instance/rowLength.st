@@ -1,5 +1,5 @@
 table management
 rowLength
-	^ self rows size strictlyPositive
-		ifTrue: [ (self rowAt: 1) size ]
-		ifFalse: [ 0 ]
+	^ self rows isEmpty
+		ifTrue: [ 0 ]
+		ifFalse: [ (self rowAt: 1) size ]

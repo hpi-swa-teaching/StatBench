@@ -1,7 +1,7 @@
 testing
 testAddRowWithSize
-	self table: SBTable new.
 	self
+		table: SBTable new;
 		assert: self table rowLength equals: 0;
 		assert: self table columnLength equals: 0.
 	self table addRowWithSize: 4.

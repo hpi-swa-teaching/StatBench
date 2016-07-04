@@ -6,7 +6,7 @@ drawXAnnotationOn: aCanvas
 	counter := 0.
 	self domain do: [ :element |
 		axisOffset := 0@0.
-		self chooseNumericalLimits
+		self hasNumericalScaling
 			ifTrue: [
 				textPosition := start + ((element * self entryWidth)@0) ]
 			ifFalse: [

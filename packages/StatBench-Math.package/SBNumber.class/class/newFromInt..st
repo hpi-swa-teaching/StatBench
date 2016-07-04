@@ -4,4 +4,4 @@ newFromInt: anInteger
 		initialize;
 		intValue: anInteger;
 		isAPFloat: false;
-		yourself.
+		yourself

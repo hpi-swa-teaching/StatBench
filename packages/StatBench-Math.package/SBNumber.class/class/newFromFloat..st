@@ -4,4 +4,4 @@ newFromFloat: aFloat
 		initialize;
 		floatValue: aFloat;
 		isAPFloat: true;
-		yourself.
+		yourself

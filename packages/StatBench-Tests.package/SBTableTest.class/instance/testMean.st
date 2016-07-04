@@ -10,4 +10,4 @@ testMean
 	self
 		assert: (self table meanForColumn: 1) = (3 + 1 / 2);
 		assert: (self table meanForColumn: 2) = (2 + 4.5 / 2);
-		assert: (self table meanForColumn: 3) = nil
+		assert: (self table meanForColumn: 3) isNil
