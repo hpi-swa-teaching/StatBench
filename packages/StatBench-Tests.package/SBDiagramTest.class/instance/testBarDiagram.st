@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testBarDiagram
 | values diagram diagramMorph position |
 diagram := SBDiagram new.

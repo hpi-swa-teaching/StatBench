@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 testScientificNotation
 	self
 		assert: (self diagram scientificNotationFor: 1) equals: '1.0e0';
