@@ -4,7 +4,7 @@ drawFunctionOn: aCanvas
 	start := self axisStartPoint.
 	base := start.
 	lastPoint := base.
-	axisOffset := self defaultDrawWidth - self defaultAxisLineWidth.
+	axisOffset := self drawWidth - self defaultAxisLineWidth.
 	self domain do: [ :element |
 		self chooseNumericalLimits
 			ifTrue: [ base := (start x + (self entryWidth * element)) @ self axisStartPoint y ]
@@ -26,5 +26,5 @@ drawFunctionOn: aCanvas
 		aCanvas
 			line: self position + fromPoint
 			to: self position + toPoint
-			width: self defaultDrawWidth
+			width: self drawWidth
 			color: self defaultDiagramColor ]
