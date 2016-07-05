@@ -7,7 +7,10 @@
 		"openDiagramWithXValues:yValues:type:" : "je 6/24/2016 11:01",
 		"openDiagramWithYValues:type:" : "je 6/23/2016 17:06",
 		"openLineDiagramWithTable:xColumn:yColumn:" : "je 6/23/2016 17:02",
-		"openLineDiagramWithTable:yColumn:" : "je 6/23/2016 17:02" },
+		"openLineDiagramWithTable:yColumn:" : "je 6/23/2016 17:02",
+		"openScatterDiagramWithTable:xColumn:yColumn:colorColumn:" : "je 7/5/2016 15:35",
+		"openScatterDiagramWithTable:xValues:yValues:colorValues:" : "je 7/5/2016 15:56",
+		"openScatterDiagramWithTable:yColumn:colorColumn:" : "je 7/5/2016 15:34" },
 	"instance" : {
 		"changeTypeTo:" : "je 6/16/2016 01:21",
 		"changeYRangeTo:" : "je 6/16/2016 01:21",

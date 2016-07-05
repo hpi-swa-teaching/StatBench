@@ -1,3 +1,3 @@
 constants
 defaultAxisStartPoint
-	^ 0 @ (self diagramSize y - self defaultDiagramPadding)
+	^ 0@(self diagramSize y - self defaultDiagramPadding)

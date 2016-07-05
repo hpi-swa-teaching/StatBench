@@ -1,6 +1,10 @@
 drawing
 drawXAnnotationOn: aCanvas
 	| textPosition axisOffset start counter annotation annotationExtent annotationPosition width |
+	self diagramType = #scatter
+		ifTrue: [
+			self drawAbstractXAnnotationOn: aCanvas.
+			^ self ].
 	start := self axisStartPoint + (0@self defaultAnnotationPadding).
 	textPosition := start.
 	counter := 0.

@@ -1,3 +1,3 @@
 constants
 defaultXAnnotationInterval
-	^ 1
+	^ 10

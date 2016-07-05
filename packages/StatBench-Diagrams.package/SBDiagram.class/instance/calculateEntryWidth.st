@@ -1,6 +1,6 @@
 diagram properties
 calculateEntryWidth
-	|  maxWidth collection |
+	| maxWidth collection |
 	maxWidth := 0.
 	collection := self hasNumericalDomain
 		ifTrue: [
@@ -12,4 +12,6 @@ calculateEntryWidth
 	maxWidth := maxWidth + self defaultAnnotationPadding.
 	self hasNumericalScaling
 		ifFalse: [ maxWidth := maxWidth min: self maxStringEntryWidth ].
-	self entryWidth: maxWidth
+	self entryWidth: (self diagramType = #scatter
+		ifTrue: [ self calculateMaxXWidthFor: (self maxRangeForCollection: self domain) ]
+		ifFalse: [ maxWidth ])

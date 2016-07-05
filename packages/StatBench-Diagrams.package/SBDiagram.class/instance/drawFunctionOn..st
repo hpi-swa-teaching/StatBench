@@ -1,11 +1,12 @@
 drawing
 drawFunctionOn: aCanvas
-	| position axisOffset base lastPoint start fromPoint toPoint |
+	| position axisOffset base lastPoint start fromPoint toPoint color |
 	start := self axisStartPoint.
 	base := start.
 	lastPoint := base.
 	axisOffset := self drawWidth - self defaultAxisLineWidth.
-	self domain do: [ :element |
+	color := self defaultDiagramColor.
+	self domain sorted do: [ :element |
 		base := self hasNumericalScaling
 			ifTrue: [ (start x + (self entryWidth * element)) @ self axisStartPoint y ]
 			ifFalse: [ (base x + self entryWidth) @ self axisStartPoint y ].
@@ -23,8 +24,15 @@ drawFunctionOn: aCanvas
 				fromPoint := lastPoint.
 				toPoint := position.
 				lastPoint := position ].
+		self diagramType = #scatter
+			ifTrue: [
+				fromPoint := position + (0@1).
+				toPoint := position.
+				color := self colorForFactor: (self colorValues at: (self domain indexOf: element)) ].
 		aCanvas
 			line: self position + fromPoint
 			to: self position + toPoint
 			width: self drawWidth
-			color: self defaultDiagramColor ]
+			color: color ].
+	self diagramType = #scatter
+		ifTrue: [ self drawLegendOn: aCanvas ]

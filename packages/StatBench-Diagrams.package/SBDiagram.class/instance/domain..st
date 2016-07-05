@@ -5,7 +5,7 @@ domain: aCollection
 		self hasNumericalDomain: (self hasNumericalDomain and: [ SBTable isEntryANumber: element asString ]) ].
 	domain := self hasNumericalDomain
 		ifTrue: [
-				SortedCollection newFrom: (aCollection collect: [ :element |
+				OrderedCollection newFrom: (aCollection collect: [ :element |
 					element isString
 						ifTrue: [ (SBNumber newFromString: element) literalValue ]
 						ifFalse: [

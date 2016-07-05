@@ -5,10 +5,11 @@ drawOn: aCanvas
 		ifTrue: [
 			self
 				calculateDiagramSize;
+				calculateLegendSize;
 				canvas: self defaultCanvas;
 				drawYAnnotationOn: self canvas;
 				drawXAnnotationOn: self canvas;
 				drawXYAxisOn: self canvas;
 				drawFunctionOn: self canvas;
 				reDraw: false;
-				updateContent: (self canvas contentsOfArea: (Rectangle origin: 0@0 corner: self canvas extent)) ]
+				updateContent: (self canvas contentsOfArea: (Rectangle origin: self canvas origin corner: self canvas extent)) ]

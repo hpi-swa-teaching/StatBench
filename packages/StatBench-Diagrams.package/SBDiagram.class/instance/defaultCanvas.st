@@ -1,7 +1,7 @@
 constants
 defaultCanvas
 	^ FormCanvas
-		extent: self diagramSize
+		extent: self calculateCanvasSize
 		depth: Display depth
 		origin: self position
-		clipRect: (Rectangle origin: self position corner: self diagramSize)
+		clipRect: (Rectangle origin: self position corner: self calculateCanvasSize)

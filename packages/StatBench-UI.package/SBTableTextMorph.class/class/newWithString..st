@@ -1,6 +1,6 @@
 instance creation
 newWithString: aString
-	^ self basicNew;
+	^ self basicNew
 		initialize;
 		data: aString;
 		updateContent;

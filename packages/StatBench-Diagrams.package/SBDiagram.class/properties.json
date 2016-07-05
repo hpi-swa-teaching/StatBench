@@ -18,7 +18,10 @@
 		"axisStartPoint",
 		"reDraw",
 		"contentMorph",
-		"canvas" ],
+		"canvas",
+		"colorValues",
+		"colorDictionary",
+		"extraCanvasSpace" ],
 	"name" : "SBDiagram",
 	"pools" : [
 		 ],
