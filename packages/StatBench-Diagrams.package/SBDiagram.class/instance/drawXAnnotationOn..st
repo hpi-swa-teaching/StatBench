@@ -20,22 +20,20 @@ drawXAnnotationOn: aCanvas
 			ifFalse: [ annotation := element asString].
 		(self functionAt: element) positive
 			ifFalse: [ axisOffset := 0@(-1 * (self defaultAxisLineWidth + self defaultAnnotationPadding + 12)) ].
-		counter \\ self annotationInterval x = 0
+		width := self defaultFont widthOfString: annotation.
+		annotationExtent := width @ self defaultFont height.
+		annotationPosition := textPosition + axisOffset - ((annotationExtent x / 2)@0).
+		self hasNumericalDomain
 			ifTrue: [
-				width := self defaultFont widthOfString: annotation.
-				annotationExtent := width @ self defaultFont height.
-				annotationPosition := textPosition + axisOffset - ((annotationExtent x / 2)@0).
-				self hasNumericalDomain
-					ifTrue: [
-						aCanvas 
-							drawString: annotation
-							in: ((self position  + annotationPosition) extent: annotationExtent)
-							font: self defaultFont 
-							color: self defaultFontColor ]
-					ifFalse: [
-						self
-							drawString: annotation
-							on: aCanvas
-							at: self position + annotationPosition
-							extent: annotationExtent ]].
+				aCanvas 
+					drawString: annotation
+					in: ((self position  + annotationPosition) extent: annotationExtent)
+					font: self defaultFont 
+					color: self defaultFontColor ]
+			ifFalse: [
+				self
+					drawString: annotation
+					on: aCanvas
+					at: self position + annotationPosition
+					extent: annotationExtent ].
 		counter := counter + 1 ]
