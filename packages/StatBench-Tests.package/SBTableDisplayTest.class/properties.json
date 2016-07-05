@@ -1,0 +1,15 @@
+{
+	"category" : "StatBench-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"tableDisplay",
+		"description" ],
+	"name" : "SBTableDisplayTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

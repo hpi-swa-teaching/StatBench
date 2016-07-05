@@ -1,7 +1,6 @@
 display
 buildTableDisplayWithStats: statCollection columns: columnCollection
 	| statisticValueMorph columnMorph |
-	
 	1 to: self table rowLength do: [ :index |
 		statisticValueMorph := statCollection at: index.
 		columnMorph := columnCollection at: index.
