@@ -12,15 +12,20 @@ testColorStatValues
 	aTableDisplay := SBTableDisplay new.
 	self tableColumn 
 		column: 1;
-		columnContents: {'7' . '1' . '2' . '4.3' . '9.2' . '0' . '11' . '10.587' . '12' . '4'} asOrderedCollection;
+		columnContents: aTable printColumnDataToCollection first;
 		header: nil.
 	aTableDisplay
 		table: aTable;
 		fillStatDictionary.
-	"self tableColumn 
+	self tableColumn 
 		updateContent;
 		colorStatisticValues: (aTableDisplay statDictionary).
-	self halt."
+	self 
+		assert: (self tableColumn submorphs first backgroundColor = Color red);
+		assert: (self tableColumn submorphs third backgroundColor = Color yellow);
+		assert: (self tableColumn submorphs fourth backgroundColor = Color green)
+		
+	
 	
 
 
