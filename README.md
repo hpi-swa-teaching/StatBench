@@ -35,7 +35,7 @@ SBDiagramWindow openBarDiagramWithTable: table xColumn: <columnNumber> yColumn: 
 SBDiagramWindow openLineDiagramWithTable: table xColumn: <columnNumber> yColumn: <columnNumber>.
 ```
 
-### Create an aggregatedTable
+#### Create an aggregatedTable
 - execute the following code in your Workspace
 ```
 aggregatedTable := yourTable
