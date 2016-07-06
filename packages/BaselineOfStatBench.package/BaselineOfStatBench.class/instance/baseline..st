@@ -5,6 +5,7 @@ baseline: spec
 	for: #'common'
 	do: [ 
 		spec
+			package: 'StatBench';
 			package: 'StatBench-Core';
 			package: 'StatBench-Tests' with: [ spec requires: #('full') ];
 			package: 'StatBench-Data';
@@ -17,6 +18,7 @@ baseline: spec
 
 		spec
 			group: 'default' with: #('StatBench-Core');
+			group: 'statbench' with: #('StatBench');
 			group: 'Tests' with: #('StatBench-Tests');
 			group: 'data' with: #('StatBench-Data');
 			group: 'diagrams' with: #('StatBench-Diagrams');
@@ -24,4 +26,4 @@ baseline: spec
 			group: 'ui' with: #('StatBench-UI');
 			group: 'math' with: #('StatBench-Math');
 			group: 'float' with: #('ArbitraryPrecisionFloat');
-			group: 'full' with: #('default' 'data' 'diagrams' 'io' 'ui' 'math' 'float')]
+			group: 'full' with: #('statbench' 'float')]
