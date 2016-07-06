@@ -1,3 +1,3 @@
 accessing
 domain
-	^ domain ifNil: [ domain := SortedCollection new ]
+	^ domain ifNil: [ domain := OrderedCollection new ]

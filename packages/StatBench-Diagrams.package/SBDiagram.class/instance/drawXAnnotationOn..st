@@ -8,15 +8,15 @@ drawXAnnotationOn: aCanvas
 	start := self axisStartPoint + (0@self defaultAnnotationPadding).
 	textPosition := start.
 	counter := 0.
-	self domain do: [ :element |
+	(self domainForStateWithMultiples: false) do: [ :element |
 		axisOffset := 0@0.
 		self hasNumericalScaling
 			ifTrue: [
-				textPosition := start + ((element * self entryWidth)@0) ]
+				textPosition := start + ((element value * self entryWidth)@0) ]
 			ifFalse: [
 				textPosition := textPosition + (self entryWidth@0) ].
 		self hasNumericalDomain
-			ifTrue: [ annotation := self scientificNotationFor: element  ]
+			ifTrue: [ annotation := self scientificNotationFor: element value ]
 			ifFalse: [ annotation := element asString].
 		(self functionAt: element) positive
 			ifFalse: [ axisOffset := 0@(-1 * (self defaultAxisLineWidth + self defaultAnnotationPadding + 12)) ].

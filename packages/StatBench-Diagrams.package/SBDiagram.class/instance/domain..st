@@ -7,9 +7,9 @@ domain: aCollection
 		ifTrue: [
 				OrderedCollection newFrom: (aCollection collect: [ :element |
 					element isString
-						ifTrue: [ (SBNumber newFromString: element) literalValue ]
-						ifFalse: [
-							element class = SBNumber
+						ifTrue: [ (SBNumber newFromString: element) "literalValue" ]
+						ifFalse: [ SBNumber newFromNumber: element
+							"element class = SBNumber
 								ifTrue: [ element literalValue ]
-								ifFalse: [ element ]]]) ]
+								ifFalse: [ element ]"]]) ]
 		ifFalse: [ aCollection ]

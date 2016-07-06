@@ -5,7 +5,7 @@ calculateEntryWidth
 	collection := self hasNumericalDomain
 		ifTrue: [
 			self domain collect: [ :element |
-				self scientificNotationFor: element ]]
+				self scientificNotationFor: element value ]]
 		ifFalse: [ self domain ].
 	collection do: [ :element |
 		maxWidth := maxWidth max: (self defaultFont widthOfString: element asString) ].

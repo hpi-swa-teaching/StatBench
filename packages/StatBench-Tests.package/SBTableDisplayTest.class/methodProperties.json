@@ -2,12 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
-		"description" : "ht 7/5/2016 23:10",
-		"description:" : "ht 7/5/2016 23:11",
-		"setUp" : "ht 7/6/2016 01:05",
+		"setUp" : "je 7/6/2016 10:04",
 		"tableDisplay" : "ht 7/5/2016 23:10",
 		"tableDisplay:" : "ht 7/5/2016 21:38",
-		"testClearStatDictionary" : "ht 7/6/2016 01:06",
-		"testFillStatDictionary" : "ht 7/6/2016 01:08",
-		"testStatDescriptionMorph" : "ht 7/5/2016 23:17",
-		"testTableDisplayWithStats" : "ht 7/6/2016 01:26" } }
+		"testClearStatDictionary" : "je 7/6/2016 10:04",
+		"testFillStatDictionary" : "je 7/6/2016 10:02",
+		"testStatDescriptionMorph" : "je 7/6/2016 10:02",
+		"testTableDisplayWithStats" : "je 7/6/2016 10:07" } }

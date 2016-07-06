@@ -13,8 +13,10 @@ drawAbstractXAnnotationOn: aCanvas
 		width := self defaultFont widthOfString: annotation.
 		annotationExtent := width @ self defaultFont height.
 		annotationPosition := textPosition + axisOffset - ((annotationExtent x / 2)@0).
-		aCanvas 
-			drawString: annotation
-			in: ((self position + annotationPosition) extent: annotationExtent)
-			font: self defaultFont 
-			color: self defaultFontColor ]
+		(annotationPosition + annotationExtent) x < self axisEndPoint x
+			ifTrue: [
+				aCanvas 
+					drawString: annotation
+					in: ((self position + annotationPosition) extent: annotationExtent)
+					font: self defaultFont 
+					color: self defaultFontColor ]]

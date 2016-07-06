@@ -6,8 +6,7 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"tableDisplay",
-		"description" ],
+		"tableDisplay" ],
 	"name" : "SBTableDisplayTest",
 	"pools" : [
 		 ],

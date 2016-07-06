@@ -6,9 +6,9 @@ drawFunctionOn: aCanvas
 	lastPoint := base.
 	axisOffset := self drawWidth - self defaultAxisLineWidth.
 	color := self defaultDiagramColor.
-	self domain sorted do: [ :element |
+	(self domainForStateWithMultiples: true) do: [ :element |
 		base := self hasNumericalScaling
-			ifTrue: [ (start x + (self entryWidth * element)) @ self axisStartPoint y ]
+			ifTrue: [ (start x + (self entryWidth * element value)) @ self axisStartPoint y ]
 			ifFalse: [ (base x + self entryWidth) @ self axisStartPoint y ].
 		position := base - (0@(self yScaling * (self functionAt: element))).
 		self diagramType = #bar

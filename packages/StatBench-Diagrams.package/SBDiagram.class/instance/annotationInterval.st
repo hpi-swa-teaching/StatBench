@@ -1,3 +1,3 @@
 accessing
 annotationInterval
-	^ annotationInterval ifNil: [ annotationInterval := self defaultXAnnotationInterval @ self defaultYAnnotationInterval ]
+	^ annotationInterval ifNil: [ annotationInterval := self defaultXAnnotationInterval@self defaultYAnnotationInterval ]

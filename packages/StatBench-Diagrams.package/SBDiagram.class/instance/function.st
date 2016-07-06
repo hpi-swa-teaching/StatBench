@@ -1,3 +1,3 @@
 accessing
 function
-	^ function ifNil: [ function := Dictionary new ]
+	^ function ifNil: [ function := IdentityDictionary new ]

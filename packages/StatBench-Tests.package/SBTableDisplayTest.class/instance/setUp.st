@@ -1,5 +1,4 @@
 running
 setUp
 	super setUp.
-	self tableDisplay: SBTableDisplay new.
-	
+	self tableDisplay: SBTableDisplay new
