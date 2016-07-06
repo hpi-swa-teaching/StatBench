@@ -1,0 +1,16 @@
+{
+	"category" : "StatBench-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"column",
+		"columnContents",
+		"header" ],
+	"name" : "SBTableColumnMorph",
+	"pools" : [
+		 ],
+	"super" : "PasteUpMorph",
+	"type" : "normal" }

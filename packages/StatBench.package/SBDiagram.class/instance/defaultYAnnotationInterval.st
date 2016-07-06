@@ -1,0 +1,3 @@
+constants
+defaultYAnnotationInterval
+	^ 10

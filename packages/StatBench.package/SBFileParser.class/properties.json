@@ -1,0 +1,14 @@
+{
+	"category" : "StatBench-IO",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SBFileParser",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

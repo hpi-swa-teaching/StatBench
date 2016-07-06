@@ -1,0 +1,14 @@
+{
+	"category" : "StatBench-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "StatBench",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

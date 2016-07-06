@@ -1,0 +1,3 @@
+display
+updateContent
+	self contentMorph updateContent

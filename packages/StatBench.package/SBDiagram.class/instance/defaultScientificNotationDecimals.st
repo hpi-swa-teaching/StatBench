@@ -1,0 +1,3 @@
+constants
+defaultScientificNotationDecimals
+	^ 5

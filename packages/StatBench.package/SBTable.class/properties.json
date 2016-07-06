@@ -1,0 +1,16 @@
+{
+	"category" : "StatBench-Data",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"rows",
+		"columnNames",
+		"columnNumberState" ],
+	"name" : "SBTable",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

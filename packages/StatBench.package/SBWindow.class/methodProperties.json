@@ -1,0 +1,16 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"clearContents" : "je 6/11/2016 23:42",
+		"contentMorph" : "je 6/11/2016 23:39",
+		"contentMorph:" : "je 6/11/2016 23:39",
+		"fillScrollPane" : "je 6/16/2016 01:24",
+		"initialize" : "je 6/22/2016 15:28",
+		"openWindow" : "je 6/22/2016 15:31",
+		"padding" : "je 6/11/2016 23:40",
+		"scrollPane" : "je 6/11/2016 23:38",
+		"scrollPane:" : "je 6/11/2016 23:38",
+		"updateContent" : "je 6/16/2016 01:19",
+		"window" : "je 6/22/2016 15:28",
+		"window:" : "je 6/22/2016 15:28" } }

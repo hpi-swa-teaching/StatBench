@@ -1,0 +1,3 @@
+constants
+tsvSeparator
+	^ Character tab

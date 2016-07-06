@@ -1,0 +1,3 @@
+constants
+newline
+	^ Character linefeed
