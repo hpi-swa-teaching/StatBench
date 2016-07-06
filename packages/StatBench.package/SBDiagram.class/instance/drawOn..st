@@ -12,4 +12,5 @@ drawOn: aCanvas
 				drawXYAxisOn: self canvas;
 				perform: ('draw', self diagramType asString capitalized, 'DiagramOn:') asSymbol with: self canvas;
 				reDraw: false;
-				updateContent: (self canvas contentsOfArea: (Rectangle origin: self canvas origin extent: self canvas extent)) ]
+				"updateContent: (self canvas contentsOfArea: (Rectangle origin: self canvas origin extent: self canvas extent)) ]"
+				updateContent: (self canvas contentsOfArea: (self canvas origin extent: self canvas extent)) ]
