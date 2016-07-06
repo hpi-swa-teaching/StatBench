@@ -72,7 +72,7 @@
 		"function" : "je 7/6/2016 08:43",
 		"function:" : "je 6/11/2016 22:28",
 		"functionAt:" : "je 7/6/2016 08:48",
-		"generateColorForString:" : "je 7/6/2016 10:31",
+		"generateColorForString:" : "mg 7/6/2016 14:25",
 		"hasNumericalDomain" : "je 6/12/2016 16:42",
 		"hasNumericalDomain:" : "je 6/12/2016 16:42",
 		"hasNumericalScaling" : "je 7/5/2016 16:29",
@@ -84,7 +84,7 @@
 		"reDraw" : "je 6/16/2016 00:21",
 		"reDraw:" : "je 6/16/2016 00:21",
 		"redrawContent" : "je 6/16/2016 00:54",
-		"scientificNotationFor:" : "je 7/5/2016 16:00",
+		"scientificNotationFor:" : "mg 7/6/2016 14:31",
 		"sortedDomain" : "je 7/6/2016 08:53",
 		"updateContent:" : "ht 7/4/2016 15:22",
 		"yScaling" : "je 6/14/2016 22:30" } }

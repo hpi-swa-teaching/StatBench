@@ -4,6 +4,8 @@ scientificNotationFor: aNumber
 	number := (aNumber class = SBNumber)
 		ifTrue: [ aNumber value ]
 		ifFalse: [ aNumber ].
+	number isZero
+		ifTrue: [ ^ '0e0' ].
 	exponent := number abs log floor.
 	factor := (number / (10 raisedTo: exponent)) asFloat.
 	factorString := factor asString.
