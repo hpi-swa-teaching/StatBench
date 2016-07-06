@@ -19,8 +19,3 @@ generateColorForString: aString
 		r: (Compiler evaluate: '16r', (color copyFrom: 1 to: 2)) / 255
 		g: (Compiler evaluate: '16r', (color copyFrom: 3 to: 4)) / 255
 		b: (Compiler evaluate: '16r', (color copyFrom: 5 to: 6)) / 255
-		"
-	^ Color
-		r: 128 atRandom + 128
-		g: 64 atRandom
-		b: 64 atRandom"

@@ -7,4 +7,4 @@ calculateDiagramSize
 		ifFalse: [ self domain size ].
 	self
 		diagramSize: ((self entryWidth * xFactor) + self defaultDiagramOverdraw + self axisStartPoint x)@self diagramSize y;
-		extent: self calculateCanvasSize.
+		extent: self canvasSize.
