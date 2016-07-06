@@ -1,9 +1,8 @@
 table management
 searchForLast: aValue inColumn: aColumn
-	| valueCollection searchValue |
-	searchValue := SBNumber newFromNumber: aValue.
+	| valueCollection |
 	valueCollection := self rowsSelect: [ :currentRow |
-		(currentRow at: aColumn) = searchValue ].
+		(currentRow at: aColumn) = aValue ].
 	^ valueCollection isEmpty
 		ifTrue: [ nil ]
 		ifFalse: [ valueCollection last ]

@@ -1,3 +1,0 @@
-constants
-defaultBitSize
-	^ 64
