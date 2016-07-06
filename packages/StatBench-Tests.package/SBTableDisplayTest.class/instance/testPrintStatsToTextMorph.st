@@ -1,6 +1,7 @@
 testing
-testTableDisplayWithStats
-	| collumnCollection aTable statCollection columnCollection|
+testPrintStatsToTextMorph
+	| aTable collumnCollection dataString |
+	dataString := '3' , Character cr , '14.1' , Character cr , '7.358' , Character cr , '5' , Character cr , '4.1835262638114274' , Character cr , '17.501892' , Character cr , 'false'.
 	aTable := SBTable new.
 	aTable
 		addRows: 4 size: 1;
@@ -17,7 +18,4 @@ testTableDisplayWithStats
 	self tableDisplay 
 		table: aTable;
 		fillStatDictionary.
-	statCollection := self tableDisplay printStatsToTextMorphs.
-	columnCollection := (self tableDisplay) createColumnMorphsFor: (self tableDisplay table printColumnDataToCollection).
-	self tableDisplay buildTableDisplayWithStats: statCollection columns: columnCollection .
-	self assert: (self tableDisplay height) = (self tableDisplay height max: ((statCollection at: 1) height + (self tableDisplay padding) + (columnCollection at: 1) height))
+	self assert: ((self tableDisplay printStatsToTextMorphs) at: 1) data equals:  dataString.

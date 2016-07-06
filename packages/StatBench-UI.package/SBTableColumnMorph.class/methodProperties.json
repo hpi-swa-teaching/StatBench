@@ -3,7 +3,7 @@
 		 },
 	"instance" : {
 		"addColumnEntryMorph:" : "ht 7/5/2016 21:23",
-		"colorStatisticValues:" : "ht 7/5/2016 21:29",
+		"colorStatisticValues:" : "ht 7/6/2016 11:44",
 		"colorsForStatisicValues" : "je 5/31/2016 15:54",
 		"column" : "je 5/31/2016 15:51",
 		"column:" : "je 5/31/2016 15:51",
@@ -13,5 +13,5 @@
 		"header:" : "je 6/1/2016 14:04",
 		"initialize" : "je 6/23/2016 17:23",
 		"padding" : "je 6/1/2016 14:02",
-		"updateContent" : "je 7/4/2016 15:21",
+		"updateContent" : "ht 7/6/2016 12:03",
 		"wantsHaloFromClick" : "je 6/1/2016 14:28" } }
