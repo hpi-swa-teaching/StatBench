@@ -2,7 +2,7 @@ testing
 testYAxisAnnotation
 	| values diagram diagramForm annotationOnYAxis sampleEnvironment position |
 	diagram := SBDiagram new.
-	values := {7 . 1 . 2 . 4.3 . 9.2 . 0 . 11 . 10.587 . 12 . 4}.
+	values := {7 . 1 . 2 . 4.3 . 9.2 . 0 . 11 . 10.587 . 12 . 4} asOrderedCollection.
 	diagram
 		diagramType: #bar;
 		displayXValues: (SBTable indexCollectionFor: values) yValues: values.
