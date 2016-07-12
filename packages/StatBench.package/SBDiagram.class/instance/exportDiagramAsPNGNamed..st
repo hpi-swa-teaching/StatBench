@@ -1,5 +1,5 @@
 display
-exportDiagramAsPNGNamed: aString
+exportDiagramAsPNGNamed: fileName
 	PNGReadWriter
-		putForm: self imageForm 
-		onFileNamed: ( aString , '.png' )
+		putForm: self contentMorph imageForm 
+		onStream: (StandardFileStream forceNewFileNamed: fileName, '.png')

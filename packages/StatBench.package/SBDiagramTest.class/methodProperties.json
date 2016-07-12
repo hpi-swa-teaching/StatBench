@@ -7,8 +7,8 @@
 		"setUp" : "je 6/16/2016 14:55",
 		"testAxis" : "je 7/4/2016 23:47",
 		"testBarDiagram" : "je 7/4/2016 23:49",
+		"testExportToPNG" : "je 7/12/2016 21:37",
 		"testLineDiagram" : "je 7/4/2016 23:50",
-		"testPngExport" : "dk 7/12/2016 18:36",
 		"testScientificNotation" : "je 6/16/2016 15:21",
 		"testXAxisAnnotation" : "je 7/5/2016 21:15",
 		"testYAxisAnnotation" : "je 7/7/2016 12:39" } }
