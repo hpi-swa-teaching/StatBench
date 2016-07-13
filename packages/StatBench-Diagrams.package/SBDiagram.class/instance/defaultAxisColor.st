@@ -1,3 +1,0 @@
-constants
-defaultAxisColor
-	^ Color black

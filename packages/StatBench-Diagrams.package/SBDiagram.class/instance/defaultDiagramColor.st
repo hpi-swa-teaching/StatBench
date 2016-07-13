@@ -1,3 +1,0 @@
-constants
-defaultDiagramColor
-	^ Color black

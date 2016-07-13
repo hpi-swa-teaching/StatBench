@@ -1,3 +1,0 @@
-constants
-defaultFactorNumber
-	^ 2
