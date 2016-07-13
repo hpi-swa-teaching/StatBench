@@ -1,3 +1,3 @@
 accessing
 function
-	^ function ifNil: [ function := IdentityDictionary new ]
+	^ function ifNil: [ function := OrderedCollection new ]

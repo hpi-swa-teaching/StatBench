@@ -1,3 +1,6 @@
 accessing
 maxRange
-	^ maxRange ifNil: [ maxRange := self maxRangeForCollection: self function values ]
+	| functionValues |
+	functionValues := self function collect: [ :tuple |
+			tuple second ].
+	^ maxRange ifNil: [ maxRange := self maxRangeForCollection: functionValues]

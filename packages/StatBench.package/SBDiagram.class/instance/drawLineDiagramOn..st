@@ -8,9 +8,11 @@ drawLineDiagramOn: aCanvas
 			ifTrue: [ (self entryWidth * element + self axisStartPoint x)@self axisStartPoint y ]
 			ifFalse: [ (base x + self entryWidth)@self axisStartPoint y ]. 
 		fromPoint := toPoint.
-		toPoint := base - (0@(self yScaling * (self functionAt: element))).
-		aCanvas
-			line: self position + fromPoint
-			to: self position + toPoint
-			width: self drawWidth
-			color: self defaultDiagramColor ]
+		
+		(self functionAt: element) do: [ :value |
+			toPoint := base - (0@(self yScaling * value)).
+			aCanvas
+				line: self position + fromPoint
+				to: self position + toPoint
+				width: self drawWidth
+				color: self defaultDiagramColor ]]

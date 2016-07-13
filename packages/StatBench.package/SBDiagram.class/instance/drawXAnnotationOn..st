@@ -18,7 +18,7 @@ drawXAnnotationOn: aCanvas
 		self hasNumericalDomain
 			ifTrue: [ annotation := self scientificNotationFor: element ]
 			ifFalse: [ annotation := element asString].
-		(self functionAt: element) positive
+		(self functionAt: element) first positive
 			ifFalse: [ axisOffset := 0@(0 - self defaultAxisLineWidth - self defaultAnnotationPadding - self defaultFont height) ].
 		width := self defaultFont widthOfString: annotation.
 		annotationExtent := width@self defaultFont height.
