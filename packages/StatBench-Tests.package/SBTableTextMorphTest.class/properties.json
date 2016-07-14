@@ -1,0 +1,14 @@
+{
+	"category" : "StatBench-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"tableTextMorph" ],
+	"name" : "SBTableTextMorphTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

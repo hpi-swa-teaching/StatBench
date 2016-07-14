@@ -1,0 +1,3 @@
+constants
+defaultScatterLineWidth
+	^ 4

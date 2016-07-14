@@ -1,0 +1,3 @@
+constants
+defaultDiagramPadding
+	^ 50

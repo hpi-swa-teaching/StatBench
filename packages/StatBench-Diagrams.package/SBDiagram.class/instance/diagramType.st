@@ -1,0 +1,3 @@
+accessing
+diagramType
+	^ diagramType

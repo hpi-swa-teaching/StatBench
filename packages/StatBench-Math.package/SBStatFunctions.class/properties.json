@@ -1,0 +1,14 @@
+{
+	"category" : "StatBench-Math",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SBStatFunctions",
+	"pools" : [
+		 ],
+	"super" : "Magnitude",
+	"type" : "normal" }

@@ -1,0 +1,3 @@
+constants
+maxStringEntryWidth
+	^ 100

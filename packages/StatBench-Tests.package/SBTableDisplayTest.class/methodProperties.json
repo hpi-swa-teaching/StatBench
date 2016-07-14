@@ -1,0 +1,12 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"setUp" : "je 7/6/2016 10:04",
+		"tableDisplay" : "ht 7/5/2016 23:10",
+		"tableDisplay:" : "ht 7/5/2016 21:38",
+		"testClearStatDictionary" : "je 7/6/2016 10:04",
+		"testFillStatDictionary" : "je 7/6/2016 15:39",
+		"testPrintStatsToTextMorph" : "je 7/6/2016 16:22",
+		"testStatDescriptionMorph" : "je 7/6/2016 16:28",
+		"testTableDisplayWithStats" : "je 7/6/2016 15:42" } }

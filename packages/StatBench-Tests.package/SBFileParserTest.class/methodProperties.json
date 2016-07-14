@@ -1,0 +1,13 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"setUp" : "je 5/17/2016 11:55",
+		"table" : "je 5/17/2016 11:55",
+		"table:" : "je 5/17/2016 11:55",
+		"testReadCSVFile" : "je 7/6/2016 14:50",
+		"testReadCSVFileWithCharacterCr" : "je 7/6/2016 14:52",
+		"testReadCSVFileWithString" : "je 7/6/2016 14:52",
+		"testReadTSVFile" : "je 7/6/2016 14:53",
+		"testWriteCSVFile" : "je 7/6/2016 14:53",
+		"testWriteTSVFile" : "je 7/6/2016 14:54" } }

@@ -1,0 +1,14 @@
+{
+	"category" : "StatBench-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SBTableWindow",
+	"pools" : [
+		 ],
+	"super" : "SBWindow",
+	"type" : "normal" }
