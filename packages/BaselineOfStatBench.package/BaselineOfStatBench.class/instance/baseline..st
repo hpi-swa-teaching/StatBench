@@ -5,7 +5,7 @@ baseline: spec
 	for: #'common'
 	do: [ 
 		spec
-			package: 'StatBench' with: [ spec requires: #('full') ];
+			package: 'StatBench';
 "			package: 'StatBench-Core';
 			package: 'StatBench-Tests' with: [ spec requires: #('full') ];
 			package: 'StatBench-Data';
@@ -17,7 +17,7 @@ baseline: spec
 			package: 'ArbitraryPrecisionFloatTests' with: [ spec requires: #('float') ]. 
 
 		spec
-			group: 'default' with: #('StatBench');
+			group: 'default' with: #('StatBench' 'ArbitraryPrecisionFloat');
 "			group: 'statbench' with: #('StatBench');
 			group: 'Tests' with: #('StatBench-Tests');
 			group: 'data' with: #('StatBench-Data');
