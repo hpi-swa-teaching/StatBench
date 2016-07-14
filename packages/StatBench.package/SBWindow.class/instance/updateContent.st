@@ -1,3 +1,0 @@
-display
-updateContent
-	self subclassResponsibility 

@@ -1,3 +1,0 @@
-accessing
-tableTextMorph
-	^tableTextMorph

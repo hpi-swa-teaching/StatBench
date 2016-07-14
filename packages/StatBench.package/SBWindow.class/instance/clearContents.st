@@ -1,3 +1,0 @@
-display
-clearContents
-	self subclassResponsibility

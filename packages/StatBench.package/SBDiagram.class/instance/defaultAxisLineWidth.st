@@ -1,3 +1,0 @@
-constants
-defaultAxisLineWidth
-	^ 4

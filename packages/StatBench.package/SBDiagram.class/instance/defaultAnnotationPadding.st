@@ -1,3 +1,0 @@
-constants
-defaultAnnotationPadding
-	^ 5
