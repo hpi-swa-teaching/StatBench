@@ -1,3 +1,6 @@
 display
 exportDiagramAsPNG
-	self exportDiagramAsPNGNamed: self diagramType asString, 'diagram_' , DateAndTime now asString, '.png'
+	| time timestamp |
+	time := DateAndTime now.
+	timestamp := time year asString, '_', time month asString, '_', time dayOfMonth asString, '_', time hour asString, '-', time minute asString, '-', time second asString.
+	self exportDiagramAsPNGNamed: self diagramType asString, 'diagram_', timestamp

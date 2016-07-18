@@ -1,4 +1,4 @@
 initialization
 initialize
 	super initialize.
-	self window setLabel: 'SBTable UI'
+	self label: 'SBTable UI'
