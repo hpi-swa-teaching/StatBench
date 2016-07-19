@@ -7,11 +7,10 @@ drawBarDiagramOn: aCanvas
 	(self domainForStateWithMultiples: true) do: [ :element |
 		base := (base x + self entryWidth)@self axisStartPoint y.
 		fromPoint := base.
-		
 		(self functionAt: element) do: [ :value |
 			value strictlyPositive
-				ifTrue: [ base := base - (0@axisOffset) ].
-			toPoint := base - (0@(self yScaling * value)).
+				ifTrue: [ fromPoint := fromPoint - (0@axisOffset) ].
+			toPoint := fromPoint - (0@(self yScaling * value)).
 			value isZero
 				ifFalse: [
 					aCanvas
