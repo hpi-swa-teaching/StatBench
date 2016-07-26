@@ -7,9 +7,9 @@ printStatsToTextMorphs
 		content := ''.
 		self statFunctions do: [ :function |
 			value := (self statDictionary at: function) at: index.
-			content := value
-				ifNil: [ content, newline ]
-				ifNotNil: [ content, value asString, newline ]].
+			content := value = #NaN
+				ifTrue: [ content, newline ]
+				ifFalse: [ content, value asString, newline ]].
 		morph := SBTableTextMorph new.
 		morph
 			data: content allButLast;
