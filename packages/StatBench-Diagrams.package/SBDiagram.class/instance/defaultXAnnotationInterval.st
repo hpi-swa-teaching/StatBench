@@ -1,3 +1,0 @@
-constants
-defaultXAnnotationInterval
-	^ 10

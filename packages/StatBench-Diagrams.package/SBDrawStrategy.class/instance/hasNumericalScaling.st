@@ -1,0 +1,3 @@
+testing
+hasNumericalScaling
+	self subclassResponsibility

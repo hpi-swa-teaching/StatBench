@@ -1,0 +1,3 @@
+drawing
+drawDiagram
+	self subclassResponsibility

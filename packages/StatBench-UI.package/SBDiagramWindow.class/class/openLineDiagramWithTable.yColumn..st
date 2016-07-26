@@ -1,3 +1,8 @@
 instance creation
 openLineDiagramWithTable: aTable yColumn: yIndex
-	^ self openDiagramWithTable: aTable yColumn: yIndex type: #line
+	^ self basicNew
+		initialize;
+		contentMorph: SBDiagram newLineDiagram;
+		displayYValues: (aTable columnAt: yIndex);
+		openWindow;
+		yourself

@@ -1,3 +1,8 @@
 instance creation
-openScatterDiagramWithTable: aTable xColumn: xIndex yColumn: yIndex colorColumn: zIndex
-	^ self openScatterDiagramWithTable: aTable xValues: (aTable columnAt: xIndex) yValues: (aTable columnAt: yIndex) colorValues: (aTable columnAt: zIndex).
+openScatterDiagramWithTable: aTable xColumn: xIndex yColumn: yIndex colorColumn: colorIndex
+	^ self basicNew
+		initialize;
+		contentMorph: (SBDiagram newScatterDiagramColorValues: (aTable columnAt: colorIndex));
+		displayXValues: (aTable columnAt: xIndex) yValues: (aTable columnAt: yIndex);
+		openWindow;
+		yourself

@@ -1,3 +1,3 @@
-drawing
+display
 redrawContent
 	self reDraw: true

@@ -1,0 +1,4 @@
+data management
+calculateDiagramSize
+	self calculateLegendSize.
+	super calculateDiagramSize

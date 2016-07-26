@@ -1,8 +1,7 @@
 display
 createHeaderMorph
-	| headerMorph |
-	headerMorph := SBTableTextMorph newWithString: self header.
-		headerMorph
-			bold;
-			updateContent;
-			centered
+	^ (SBTableTextMorph newWithString: self header)
+		bold;
+		updateContent;
+		centered;
+		yourself

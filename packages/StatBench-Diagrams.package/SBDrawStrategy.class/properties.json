@@ -1,0 +1,16 @@
+{
+	"category" : "StatBench-Diagrams",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"diagram",
+		"canvas",
+		"diagramProperties" ],
+	"name" : "SBDrawStrategy",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

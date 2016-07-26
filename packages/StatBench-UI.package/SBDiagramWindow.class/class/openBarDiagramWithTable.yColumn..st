@@ -1,3 +1,8 @@
 instance creation
 openBarDiagramWithTable: aTable yColumn: yIndex
-	^ self openDiagramWithTable: aTable yColumn: yIndex type: #bar
+	^ self basicNew
+		initialize;
+		contentMorph: SBDiagram newBarDiagram;
+		displayYValues: (aTable columnAt: yIndex);
+		openWindow;
+		yourself

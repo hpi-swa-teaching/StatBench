@@ -1,3 +1,0 @@
-constants
-maxStringEntryWidth
-	^ 100

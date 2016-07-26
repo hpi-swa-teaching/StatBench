@@ -1,0 +1,18 @@
+{
+	"class" : {
+		"newOn:colorValues:" : "je 7/26/2016 17:26" },
+	"instance" : {
+		"calculateDiagramSize" : "je 7/26/2016 16:10",
+		"calculateEntryWidth" : "je 7/26/2016 15:45",
+		"calculateLegendSize" : "je 7/26/2016 15:48",
+		"colorDictionary" : "je 7/26/2016 17:24",
+		"colorForFactor:" : "je 7/26/2016 17:42",
+		"colorValues" : "je 7/26/2016 17:26",
+		"colorValues:" : "je 7/26/2016 17:27",
+		"drawDiagram" : "je 7/26/2016 16:19",
+		"drawLegend" : "je 7/26/2016 18:10",
+		"drawXAnnotation" : "je 7/26/2016 16:00",
+		"extraCanvasSpace" : "je 7/26/2016 15:49",
+		"generateColorForString:" : "je 7/26/2016 15:51",
+		"hasNumericalScaling" : "je 7/26/2016 15:17",
+		"initializeDiagramProperties" : "je 7/26/2016 17:26" } }

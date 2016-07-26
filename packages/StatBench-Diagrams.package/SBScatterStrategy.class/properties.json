@@ -1,0 +1,14 @@
+{
+	"category" : "StatBench-Diagrams",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SBScatterStrategy",
+	"pools" : [
+		 ],
+	"super" : "SBDrawStrategy",
+	"type" : "normal" }

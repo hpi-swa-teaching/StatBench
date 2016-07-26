@@ -1,3 +1,0 @@
-constants
-defaultDiagramOverdraw
-	^ 100

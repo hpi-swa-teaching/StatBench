@@ -1,15 +1,10 @@
-drawing
+display
 drawOn: aCanvas
-	super drawOn: self canvas.
+	"aCanvas is ignored but needed because Morphic calls #drawOn: with one argument."
 	self reDraw
 		ifTrue: [
 			self
-				calculateDiagramSize;
-				calculateLegendSize;
-				canvas: self defaultCanvas;
-				drawYAnnotationOn: self canvas;
-				drawXAnnotationOn: self canvas;
-				drawXYAxisOn: self canvas;
-				perform: ('draw', self diagramType asString capitalized, 'DiagramOn:') asSymbol with: self canvas;
+				canvas: (self strategy draw: self domain function: self function); 
 				reDraw: false;
-				updateContent: (self canvas contentsOfArea: (self canvas origin extent: self canvas extent)) ]
+				updateContent: (self canvas contentsOfArea: (self canvas origin extent: self canvas extent)) ].
+	super drawOn: self canvas.

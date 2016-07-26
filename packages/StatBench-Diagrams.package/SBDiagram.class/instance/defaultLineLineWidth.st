@@ -1,3 +1,0 @@
-constants
-defaultLineLineWidth
-	^ 1
