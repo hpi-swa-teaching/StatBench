@@ -16,7 +16,7 @@ baseline: spec
 			package: 'ArbitraryPrecisionFloat';
 			package: 'ArbitraryPrecisionFloatTests' with: [ spec requires: #('float') ].
 		spec
-			"group: 'default' with: #('StatBench-Core');"
+			group: 'default' with: #('full');
 			"group: 'statbench' with: #('StatBench');"
 			group: 'Tests' with: #('StatBench-Tests');
 			group: 'data' with: #('StatBench-Data');
@@ -25,4 +25,4 @@ baseline: spec
 			group: 'ui' with: #('StatBench-UI');
 			group: 'math' with: #('StatBench-Math');
 			group: 'float' with: #('ArbitraryPrecisionFloat');
-			group: 'full' with: #('default' 'data' 'diagrams' 'io' 'ui' 'math' 'float')]
+			group: 'full' with: #('data' 'diagrams' 'io' 'ui' 'math' 'float')]
