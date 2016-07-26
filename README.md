@@ -1,7 +1,7 @@
 # SWT16-Project-10 [![Build Status](https://travis-ci.org/HPI-SWA-Teaching/SWT16-Project-10.svg?branch=master)](https://travis-ci.org/HPI-SWA-Teaching/SWT16-Project-10)[![Coverage Status](https://img.shields.io/coveralls/HPI-SWA-Teaching/SWT16-Project-10/master.svg?maxAge=0)](https://coveralls.io/github/HPI-SWA-Teaching/SWT16-Project-10?branch=master)
 
 ### Requirements
-- Squeak 4, 5 or Trunk Image
+- Squeak 5 or Trunk Image
 
 ### How to use it
 #### Import Statbench
