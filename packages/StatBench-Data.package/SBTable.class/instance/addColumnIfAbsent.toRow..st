@@ -1,7 +1,7 @@
 table management
-addColumnIfAbsent: columnIndex toRow: rowIndex
+addColumnIfAbsent: aColumnIndex toRow: aRowIndex
 	| row |
-	row := self rowAt: rowIndex.
-	row size < columnIndex
-		ifTrue: [ row add: nil withOccurrences: (columnIndex - row size) ].
-	self columnNumberState add: true withOccurrences: (columnIndex - self columnNumberState size)
+	row := self rowAt: aRowIndex.
+	row size < aColumnIndex
+		ifTrue: [ row add: nil withOccurrences: (aColumnIndex - row size) ].
+	self columnNumberState add: true withOccurrences: (aColumnIndex - self columnNumberState size)

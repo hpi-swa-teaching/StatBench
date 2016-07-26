@@ -1,7 +1,7 @@
-factor detection
+column functions
 detectFactors
-	| columnsAreFactors |
-	columnsAreFactors := OrderedCollection new.
+	| factorBooleanCollection |
+	factorBooleanCollection := OrderedCollection new.
 	1 to: self rowLength do: [ :column |
-		columnsAreFactors add: (self detectFactorsForColumn: column) ].
-	^ columnsAreFactors
+		factorBooleanCollection add: (self detectFactorsForColumn: column) ].
+	^ factorBooleanCollection

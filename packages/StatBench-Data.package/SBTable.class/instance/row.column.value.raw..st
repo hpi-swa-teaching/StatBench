@@ -1,12 +1,14 @@
 accessing
-row: aRow column: aColumn value: aValue raw: aBoolean
+row: aRowIndex column: aColumnIndex value: aValue raw: aBoolean
 	| value |
-	((aRow between: 1 and: self columnLength) and: [ aColumn between: 1 and: (self rowAt: aRow) size ])
-		ifFalse: [ ^ self ].
+	(self isOutOfBoundsRow: aRowIndex column: aColumnIndex)
+		ifTrue: [ ^ self ].
 	value := aBoolean
 		ifTrue: [ aValue ]
 		ifFalse: [ Number readArbitraryPrecisionFloatFrom: aValue asString ].
 	self columnNumberState
-		at: aColumn
-		put: ((self columnNumberState at: aColumn) and: [ Number isStringANumber: value asString ] and: [ value isString not ]).
-	(self rowAt: aRow) at: aColumn put: value
+		at: aColumnIndex
+		put: ((self columnNumberState at: aColumnIndex)
+			and: [ Number isStringANumber: value asString ]
+			and: [ value isString not ]).
+	(self rowAt: aRowIndex) at: aColumnIndex put: value

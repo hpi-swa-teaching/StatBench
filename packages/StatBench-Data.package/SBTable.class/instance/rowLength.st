@@ -1,4 +1,4 @@
-table management
+accessing
 rowLength
 	^ self rows isEmpty
 		ifTrue: [ 0 ]

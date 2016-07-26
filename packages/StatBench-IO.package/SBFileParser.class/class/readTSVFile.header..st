@@ -1,3 +1,3 @@
-file IO
+file input
 readTSVFile: filename header: hasHeader
 	^ self readCSVStream: (self openStream: filename) header: hasHeader seperator: self tsvSeparator

@@ -1,9 +1,8 @@
 drawing
 drawDiagram
-	| axisOffset base lastPoint fromPoint toPoint diagramPosition |
+	| axisOffset base fromPoint toPoint diagramPosition |
 	diagramPosition := self diagram position.
 	base := self axisStartPoint.
-	lastPoint := base.
 	axisOffset := self drawWidth - self axisLineWidth.
 	(self domainForStateWithMultiples: true) do: [ :element |
 		(self functionAt: element) do: [ :value |

@@ -1,7 +1,7 @@
 testing
 testReadCSVFileWithString
 	| csvString |
-	csvString := 'a,b,c,d', SBFileParser newline, '5asd,6,123g7,8...5.2'.
+	csvString := 'a,b,c,d', SBFileParser unixNewline, '5asd,6,123g7,8...5.2'.
 	self
 		table: (SBFileParser
 			readCSVStream: (ReadStream on: csvString)

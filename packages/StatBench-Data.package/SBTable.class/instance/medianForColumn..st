@@ -1,5 +1,5 @@
-math functions
-medianForColumn: aColumn
-	^ (self isColumnNumeric: aColumn)
-		ifTrue: [ SBStatFunctions median value: (self columnWithoutNilValuesAt: aColumn) ]
-		ifFalse: [ #NaN ]
+column functions
+medianForColumn: aColumnIndex
+	^ (self isColumnNumeric: aColumnIndex)
+		ifTrue: [ SBStatFunctions median value: (self columnWithoutNilValuesAt: aColumnIndex) ]
+		ifFalse: [ self notANumber ]

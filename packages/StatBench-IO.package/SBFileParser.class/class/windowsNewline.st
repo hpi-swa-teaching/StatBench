@@ -1,0 +1,3 @@
+constants
+windowsNewline
+	^ Character cr

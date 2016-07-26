@@ -1,3 +1,3 @@
 aggregation
-tupleForColumn: columnIndex name: aName function: block
-	^ { aName . columnIndex . block } asOrderedCollection
+tupleForColumn: aColumnIndex name: aString function: aBlock
+	^ { aString . aColumnIndex . aBlock } asOrderedCollection

@@ -1,3 +1,3 @@
 accessing
-row: aRow column: aColumn value: aValue
-	self row: aRow column: aColumn value: aValue raw: true
+row: aRowIndex column: aColumnIndex value: aValue
+	self row: aRowIndex column: aColumnIndex value: aValue raw: true

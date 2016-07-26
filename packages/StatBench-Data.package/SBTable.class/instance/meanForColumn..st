@@ -1,5 +1,5 @@
-math functions
-meanForColumn: aColumn
-	^ (self isColumnNumeric: aColumn)
-		ifTrue: [ SBStatFunctions mean value: (self columnWithoutNilValuesAt: aColumn) ]
-		ifFalse: [ #NaN ]
+column functions
+meanForColumn: aColumnIndex
+	^ (self isColumnNumeric: aColumnIndex)
+		ifTrue: [ SBStatFunctions mean value: (self columnWithoutNilValuesAt: aColumnIndex) ]
+		ifFalse: [ self notANumber ]

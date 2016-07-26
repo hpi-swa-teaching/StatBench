@@ -1,5 +1,5 @@
-math functions
-standardDeviationForColumn: aColumn
-	^ (self isColumnNumeric: aColumn)
-		ifTrue: [ SBStatFunctions standardDeviation value: (self columnWithoutNilValuesAt: aColumn) ]
-		ifFalse: [ #NaN ]
+column functions
+standardDeviationForColumn: aColumnIndex
+	^ (self isColumnNumeric: aColumnIndex)
+		ifTrue: [ SBStatFunctions standardDeviation value: (self columnWithoutNilValuesAt: aColumnIndex) ]
+		ifFalse: [ self notANumber ]

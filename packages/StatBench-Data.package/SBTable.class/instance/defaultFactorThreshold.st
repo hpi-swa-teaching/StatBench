@@ -1,0 +1,3 @@
+constants
+defaultFactorThreshold
+	^ 2

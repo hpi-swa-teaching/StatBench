@@ -1,5 +1,3 @@
 table management
-addColumnIfAbsent: columnIndex toRow: rowIndex value: aValue
-	self
-		addColumnIfAbsent: columnIndex toRow: rowIndex;
-		row: rowIndex column: columnIndex value: aValue raw: true
+addColumnIfAbsent: aColumnIndex toRow: aRowIndex value: aValue
+	self addColumnIfAbsent: aColumnIndex toRow: aRowIndex value: aValue raw: true

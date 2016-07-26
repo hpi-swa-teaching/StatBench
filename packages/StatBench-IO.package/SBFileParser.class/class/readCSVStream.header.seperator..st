@@ -1,15 +1,15 @@
-file IO
+file input
 readCSVStream: inStream header: hasHeader seperator: aCharacter
 	| myLine table x y header row seperator linebreak |
-	inStream
-		ifNil: [ ^ SBTable new ].
+	inStream isNil
+		ifTrue: [ ^ SBTable new ].
 	table := SBTable new.
 	header := OrderedCollection new.
 	seperator := aCharacter.
 	x := y := row := 1.
-	linebreak := SBFileParser newline.
+	linebreak := self unixNewline.
 	(inStream contents occurrencesOf: linebreak) strictlyPositive
-		ifFalse: [ linebreak := Character cr ].
+		ifFalse: [ linebreak := self windowsNewline ].
 	[ inStream atEnd ] whileFalse: [
 		myLine := (inStream upTo: linebreak) readStream.
 		x := 1.

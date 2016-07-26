@@ -5,5 +5,5 @@ displayTable: aSBTable
 		table: aSBTable;
 		fillStatDictionary;
 		addStatDescriptionMorph.
-	columnMorphs := self createColumnMorphsFor: self table printColumnDataToCollection.
+	columnMorphs := SBTableColumnMorph morphCollectionFor: self table withStats: self statDictionary. 
 	self buildTableDisplayWithStats: self printStatsToTextMorphs columns: columnMorphs

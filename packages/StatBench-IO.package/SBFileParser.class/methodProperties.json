@@ -1,14 +1,16 @@
 {
 	"class" : {
 		"csvSeparator" : "je 5/18/2016 15:45",
-		"newline" : "je 5/17/2016 11:22",
-		"openStream:" : "je 6/24/2016 17:02",
-		"readCSVFile:header:" : "je 6/23/2016 17:21",
-		"readCSVStream:header:seperator:" : "je 7/6/2016 15:15",
+		"openStream:" : "je 7/26/2016 22:06",
+		"readCSVFile:header:" : "je 7/26/2016 22:06",
+		"readCSVStream:header:seperator:" : "je 7/26/2016 22:27",
 		"readTSVFile:header:" : "je 6/23/2016 17:16",
 		"tsvSeparator" : "je 5/18/2016 15:46",
+		"unixNewline" : "je 7/26/2016 22:04",
+		"windowsNewline" : "je 7/26/2016 22:04",
+		"writeCollection:toStream:seperator:" : "je 7/26/2016 22:25",
 		"writeTable:toCSVFile:header:" : "je 7/6/2016 15:15",
-		"writeTable:toCSVStream:header:seperator:" : "je 6/23/2016 17:17",
+		"writeTable:toCSVStream:header:seperator:" : "je 7/26/2016 22:26",
 		"writeTable:toTSVFile:header:" : "je 7/6/2016 15:15" },
 	"instance" : {
 		 } }

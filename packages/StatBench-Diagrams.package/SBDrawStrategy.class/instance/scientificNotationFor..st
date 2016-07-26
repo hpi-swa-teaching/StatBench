@@ -14,5 +14,4 @@ scientificNotationFor: aNumber
 			subStrings := factorString subStrings: '.' ].
 	subStrings second size > self scientificNotationDecimals
 		ifTrue: [ factorString := factorString allButLast: (subStrings second size - self scientificNotationDecimals) ].
-	factorString := factorString , 'e', exponent asString.
-	^ factorString
+	^ factorString , 'e', exponent asString

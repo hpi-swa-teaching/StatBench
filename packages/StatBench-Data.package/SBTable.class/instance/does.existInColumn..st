@@ -1,4 +1,4 @@
-table management
-does: aValue existInColumn: aColumn
-	^ (self columnAt: aColumn) anySatisfy: [ :element |
+column functions
+does: aValue existInColumn: aColumnIndex
+	^ (self columnAt: aColumnIndex) anySatisfy: [ :element |
 		element = aValue ]

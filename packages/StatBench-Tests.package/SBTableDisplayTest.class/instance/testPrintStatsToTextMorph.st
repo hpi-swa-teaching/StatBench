@@ -1,7 +1,13 @@
 testing
 testPrintStatsToTextMorph
 	| aTable collumnCollection dataString |
-	dataString := '3', Character cr, '14.1', Character cr, '7.3580000000000005', Character cr, '5', Character cr, '6.166', Character cr, '4.1835262638114274', Character cr, '17.501891999999998', Character cr, 'false'.
+	dataString := '3', Character cr,
+		'14.1', Character cr,
+		'7.3580000000000005', Character cr,
+		'5', Character cr, '6.166', Character cr,
+		'4.1835262638114274', Character cr,
+		'17.501891999999998', Character cr,
+		'false'.
 	aTable := SBTable new.
 	aTable
 		addRows: 4 size: 1;

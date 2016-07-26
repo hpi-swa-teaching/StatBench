@@ -1,3 +1,3 @@
-table management
+accessing
 rowsDo: aBlock
 	self rows do: aBlock

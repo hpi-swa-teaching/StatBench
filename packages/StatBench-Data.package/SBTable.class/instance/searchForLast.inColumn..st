@@ -1,8 +1,8 @@
-table management
-searchForLast: aValue inColumn: aColumn
+column functions
+searchForLast: aValue inColumn: aColumnIndex
 	| valueCollection |
 	valueCollection := self rowsSelect: [ :currentRow |
-		(currentRow at: aColumn) = aValue ].
+		(currentRow at: aColumnIndex) = aValue ].
 	^ valueCollection isEmpty
 		ifTrue: [ nil ]
 		ifFalse: [ valueCollection last ]

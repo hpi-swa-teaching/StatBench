@@ -2,8 +2,7 @@ drawing
 drawDiagram
 	| base toPoint diagramPosition fromPoints newFromPoints |
 	diagramPosition := self diagram position.
-	base := self axisStartPoint.
-	toPoint := base.
+	base := toPoint := self axisStartPoint.
 	fromPoints := { self axisStartPoint }.
 	(self domainForStateWithMultiples: true) do: [ :element |
 		base := self hasNumericalScaling

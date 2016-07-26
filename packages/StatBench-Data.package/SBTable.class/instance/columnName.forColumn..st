@@ -1,7 +1,9 @@
 table management
-columnName: aString forColumn: columnIndex
-	columnIndex > self rowLength
+columnName: aString forColumn: aColumnIndex
+	| columnNameSize |
+	columnNameSize := self columnNames size.
+	aColumnIndex > self rowLength
 		ifTrue: [ ^ self ].
-	self columnNames size < columnIndex
-		ifTrue: [ self columnNames add: '' withOccurrences: columnIndex - self columnNames size ].
-	self columnNames at: columnIndex put: aString
+	columnNameSize < aColumnIndex
+		ifTrue: [ self columnNames add: '' withOccurrences: aColumnIndex - columnNameSize ].
+	self columnNames at: aColumnIndex put: aString

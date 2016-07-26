@@ -3,7 +3,7 @@ domain: aCollection
 	| hasNumericalDomain |
 	hasNumericalDomain := true.
 	aCollection do: [ :element |
-		hasNumericalDomain := hasNumericalDomain and: [ Number isStringANumber: element asString ] ].
+		hasNumericalDomain := hasNumericalDomain and: [ Number isStringANumber: element asString ]].
 	self diagramProperties
 		at: #hasNumericalDomain put: hasNumericalDomain;
 		at: #domain put: (self hasNumericalDomain

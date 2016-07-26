@@ -1,4 +1,4 @@
-table management
-count: aValue inColumn: aColumn
-	^ (self columnAt: aColumn) count: [ :element |
+column functions
+count: aValue inColumn: aColumnIndex
+	^ (self columnAt: aColumnIndex) count: [ :element |
 		element = aValue ]

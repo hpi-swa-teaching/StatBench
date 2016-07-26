@@ -1,5 +1,5 @@
-math functions
-varianceForColumn: aColumn
-	^ (self isColumnNumeric: aColumn)
-		ifTrue: [ SBStatFunctions variance value: (self columnWithoutNilValuesAt: aColumn) ]
-		ifFalse: [ #NaN ]
+column functions
+varianceForColumn: aColumnIndex
+	^ (self isColumnNumeric: aColumnIndex)
+		ifTrue: [ SBStatFunctions variance value: (self columnWithoutNilValuesAt: aColumnIndex) ]
+		ifFalse: [ self notANumber ]

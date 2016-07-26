@@ -1,3 +1,3 @@
 constants
-newline
+unixNewline
 	^ Character linefeed

@@ -1,3 +1,6 @@
 display
 displayYValues: yValues
-	self displayXValues: (SBTable indexCollectionFor: yValues) yValues: yValues
+	self contentMorph
+		displayYValues: yValues;
+		position: self padding asPoint.
+	self updateContent

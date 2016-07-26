@@ -1,4 +1,4 @@
-file IO
+file output
 writeTable: aTable toTSVFile: fileName header: aBoolean
 	| fileStream |
 	fileStream := StandardFileStream forceNewFileNamed: fileName, '.tsv'.

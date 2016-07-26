@@ -1,3 +1,3 @@
-table management
-rowAt: rowIndex
-	^ self rows at: rowIndex
+accessing
+rowAt: aRowIndex
+	^ self rows at: aRowIndex

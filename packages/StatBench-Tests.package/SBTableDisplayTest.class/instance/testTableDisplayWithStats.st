@@ -17,6 +17,8 @@ testTableDisplayWithStats
 		table: aTable;
 		fillStatDictionary.
 	statCollection := self tableDisplay printStatsToTextMorphs.
-	columnCollection := (self tableDisplay) createColumnMorphsFor: (self tableDisplay table printColumnDataToCollection).
+	columnCollection := SBTableColumnMorph
+		morphCollectionFor: aTable
+		withStats: self tableDisplay statDictionary.
 	self tableDisplay buildTableDisplayWithStats: statCollection columns: columnCollection .
 	self assert: self tableDisplay height equals: (self tableDisplay height max: (statCollection first height + self tableDisplay padding + columnCollection first height))

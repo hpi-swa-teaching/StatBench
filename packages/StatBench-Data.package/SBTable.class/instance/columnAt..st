@@ -1,4 +1,4 @@
-table management
-columnAt: columnIndex
+accessing
+columnAt: aColumnIndex
 	^ self rows collect: [ :currentRow |
-		currentRow at: columnIndex ]
+		currentRow at: aColumnIndex ]

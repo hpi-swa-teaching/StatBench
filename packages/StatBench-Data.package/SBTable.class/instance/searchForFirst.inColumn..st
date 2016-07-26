@@ -1,7 +1,7 @@
-table management
-searchForFirst: aValue inColumn: aColumn
+column functions
+searchForFirst: aValue inColumn: aColumnIndex
 	^ self rows detect: [ :currentRow |
-		(currentRow at: aColumn) = aValue ] 
+		(currentRow at: aColumnIndex) = aValue ] 
 		ifFound: [ :currentRow |
 			currentRow ]
 		ifNone: [ nil ]

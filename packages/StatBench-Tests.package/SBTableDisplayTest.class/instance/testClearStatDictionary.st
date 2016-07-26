@@ -6,4 +6,4 @@ testClearStatDictionary
 	self tableDisplay statDictionary: aDictionary.
 	self assert: (self tableDisplay statDictionary at: 1) equals: { 1} asOrderedCollection.
 	self tableDisplay clearStatDictionary.
-	self assert: (self tableDisplay statDictionary at: 1) equals: OrderedCollection new
+	self assert: (self tableDisplay statDictionary at: 1) isEmpty

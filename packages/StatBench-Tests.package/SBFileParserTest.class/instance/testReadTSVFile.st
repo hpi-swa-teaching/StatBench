@@ -2,8 +2,8 @@ testing
 testReadTSVFile
 	| tsvString tab |
 	tab := SBFileParser tsvSeparator.
-	tsvString := 'a', tab, 'b', tab, 'c', tab, 'd', SBFileParser newline,
-		'1', tab, '2', tab, '3', tab, '4', SBFileParser newline,
+	tsvString := 'a', tab, 'b', tab, 'c', tab, 'd', SBFileParser unixNewline,
+		'1', tab, '2', tab, '3', tab, '4', SBFileParser unixNewline,
 		'5', tab, '6', tab, '7.7', tab, '8'.
 	self
 		table: (SBFileParser

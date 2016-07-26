@@ -7,10 +7,8 @@
 		"openScatterDiagramWithTable:xColumn:yColumn:colorColumn:" : "je 7/26/2016 17:33",
 		"openScatterDiagramWithTable:yColumn:colorColumn:" : "je 7/26/2016 17:34" },
 	"instance" : {
-		"changeTypeTo:" : "je 6/16/2016 01:21",
-		"changeYRangeTo:" : "je 6/16/2016 01:21",
 		"clearContents" : "je 6/15/2016 00:06",
 		"displayXValues:yValues:" : "je 6/24/2016 11:01",
-		"displayYValues:" : "je 6/24/2016 11:01",
+		"displayYValues:" : "je 7/26/2016 22:51",
 		"initialize" : "je 7/26/2016 17:13",
 		"updateContent" : "je 6/22/2016 15:30" } }
