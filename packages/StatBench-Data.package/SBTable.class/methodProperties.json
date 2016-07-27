@@ -3,7 +3,6 @@
 		"indexCollectionFor:" : "je 7/6/2016 10:19" },
 	"instance" : {
 		"addColumnIfAbsent:toRow:" : "je 7/26/2016 21:35",
-		"addColumnIfAbsent:toRow:value:" : "je 7/26/2016 21:36",
 		"addColumnIfAbsent:toRow:value:raw:" : "je 7/26/2016 21:35",
 		"addColumnName:" : "je 5/12/2016 14:40",
 		"addColumnNumberState:" : "je 6/7/2016 20:30",
