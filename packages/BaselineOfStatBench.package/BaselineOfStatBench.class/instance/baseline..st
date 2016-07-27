@@ -5,7 +5,7 @@ baseline: spec
 	for: #'common'
 	do: [ 
 		spec
-			package: 'StatBench' with: [ spec requires: #('default') ];
+			package: 'StatBench';
 			package: 'StatBench-Tests' with: [ spec requires: #('full') ];
 			package: 'StatBench-Data';
 			package: 'StatBench-Diagrams';
