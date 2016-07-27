@@ -1,6 +1,6 @@
 data management
 domainForStateWithMultiples: aBoolean
-	"refactor name"
+	"refactor name and write test"
 	^ (self hasNumericalScaling and: [ aBoolean not ])
 		ifTrue: [ self domain asSet asOrderedCollection sorted ]
 		ifFalse: [
