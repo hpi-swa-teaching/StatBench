@@ -6,6 +6,6 @@
 		"diagramWindow:" : "je 7/27/2016 19:03",
 		"setUp" : "je 7/27/2016 19:03",
 		"testClearContents" : "je 7/27/2016 19:11",
-		"testUpdateContents" : "je 7/27/2016 19:13",
-		"testXYDisplayValues" : "je 7/27/2016 19:16",
-		"testYDisplayValues" : "je 7/27/2016 19:21" } }
+		"testDisplayXYValues" : "je 7/27/2016 19:23",
+		"testDisplayYValues" : "je 7/27/2016 19:23",
+		"testUpdateContents" : "je 7/27/2016 19:13" } }

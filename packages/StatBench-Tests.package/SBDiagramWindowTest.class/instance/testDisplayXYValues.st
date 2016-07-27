@@ -1,5 +1,5 @@
 testing
-testXYDisplayValues
+testDisplayXYValues
 	| size |
 	self diagramWindow: SBDiagramWindow new.
 	self diagramWindow

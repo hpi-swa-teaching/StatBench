@@ -1,5 +1,5 @@
 testing
-testYDisplayValues
+testDisplayYValues
 	| size values domain |
 	values := { 2 . 1 }.
 	self diagramWindow: SBDiagramWindow new.

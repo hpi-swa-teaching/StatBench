@@ -7,8 +7,12 @@ testExportToPNG
 		displayYValues: values;
 		exportDiagramAsPNG.
 	directory := FileDirectory uri: '.'.
-	files := directory fileNames select: [ :element |
-		(element asString last: 3) = 'png' and: [ (element asString = 'pngexporttest.png') not ]]
+	files := directory fileNames collect: [ :element |
+		element asString ]
+	thenSelect: [ :element |
+		element size > 4 ].
+	files := files select: [ :element |
+		(element last: 3) = 'png' and: [ (element = 'pngexporttest.png') not ]]
 	thenCollect: [ :element |
 		directory entryAt: element ].
 	files select: [ :file |
