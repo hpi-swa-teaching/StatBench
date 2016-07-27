@@ -11,7 +11,7 @@
 		"strategy",
 		"reDraw",
 		"contentMorph",
-		"canvas" ],
+		"diagramCanvas" ],
 	"name" : "SBDiagram",
 	"pools" : [
 		 ],

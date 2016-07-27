@@ -1,6 +1,6 @@
 instance creation
-newOn: aDiagram
+newWith: colorCollection
 	^ self basicNew
 		initialize;
-		diagram: aDiagram;
+		colorValues: colorCollection;
 		yourself

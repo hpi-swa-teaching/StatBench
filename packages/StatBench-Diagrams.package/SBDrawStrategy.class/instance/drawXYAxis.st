@@ -1,10 +1,9 @@
 drawing
 drawXYAxis
-	| yGraphWidthOffset diagramPosition |
+	| yGraphWidthOffset |
 	yGraphWidthOffset := self drawWidth + (self font height / 2).
-	diagramPosition := self diagram position.
 	self
-		drawAxis: diagramPosition + self axisStartPoint
-		to: diagramPosition + (self axisEndPoint x @ self axisStartPoint y);
-		drawAxis: diagramPosition + self axisStartPoint
-		to: diagramPosition + (self axisStartPoint x @ (self axisEndPoint y - yGraphWidthOffset))
+		drawAxis: self diagramPosition + self axisStartPoint
+		to: self diagramPosition + (self axisEndPoint x @ self axisStartPoint y);
+		drawAxis: self diagramPosition + self axisStartPoint
+		to: self diagramPosition + (self axisStartPoint x @ (self axisEndPoint y - yGraphWidthOffset))

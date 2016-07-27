@@ -1,8 +1,6 @@
 instance creation
 newLineDiagram
-	| instance |
-	instance := self basicNew.
-	^ instance
+	^ self basicNew
 		initialize;
-		strategy: (SBLineStrategy newOn: instance);
+		strategy: SBLineStrategy new;
 		yourself

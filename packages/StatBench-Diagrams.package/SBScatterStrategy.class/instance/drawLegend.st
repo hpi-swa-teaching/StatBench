@@ -7,5 +7,5 @@ drawLegend
 		self diagramProperties at: #fontColor put: color.
 		self
 			drawString: value asString
-			in: ((self diagram position + position) extent: (self font widthOfString: value asString)@self font height) ].
+			in: ((self diagramPosition + position) extent: (self font widthOfString: value asString)@self font height) ].
 	self diagramProperties at: #fontColor put: Color black

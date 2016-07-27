@@ -1,7 +1,6 @@
 drawing
 drawDiagram
-	| base toPoint diagramPosition fromPoints newFromPoints |
-	diagramPosition := self diagram position.
+	| base toPoint fromPoints newFromPoints |
 	base := toPoint := self axisStartPoint.
 	fromPoints := { self axisStartPoint }.
 	(self domainForStateWithMultiples: true) do: [ :element |
@@ -15,6 +14,6 @@ drawDiagram
 			newFromPoints add: toPoint.
 			fromPoints do: [ :fromPoint |
 				self
-					drawLine: diagramPosition + fromPoint
-					to: diagramPosition + toPoint ]].
+					drawLine: self diagramPosition + fromPoint
+					to: self diagramPosition + toPoint ]].
 		fromPoints := newFromPoints ]

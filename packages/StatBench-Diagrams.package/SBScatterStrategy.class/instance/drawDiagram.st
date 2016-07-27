@@ -1,7 +1,6 @@
 drawing
 drawDiagram
-	| position base color diagramPosition |
-	diagramPosition := self diagram position.
+	| position base color |
 	base := self axisStartPoint.
 	(self domainForStateWithMultiples: true) do: [ :element |
 		base := self hasNumericalScaling
@@ -12,6 +11,6 @@ drawDiagram
 			position := base - (0@(self yScaling * value)).
 			self diagramProperties at: #diagramColor put: color.
 			self
-				drawLine: diagramPosition + position
-				to: diagramPosition + position ]].
+				drawLine: self diagramPosition + position
+				to: self diagramPosition + position ]].
 		self drawLegend

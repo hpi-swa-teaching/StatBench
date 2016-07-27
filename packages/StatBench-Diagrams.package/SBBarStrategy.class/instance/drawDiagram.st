@@ -1,7 +1,6 @@
 drawing
 drawDiagram
-	| axisOffset base fromPoint toPoint diagramPosition |
-	diagramPosition := self diagram position.
+	| axisOffset base fromPoint toPoint |
 	base := self axisStartPoint.
 	axisOffset := self drawWidth - self axisLineWidth.
 	(self domainForStateWithMultiples: true) do: [ :element |
@@ -14,5 +13,5 @@ drawDiagram
 			value isZero
 				ifFalse: [
 					self
-						drawLine: diagramPosition + fromPoint
-						to: diagramPosition + toPoint ]]]
+						drawLine: self diagramPosition + fromPoint
+						to: self diagramPosition + toPoint ]]]

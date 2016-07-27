@@ -15,4 +15,4 @@ drawXAnnotation
 			ifTrue: [
 				self
 					drawString: annotation
-					in: ((self diagram position + annotationPosition) extent: annotationExtent) ]]
+					in: ((self diagramPosition + annotationPosition) extent: annotationExtent) ]]

@@ -4,5 +4,5 @@ newScatterDiagramColorValues: colorCollection
 	instance := self basicNew.
 	^ instance
 		initialize;
-		strategy: (SBScatterStrategy newOn: instance colorValues: colorCollection);
+		strategy: (SBScatterStrategy newWith: colorCollection);
 		yourself

@@ -23,4 +23,5 @@ initializeDiagramProperties
 		at: #defaultAxisStartPoint put: [ 0@(self diagramSize y - self diagramPadding) ];
 		at: #axisStartPoint put: (self defaultAxisStartPoint);
 		at: #axisEndPoint put: [ self diagramSize - (self diagramPadding @ self axisStartPoint y) ];
-		at: #drawArea put: [ (self axisEndPoint - self axisStartPoint) abs ]
+		at: #drawArea put: [ (self axisEndPoint - self axisStartPoint) abs ];
+		at: #diagramPosition put: 0 asPoint

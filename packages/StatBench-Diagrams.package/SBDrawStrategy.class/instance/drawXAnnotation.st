@@ -22,11 +22,11 @@ drawXAnnotation
 			ifTrue: [
 				self 
 					drawString: annotation
-					in: ((self diagram position  + annotationPosition) extent: annotationExtent) ]
+					in: ((self diagramPosition  + annotationPosition) extent: annotationExtent) ]
 			ifFalse: [
 				self
 					drawString: annotation
 					on: self canvas
-					at: self diagram position + annotationPosition
+					at: self diagramPosition + annotationPosition
 					extent: annotationExtent ].
 		counter := counter + 1 ]

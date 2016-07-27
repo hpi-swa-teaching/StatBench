@@ -2,7 +2,7 @@ data management
 scientificNotationFor: aNumber
 	| exponent factor factorString subStrings |
 	aNumber isZero
-		ifTrue: [ ^ '0e0' ].
+		ifTrue: [ ^ self scientificNotationZero ].
 	exponent := aNumber abs log floor.
 	factor := (aNumber / (10 raisedTo: exponent)) asFloat.
 	factorString := factor asString.
@@ -14,4 +14,4 @@ scientificNotationFor: aNumber
 			subStrings := factorString subStrings: '.' ].
 	subStrings second size > self scientificNotationDecimals
 		ifTrue: [ factorString := factorString allButLast: (subStrings second size - self scientificNotationDecimals) ].
-	^ factorString , 'e', exponent asString
+	^ factorString, 'e', exponent asString

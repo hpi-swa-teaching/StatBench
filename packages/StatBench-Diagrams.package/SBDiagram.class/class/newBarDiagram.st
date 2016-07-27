@@ -1,8 +1,6 @@
 instance creation
 newBarDiagram
-	| instance |
-	instance := self basicNew.
-	^ instance
+	^ self basicNew
 		initialize;
-		strategy: (SBBarStrategy newOn: instance);
+		strategy: SBBarStrategy new;
 		yourself

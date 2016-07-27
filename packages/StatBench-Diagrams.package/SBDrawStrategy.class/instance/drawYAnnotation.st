@@ -17,4 +17,4 @@ drawYAnnotation
 		textPosition := self axisStartPoint - ((annotationExtent x + self annotationPadding)@(self drawArea y / self annotationInterval y * index + graphWidthOffset)).
 		self
 			drawString: annotation
-			in: ((self diagram position + textPosition) extent: annotationExtent) ]
+			in: ((self diagramPosition + textPosition) extent: annotationExtent) ]

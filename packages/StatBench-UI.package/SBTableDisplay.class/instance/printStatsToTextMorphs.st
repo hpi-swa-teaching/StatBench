@@ -7,7 +7,7 @@ printStatsToTextMorphs
 		content := ''.
 		self statFunctions do: [ :function |
 			value := (self statDictionary at: function) at: index.
-			content := value = #NaN
+			content := value = self table notANumber
 				ifTrue: [ content, newline ]
 				ifFalse: [ content, value asString, newline ]].
 		morph := SBTableTextMorph new.

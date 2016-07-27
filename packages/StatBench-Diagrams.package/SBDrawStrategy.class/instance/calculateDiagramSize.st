@@ -6,5 +6,4 @@ calculateDiagramSize
 		ifTrue: [ SBStatFunctions max value: self domain ]
 		ifFalse: [ self domain size ].
 	self diagramProperties
-		at: #diagramSize put: ((self entryWidth * xFactor) + self diagramOverdraw + self axisStartPoint x)@self diagramSize y.
-	self diagram extent: self canvasSize
+		at: #diagramSize put: ((self entryWidth * xFactor) + self diagramOverdraw + self axisStartPoint x)@self diagramSize y

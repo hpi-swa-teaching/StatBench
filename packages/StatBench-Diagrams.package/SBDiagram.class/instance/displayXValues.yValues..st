@@ -4,4 +4,4 @@ displayXValues: xValues yValues: yValues
 		domain: xValues;
 		fillFunctionForDomainAndValues: yValues;
 		redrawContent;
-		drawOn: self canvas
+		drawOn: self diagramCanvas
