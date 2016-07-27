@@ -7,7 +7,8 @@
 		"setUp" : "je 6/16/2016 14:55",
 		"testAxis" : "je 7/26/2016 18:32",
 		"testBarDiagram" : "je 7/26/2016 18:34",
-		"testExportToPNG" : "je 7/26/2016 18:35",
+		"testExportToPNG" : "je 7/27/2016 19:01",
+		"testExportToPNGNamed" : "je 7/27/2016 18:48",
 		"testLineDiagram" : "je 7/26/2016 18:36",
 		"testXAxisAnnotation" : "je 7/26/2016 22:45",
 		"testYAxisAnnotation" : "je 7/26/2016 21:09" } }
