@@ -5,7 +5,7 @@ updateContent
 	self header ifNotNil: [
 		self header = ''
 			ifTrue: [ self header: ' ' ].
-		headerMorph := self createHeaderMorph.
+		headerMorph := SBTableTextMorph headerWithString: self header.
 		self addColumnEntryMorph: headerMorph ].
 	self columnContents do: [ :currentElement |
 		self addColumnEntryMorph: (SBTableTextMorph newWithString: currentElement) ].
