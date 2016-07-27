@@ -9,7 +9,7 @@ SmalltalkCISpec {
   ],
   #testing : {
     #coverage : {
-      #categories : [ 'StatBench' ]
+      #categories : [ 'StatBench-Tests' 'StatBench-Data' 'StatBench-Diagrams' 'StatBench-IO' 'StatBench-UI' 'StatBench-Math' ]
     }
   }
 }
