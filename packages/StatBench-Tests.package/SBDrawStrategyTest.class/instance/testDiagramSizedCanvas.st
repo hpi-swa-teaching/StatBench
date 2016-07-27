@@ -5,6 +5,6 @@ testDiagramSizedCanvas
 	self strategy diagramProperties at: #diagramPosition put: (150@150).
 	aCanvas := self strategy diagramSizedCanvas. 
 	self 
-		assert: aCanvas origin = (150@150);
-		assert: aCanvas extent =  (200@200);
-		assert: aCanvas clipRect = (Rectangle origin: (0@0) corner: (50@50))
+		assert: aCanvas origin equals: (150@150);
+		assert: aCanvas extent equals:  (200@200);
+		assert: aCanvas clipRect equals: (Rectangle origin: (0@0) corner: (50@50))
