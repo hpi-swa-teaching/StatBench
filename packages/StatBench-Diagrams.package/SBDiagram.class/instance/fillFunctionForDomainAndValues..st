@@ -1,7 +1,8 @@
 data management
 fillFunctionForDomainAndValues: yValues
 	| value |
-	self function: OrderedCollection new.
+	self function: Dictionary new.
 	1 to: self domain size do: [ :index |
-		value := yValues at: index ifAbsent: [ 0 ].
-		self function add: {self domain at: index . value} ]
+		value := self domain at: index.
+		(self function at: (self domain at: index) ifAbsentPut: [ OrderedCollection new ])
+			add: (yValues at: index ifAbsent: [ 0 ]) ]

@@ -9,4 +9,5 @@ testOpenWindow
 	self deny: (World submorphs includes: self diagramWindow window).
 	self diagramWindow openWindow.
 	self assert: (World submorphs includes: self diagramWindow window).
-	World removeMorph: self diagramWindow window
+	World removeMorph: self diagramWindow window.
+	self deny: (World submorphs includes: self diagramWindow window)

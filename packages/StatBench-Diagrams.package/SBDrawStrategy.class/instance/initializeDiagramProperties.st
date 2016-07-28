@@ -16,7 +16,7 @@ initializeDiagramProperties
 		at: #entryWidth put: 0;
 		at: #hasNumericalDomain put: true;
 		at: #domain put: OrderedCollection new;
-		at: #function put: OrderedCollection new;
+		at: #function put: Dictionary new;
 		at: #maxRange put: 1;
 		at: #extraCanvasSpace put: 0 asPoint;
 		at: #yScaling put: [ self drawArea y / self maxRange ];

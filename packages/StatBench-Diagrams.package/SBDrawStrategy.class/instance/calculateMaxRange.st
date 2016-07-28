@@ -1,5 +1,5 @@
 data management
 calculateMaxRange
 	self diagramProperties at: #maxRange put:
-		(self maxRangeForCollection: (self function collect: [ :tuple |
-			tuple second ]))
+		(self maxRangeForCollection: (self function values collect: [ :yValues |
+			SBStatFunctions max value: yValues ]))

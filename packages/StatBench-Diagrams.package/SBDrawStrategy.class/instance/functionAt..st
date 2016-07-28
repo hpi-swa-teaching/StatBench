@@ -1,6 +1,3 @@
 diagram properties
 functionAt: key
-	^ self function select: [ :tuple |
-		tuple first = key ]
-	thenCollect: [ :tuple |
-		tuple second ]
+	^ self function at: key ifAbsent: [ self error: 'Element ', key asString, ' not in function.' ]

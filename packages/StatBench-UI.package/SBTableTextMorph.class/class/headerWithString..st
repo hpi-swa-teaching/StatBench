@@ -1,6 +1,6 @@
 instance creation
 headerWithString: aString
-	^ (self newWithString: self header)
+	^ (self newWithString: aString)
 		bold;
 		updateContent;
 		centered;

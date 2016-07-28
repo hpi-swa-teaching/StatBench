@@ -18,5 +18,6 @@ testExportToPNG
 	files select: [ :file |
 		(DateAndTime now - file creationDateAndTime) < (Duration minutes: 1) ]
 	thenDo: [ :file |
-		self assert: file size strictlyPositive ]
+		self assert: file size strictlyPositive.
+		file delete ]
 	
