@@ -8,4 +8,4 @@ testDisplayXValuesYValues
 	self diagram displayXValues: xValues yValues: yValues.
 	self
 		assert: self diagram domain equals: xValues;
-		assert: self diagram contentMorph notNil.
+		assert: self diagram contentMorph notNil

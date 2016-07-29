@@ -7,13 +7,11 @@
 		"setUp" : "je 6/16/2016 14:55",
 		"testAxis" : "je 7/26/2016 18:32",
 		"testBarDiagram" : "je 7/26/2016 18:34",
-		"testDisplayXValuesYValues" : "mg 7/29/2016 14:40",
+		"testDisplayXValuesYValues" : "mg 7/29/2016 20:29",
 		"testDisplayYValues" : "je 7/29/2016 16:59",
 		"testExportDiagramAsPNG" : "mg 7/29/2016 14:32",
 		"testExportDiagramAsPNGNamed" : "mg 7/29/2016 14:32",
-		"testExportToPNG" : "je 7/28/2016 14:47",
-		"testExportToPNGNamed" : "je 7/27/2016 18:48",
-		"testFillFunctionForDomainAndValues" : "mg 7/29/2016 14:29",
+		"testFillFunctionForDomainAndValues" : "mg 7/29/2016 20:30",
 		"testLineDiagram" : "je 7/26/2016 18:36",
-		"testRedrawContent" : "mg 7/29/2016 14:48",
-		"testUpdateContent" : "mg 7/29/2016 14:43" } }
+		"testRedrawContent" : "mg 7/29/2016 20:30",
+		"testUpdateContent" : "mg 7/29/2016 20:30" } }

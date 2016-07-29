@@ -8,4 +8,4 @@ testFillFunctionForDomainAndValues
 		domain: xValues;
 		fillFunctionForDomainAndValues: yValues.
 	1 to: xValues size do: [ :index |
-		self assert: ((self diagram function at: (xValues at: index)) includes: (yValues at: index)). ]
+		self assert: ((self diagram function at: (xValues at: index)) includes: (yValues at: index)) ]
