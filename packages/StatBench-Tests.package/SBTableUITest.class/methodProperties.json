@@ -4,7 +4,10 @@
 	"instance" : {
 		"tableUI" : "je 7/29/2016 12:23",
 		"tableUI:" : "je 7/29/2016 12:23",
-		"testBuildWith" : "je 7/29/2016 13:13",
-		"testHeaderSpec" : "je 7/29/2016 13:12",
-		"testInputSpec" : "je 7/29/2016 13:40",
+		"testBuildWith" : "je 7/29/2016 14:16",
+		"testButtonActionOnCSV" : "je 7/29/2016 14:12",
+		"testButtonActionOnTSV" : "je 7/29/2016 14:13",
+		"testButtonActionOnWrongFileType" : "je 7/29/2016 14:13",
+		"testHeaderSpec" : "je 7/29/2016 14:34",
+		"testInputSpec" : "je 7/29/2016 14:39",
 		"testOpenTableSpec" : "je 7/29/2016 13:44" } }

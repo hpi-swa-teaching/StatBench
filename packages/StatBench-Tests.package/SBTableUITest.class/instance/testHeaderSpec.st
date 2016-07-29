@@ -9,4 +9,8 @@ testHeaderSpec
 	self
 		assert: self tableUI checkBoxLabel equals: header label;
 		assert: header actionSelector equals: #checkBoxAction;
-		assert: header valueSelector equals: #checkBoxState
+		assert: header valueSelector equals: #checkBoxState.
+	self tableUI header: true.
+	self
+		assert: (header model perform: header valueSelector) equals: self tableUI checkBoxState;
+		assert: (header model perform: header valueSelector) equals: self tableUI header

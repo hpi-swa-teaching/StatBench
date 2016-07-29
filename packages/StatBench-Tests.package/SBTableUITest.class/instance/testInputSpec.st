@@ -1,8 +1,7 @@
 testing
 testInputSpec
-	| input tabelUIMorph textSelector string |
+	| input tabelUIMorph textSelector  |
 	tabelUIMorph :=  SBTableUI open.
-	string := 'testString'.
 	textSelector := #filePath.
 	World removeMorph: tabelUIMorph.
 	self tableUI: tabelUIMorph model.
@@ -10,7 +9,6 @@ testInputSpec
 		paneMorph class = PluggableTextMorphPlus ]) first.
 	self
 		assert: input getTextSelector equals: #filePath;
-		assert: input editTextSelector equals: #filePath:;
-		assert: input text string equals: ''.
-	input setText: string.
-	self assert: input text string equals: string
+		assert: input editTextSelector equals: #filePath:.
+	self tableUI filePath: 'test_test'.
+	self assert: input text string equals: self tableUI filePath
