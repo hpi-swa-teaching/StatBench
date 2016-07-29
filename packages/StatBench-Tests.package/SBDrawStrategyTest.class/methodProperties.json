@@ -11,6 +11,8 @@
 		"testCalculateMaxXWidth" : "ht 7/27/2016 23:41",
 		"testCanvasSize" : "ht 7/27/2016 23:40",
 		"testDiagramSizedCanvas" : "ht 7/27/2016 23:40",
+		"testGenerateColorForString" : "ht 7/29/2016 13:21",
+		"testHasNumericalScaling" : "ht 7/29/2016 13:09",
 		"testMaxRangeForCollection" : "ht 7/27/2016 23:40",
 		"testParseDomainEntry" : "ht 7/27/2016 23:39",
 		"testPropertySelectors" : "je 7/27/2016 19:27",
