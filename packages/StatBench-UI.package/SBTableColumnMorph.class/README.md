@@ -1,0 +1,1 @@
+A single column of a SBTableDisplay

@@ -1,0 +1,1 @@
+Predefined statistic blocks that accept value collections (e.g. for aggregation)

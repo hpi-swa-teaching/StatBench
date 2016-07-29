@@ -1,0 +1,1 @@
+Central data storage and manipulation class for StatBench

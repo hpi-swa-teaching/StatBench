@@ -1,0 +1,1 @@
+Strategy for drawing line diagrams

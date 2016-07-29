@@ -1,0 +1,1 @@
+Renders functions as different diagram types

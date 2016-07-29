@@ -1,0 +1,1 @@
+Contains a SBDiagram and displays it in a SystemWindow

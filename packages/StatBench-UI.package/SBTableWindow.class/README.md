@@ -1,0 +1,1 @@
+Contains a SBTableDisplay and displays it in a SystemWindow

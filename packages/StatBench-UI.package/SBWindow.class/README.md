@@ -1,0 +1,1 @@
+Superclass for StatBench window types

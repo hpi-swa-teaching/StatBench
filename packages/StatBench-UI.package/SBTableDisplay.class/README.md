@@ -1,0 +1,1 @@
+Renders a SBTable with statistics information
