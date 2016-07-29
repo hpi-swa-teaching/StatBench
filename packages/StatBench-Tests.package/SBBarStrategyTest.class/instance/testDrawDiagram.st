@@ -7,7 +7,6 @@ testDrawDiagram
 	form := self strategy canvas form.
 	function keys do: [ :key |
 		position := self strategy axisStartPoint + ((self strategy entryWidth * key)@(-1 * self strategy yScaling * ((function at: key) first) - self strategy drawWidth)).
-		
 		self
 			assert: (form pixelValueAt: position) strictlyPositive;
-			assert: (form pixelValueAt: position - (0@2)) isZero ].
+			assert: (form pixelValueAt: position - (0@2)) isZero ]

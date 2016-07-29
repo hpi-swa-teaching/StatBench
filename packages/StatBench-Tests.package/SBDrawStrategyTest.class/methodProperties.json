@@ -10,12 +10,13 @@
 		"testCalculateMaxRange" : "je 7/29/2016 15:28",
 		"testCalculateMaxXWidth" : "je 7/29/2016 15:28",
 		"testCanvasSize" : "je 7/29/2016 15:30",
-		"testDiagramSizedCanvas" : "je 7/29/2016 15:31",
+		"testDiagramSizedCanvas" : "je 7/29/2016 15:55",
+		"testDrawDiagram" : "je 7/29/2016 16:02",
 		"testDrawXAnnotation" : "je 7/29/2016 15:32",
 		"testDrawYAnnotation" : "je 7/29/2016 15:38",
 		"testGenerateColorForString" : "ht 7/29/2016 13:21",
-		"testHasNumericalScaling" : "ht 7/29/2016 13:09",
+		"testHasNumericalScaling" : "je 7/29/2016 15:55",
 		"testMaxRangeForCollection" : "je 7/29/2016 15:46",
 		"testParseDomainEntry" : "ht 7/27/2016 23:39",
-		"testPropertySelectors" : "je 7/27/2016 19:27",
-		"testScientificNotation" : "je 7/27/2016 15:58" } }
+		"testPropertySelectors" : "je 7/29/2016 15:55",
+		"testScientificNotation" : "je 7/29/2016 15:54" } }

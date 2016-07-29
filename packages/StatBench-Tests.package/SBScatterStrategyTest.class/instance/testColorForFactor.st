@@ -1,6 +1,9 @@
 testing
 testColorForFactor
-	| aColor |
-	aColor := self strategy generateColorForString: 'HalloWelt'.
-	self assert: (self strategy colorForFactor: 'HalloWelt') equals: aColor
+	| color string |
+	string := 'HalloWelt'.
+	color := self strategy generateColorForString: string.
+	self
+		assert: (self strategy colorForFactor: string) equals: color;
+		deny: (self strategy colorForFactor: string, 'a') = color
 	

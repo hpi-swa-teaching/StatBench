@@ -1,10 +1,10 @@
 testing
 testGenerateColorForString
-	| aColor1 aColor2 aColor3 |
+	| color1 color2 color3 |
 	self strategy: SBScatterStrategy new.
-	aColor1 := self strategy generateColorForString: 'HalloWelt'.
-	aColor2 := self strategy generateColorForString: 'HalloWelt'.
-	aColor3 := self strategy generateColorForString: 'Hallo' .
+	color1 := self strategy generateColorForString: 'HalloWelt'.
+	color2 := self strategy generateColorForString: 'HalloWelt'.
+	color3 := self strategy generateColorForString: 'Hallo' .
 	self
-		assert: aColor1 equals: aColor2;
-		deny: aColor1 = aColor3
+		assert: color1 equals: color2;
+		deny: color1 = color3
