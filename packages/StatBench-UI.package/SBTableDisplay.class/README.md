@@ -1,1 +1,1 @@
-Renders a SBTable with statistics information
+Renders a SBTable with statistical information
