@@ -10,7 +10,6 @@ drawString: aString at: aPoint extent: extent
 			newString := aString copyFrom: charNumber + 1 to: aString size.
 			self
 				drawString: newString
-				on: self canvas
 				at: aPoint + (0@font height)
 				extent: (font widthOfString: newString)@extent y.
 			newString := aString copyFrom: 1 to: charNumber.
