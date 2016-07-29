@@ -7,13 +7,14 @@ drawDiagram
 	(self domainForStateWithMultiples: true) do: [ :element |
 		base := self hasNumericalScaling
 			ifTrue: [ (self entryWidth * element + self axisStartPoint x)@self axisStartPoint y ]
-			ifFalse: [ (base x + self entryWidth)@self axisStartPoint y ]. 
-		"todo fix line with multiple y values"
+			ifFalse: [ (base x + self entryWidth)@self axisStartPoint y ].
+		newFromPoints := OrderedCollection new.
 		(self functionAt: element) do: [ :value |
-			newFromPoints := OrderedCollection new.
 			toPoint := base - (0@(self yScaling * value)).
 			newFromPoints add: toPoint.
-			fromPoints do: [ :fromPoint |
+			fromPoints select: [ :fromPoint |
+				fromPoint x ~= base x ]
+			thenDo: [ :fromPoint |
 				self
 					drawLine: self diagramPosition + fromPoint
 					to: self diagramPosition + toPoint ]].
