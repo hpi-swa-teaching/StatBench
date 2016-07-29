@@ -1,3 +1,3 @@
 testing
 hasNumericalScaling
-	self subclassResponsibility
+	^ self hasNumericalDomain
