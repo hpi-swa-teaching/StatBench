@@ -1,3 +1,3 @@
 accessing
-tableWindow
+diagramWindow
 	^ tableWindow

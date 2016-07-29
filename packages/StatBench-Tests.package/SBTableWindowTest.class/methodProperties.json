@@ -2,10 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
-		"setUp" : "mg 7/29/2016 12:22",
-		"tableWindow" : "mg 7/29/2016 12:23",
-		"tableWindow:" : "mg 7/29/2016 12:22",
-		"testClearContents" : "mg 7/29/2016 12:27",
-		"testDisplayTable" : "mg 7/29/2016 12:44",
-		"testLabel" : "mg 7/29/2016 12:47",
-		"testUpdateContents" : "mg 7/29/2016 12:47" } }
+		"diagramWindow" : "je 7/29/2016 20:39",
+		"diagramWindow:" : "je 7/29/2016 20:39",
+		"setUp" : "je 7/29/2016 20:39",
+		"testClearContents" : "je 7/29/2016 20:39",
+		"testDisplayTable" : "je 7/29/2016 20:39",
+		"testLabel" : "je 7/29/2016 20:39",
+		"testUpdateContents" : "je 7/29/2016 20:39" } }

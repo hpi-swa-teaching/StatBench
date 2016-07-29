@@ -1,7 +1,5 @@
 testing
 testOpenWindow
-	| values |
-	values := { 2 . 1 }.
 	self window: SBWindow new.
 	self deny: (World submorphs includes: self window window).
 	self window openWindow.

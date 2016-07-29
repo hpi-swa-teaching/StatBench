@@ -1,11 +1,11 @@
 testing
 testDisplayTable
 	| table |
-	self tableWindow: SBTableWindow new.
-	self assert: self tableWindow contentMorph isNil.
+	self diagramWindow: SBTableWindow new.
+	self assert: self diagramWindow contentMorph isNil.
 	table := SBTable new.
-	self tableWindow displayTable: table.
+	self diagramWindow displayTable: table.
 	self
-		assert: self tableWindow contentMorph notNil;
-		assert: (self tableWindow window submorphs anySatisfy: [ :element |
+		assert: self diagramWindow contentMorph notNil;
+		assert: (self diagramWindow window submorphs anySatisfy: [ :element |
 			element class = ScrollPane ])

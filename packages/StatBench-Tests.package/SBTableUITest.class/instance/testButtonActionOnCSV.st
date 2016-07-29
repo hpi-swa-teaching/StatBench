@@ -4,6 +4,6 @@ testButtonActionOnCSV
 	self tableUI
 		filePath: 'test.csv';
 		buttonAction.
-	self assert: (World submorphs includes: self tableUI tableWindow window).
-	World removeMorph: self tableUI tableWindow window.
-	self deny: (World submorphs includes: self tableUI tableWindow window)
+	self assert: (World submorphs includes: self tableUI diagramWindow window).
+	World removeMorph: self tableUI diagramWindow window.
+	self deny: (World submorphs includes: self tableUI diagramWindow window)

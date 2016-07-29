@@ -1,10 +1,10 @@
 testing
 testClearContents
-	self tableWindow: SBDiagramWindow new.
-	self tableWindow
+	self diagramWindow: SBDiagramWindow new.
+	self diagramWindow
 		contentMorph: SBDiagram newBarDiagram;
 		clearContents;
 		fillScrollPane.
-	self assert: self tableWindow scrollPane scroller submorphs notEmpty.
-	self tableWindow clearContents.
-	self assert: self tableWindow scrollPane scroller submorphs isEmpty
+	self assert: self diagramWindow scrollPane scroller submorphs notEmpty.
+	self diagramWindow clearContents.
+	self assert: self diagramWindow scrollPane scroller submorphs isEmpty

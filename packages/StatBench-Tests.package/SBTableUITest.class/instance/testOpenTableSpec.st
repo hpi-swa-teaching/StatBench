@@ -1,9 +1,7 @@
 testing
 testOpenTableSpec
-	| openTable tabelUIMorph textSelector string |
+	| openTable tabelUIMorph |
 	tabelUIMorph :=  SBTableUI open.
-	string := 'testString'.
-	textSelector := #filePath.
 	World removeMorph: tabelUIMorph.
 	self tableUI: tabelUIMorph model.
 	openTable := (tabelUIMorph paneMorphs select: [ :paneMorph | 

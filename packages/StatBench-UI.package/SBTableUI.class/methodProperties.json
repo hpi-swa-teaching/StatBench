@@ -3,14 +3,14 @@
 		"open" : "je 7/19/2016 00:08" },
 	"instance" : {
 		"buildWith:" : "je 7/29/2016 12:56",
-		"buttonAction" : "je 7/19/2016 01:04",
+		"buttonAction" : "je 7/29/2016 20:39",
 		"buttonLabel" : "je 7/19/2016 00:38",
 		"checkBoxAction" : "je 7/19/2016 00:49",
 		"checkBoxLabel" : "je 7/19/2016 00:23",
 		"checkBoxState" : "je 7/19/2016 00:34",
+		"diagramWindow" : "je 7/29/2016 20:39",
+		"diagramWindow:" : "je 7/29/2016 20:39",
 		"filePath" : "je 7/19/2016 00:31",
 		"filePath:" : "je 7/19/2016 00:46",
 		"header" : "je 7/19/2016 00:31",
-		"header:" : "je 7/19/2016 00:30",
-		"tableWindow" : "je 7/19/2016 00:40",
-		"tableWindow:" : "je 7/19/2016 00:40" } }
+		"header:" : "je 7/19/2016 00:30" } }

@@ -6,5 +6,5 @@ buttonAction
 		[ 'csv' ] -> [ SBFileParser readCSVFile: self filePath asString header: self header ] .
 		[ 'tsv' ] -> [ SBFileParser readTSVFile: self filePath asString header: self header ] }
 		otherwise: [ self error: 'Wrong file type! Only use .csv or .tsv!' ].
-	self tableWindow: (SBTableWindow openTable: table).
-	self tableWindow label: self filePath asString
+	self diagramWindow: (SBTableWindow openTable: table).
+	self diagramWindow label: self filePath asString

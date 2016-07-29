@@ -1,8 +1,7 @@
 testing
 testInputSpec
-	| input tabelUIMorph textSelector  |
+	| input tabelUIMorph |
 	tabelUIMorph :=  SBTableUI open.
-	textSelector := #filePath.
 	World removeMorph: tabelUIMorph.
 	self tableUI: tabelUIMorph model.
 	input := (tabelUIMorph paneMorphs select: [ :paneMorph | 

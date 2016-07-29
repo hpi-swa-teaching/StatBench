@@ -1,7 +1,7 @@
 testing
 testLabel
 	| label |
-	self tableWindow: SBTableWindow new.
+	self diagramWindow: SBTableWindow new.
 	label := 'test_label'.
-	self tableWindow label: label.
-	self assert: self tableWindow window label equals: label
+	self diagramWindow label: label.
+	self assert: self diagramWindow window label equals: label
