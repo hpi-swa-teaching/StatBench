@@ -2,13 +2,14 @@
 	"class" : {
 		 },
 	"instance" : {
+		"positionFor:" : "je 7/29/2016 17:06",
 		"setUp" : "ht 7/29/2016 13:53",
 		"strategy" : "ht 7/29/2016 14:04",
 		"strategy:" : "ht 7/29/2016 13:54",
 		"testCalculateDiagramSize" : "je 7/29/2016 15:59",
 		"testCalculateEntryWidth" : "je 7/29/2016 16:04",
 		"testColorForFactor" : "je 7/29/2016 16:09",
-		"testDrawDiagram" : "ht 7/29/2016 15:50",
+		"testDrawDiagram" : "je 7/29/2016 17:07",
 		"testDrawLegend" : "mg 7/29/2016 16:07",
 		"testDrawXAnnotation" : "mg 7/29/2016 15:46",
 		"testGenerateColorForString" : "je 7/29/2016 16:09",

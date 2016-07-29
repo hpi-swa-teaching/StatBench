@@ -6,7 +6,7 @@ testDrawDiagram
 	self strategy draw: function keys function: function at: 0 asPoint.
 	form := self strategy canvas form.
 	function keys do: [ :key |
-		position := self strategy axisStartPoint + ((self strategy entryWidth * key)@(-1 * self strategy yScaling * ((function at: key) first) - self strategy drawWidth)).
+		position := self positionFor: key@((function at: key) first).
 		self
 			assert: (form pixelValueAt: position) strictlyPositive;
 			assert: (form pixelValueAt: position - (0@2)) isZero ]

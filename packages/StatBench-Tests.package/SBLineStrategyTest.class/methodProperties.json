@@ -2,7 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
+		"positionFor:" : "je 7/29/2016 17:06",
 		"setUp" : "ht 7/29/2016 15:41",
 		"strategy" : "ht 7/29/2016 15:42",
 		"strategy:" : "ht 7/29/2016 15:41",
-		"testDrawDiagram" : "ht 7/29/2016 15:49" } }
+		"testDrawDiagram" : "je 7/29/2016 17:03" } }

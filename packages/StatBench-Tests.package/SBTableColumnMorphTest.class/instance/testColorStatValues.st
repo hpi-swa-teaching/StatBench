@@ -16,15 +16,10 @@ testColorStatValues
 	aTableDisplay
 		table: aTable;
 		fillStatDictionary.
-	self
-		tableColumn updateContent;
+	self tableColumn
+		updateContent;
 		colorStatisticValues: aTableDisplay statDictionary.
-	self assert: self tableColumn submorphs first backgroundColor equals: Color red;
-		 assert: self tableColumn submorphs third backgroundColor equals: Color yellow;
-		 assert: self tableColumn submorphs fourth backgroundColor equals: Color green
-	"a Dictionary(#detectFactors->an OrderedCollection(false) #max->an
-	OrderedCollection(a SBNumber) #mean->an OrderedCollection(a
-	SBNumber) #min->an OrderedCollection(a SBNumber)
-	#papeMedian->an OrderedCollection(a SBNumber)
-	#standardDeviation->an OrderedCollection(a SBNumber)
-	#variance->an OrderedCollection(a SBNumber) )"
+	self
+		assert: self tableColumn submorphs first backgroundColor equals: Color red;
+		assert: self tableColumn submorphs third backgroundColor equals: Color yellow;
+		assert: self tableColumn submorphs fourth backgroundColor equals: Color green

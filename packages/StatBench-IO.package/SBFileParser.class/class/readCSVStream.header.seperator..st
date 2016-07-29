@@ -1,13 +1,15 @@
 file input
-readCSVStream: inStream header: hasHeader seperator: aCharacter
-	| myLine table x y header row seperator linebreak |
+readCSVStream: inStream header: hasHeader seperator: seperator
+	| myLine table x y header linebreak headerOffset |
 	inStream isNil
 		ifTrue: [ ^ SBTable new ].
 	table := SBTable new.
 	header := OrderedCollection new.
-	seperator := aCharacter.
-	x := y := row := 1.
+	y := 1.
 	linebreak := self unixNewline.
+	headerOffset := hasHeader
+		ifTrue: [ -1 ]
+		ifFalse: [ 0 ].
 	(inStream contents occurrencesOf: linebreak) strictlyPositive
 		ifFalse: [ linebreak := self windowsNewline ].
 	[ inStream atEnd ] whileFalse: [
@@ -17,17 +19,7 @@ readCSVStream: inStream header: hasHeader seperator: aCharacter
  			myCell := (myLine upTo: seperator) withBlanksTrimmed.
 			(y = 1 and: [ hasHeader ])
 				ifTrue: [ header add: myCell ]
-				ifFalse: [
-					row := hasHeader
-						ifTrue: [ y - 1 ]
-						ifFalse: [ y ]. 
-					table addRowIfAbsent: row.
-					table columnNumberState at: x ifAbsentPut: [ true ].
-					(Number isStringANumber: myCell)
-						ifTrue: [ table addColumnIfAbsent: x toRow: row value: myCell raw: false ]
-						ifFalse: [
-							table addColumnIfAbsent: x toRow: row value: myCell raw: true.
-							table columnNumberState at: x put: false ]].
+				ifFalse: [ self write: myCell to: table column: x row: y + headerOffset ].
 			x := x + 1 ].
 		y := y + 1 ].
 	table columnNames: header.

@@ -8,5 +8,5 @@ testMin
 		row: 2 column: 1 value: 1;
 		row: 2 column: 2 value: 4.
 	self
-		assert: (self table minForColumn: 1) = 1;
-		assert: (self table minForColumn: 2) = (ArbitraryPrecisionFloat readFrom: '2.2')
+		assert: (self table minForColumn: 1) equals: 1;
+		assert: (self table minForColumn: 2) equals: (ArbitraryPrecisionFloat readFrom: '2.2')
