@@ -11,6 +11,8 @@
 		"testDisplayYValues" : "mg 7/29/2016 14:39",
 		"testExportDiagramAsPNG" : "mg 7/29/2016 14:32",
 		"testExportDiagramAsPNGNamed" : "mg 7/29/2016 14:32",
+		"testExportToPNG" : "je 7/28/2016 14:47",
+		"testExportToPNGNamed" : "je 7/27/2016 18:48",
 		"testFillFunctionForDomainAndValues" : "mg 7/29/2016 14:29",
 		"testLineDiagram" : "je 7/26/2016 18:36",
 		"testRedrawContent" : "mg 7/29/2016 14:48",

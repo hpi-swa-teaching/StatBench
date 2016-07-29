@@ -13,6 +13,7 @@
 		"testDiagramSizedCanvas" : "je 7/29/2016 15:31",
 		"testDrawXAnnotation" : "je 7/29/2016 15:32",
 		"testDrawYAnnotation" : "je 7/29/2016 15:38",
+		"testGenerateColorForString" : "ht 7/29/2016 13:21",
 		"testHasNumericalScaling" : "ht 7/29/2016 13:09",
 		"testMaxRangeForCollection" : "je 7/29/2016 15:46",
 		"testParseDomainEntry" : "ht 7/27/2016 23:39",
