@@ -4,5 +4,6 @@
 	"instance" : {
 		"setUp" : "je 7/27/2016 19:51",
 		"testAbstractMethods" : "je 7/27/2016 19:52",
+		"testOpenWindow" : "mg 7/29/2016 12:32",
 		"window" : "je 7/27/2016 19:52",
 		"window:" : "je 7/27/2016 19:52" } }

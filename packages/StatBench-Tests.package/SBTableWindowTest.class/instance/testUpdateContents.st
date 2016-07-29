@@ -1,8 +1,8 @@
 testing
 testUpdateContents
-	self tableWindow: SBDiagramWindow new.
+	self tableWindow: SBTableWindow new.
 	self tableWindow
-		contentMorph: SBDiagram newBarDiagram;
+		contentMorph: SBTableDisplay new;
 		clearContents.
 	self
 		assert: self tableWindow scrollPane scroller submorphs isEmpty;

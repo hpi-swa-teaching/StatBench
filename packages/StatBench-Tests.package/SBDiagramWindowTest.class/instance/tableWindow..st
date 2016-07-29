@@ -1,3 +1,3 @@
 accessing
-diagramWindow: anObject
+tableWindow: anObject
 	diagramWindow := anObject
