@@ -1,5 +1,6 @@
 testing
 testCreateTableWithColumnNamesForColumnsAndTuples
+	| newTable |
 	self table: SBTable new.
 	self table
 		addRows: 3 size: 2;
@@ -11,11 +12,16 @@ testCreateTableWithColumnNamesForColumnsAndTuples
 		row: 3 column: 2 value: 2 raw: false;
 		addColumnName: 'first';
 		addColumnName: 'second'.
-	self table: (self table createTableWithColumnNamesForColumns: { 1 } tuples: {
-		self table tupleForColumn: 2 name: 'a' function: [] .
-		self table tupleForColumn: 2 name: 'b' function: [] .
-		self table tupleForColumn: 2 name: 'c' function: [] }).
+	newTable := SBTable new.
+	newTable
+		addColumnNamesForColumns: { 1 }
+			tuples: {
+			self table tupleForColumn: 2 name: 'a' function: [] .
+			self table tupleForColumn: 2 name: 'b' function: [] .
+			self table tupleForColumn: 2 name: 'c' function: [] }
+			from: self table.
 	self
+		table: newTable;
 		assert: self table columnNames first equals: 'first';
 		assert: self table columnNames second equals: 'a';
 		assert: self table columnNames third equals: 'b';
