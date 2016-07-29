@@ -1,10 +1,12 @@
 testing
 testDiagramSizedCanvas
 	| aCanvas |
-	self strategy diagramProperties at: #diagramSize put: (200@200).
-	self strategy diagramProperties at: #diagramPosition put: (150@150).
+	self strategy: SBDrawStrategy new.
+	self strategy diagramProperties
+		at: #diagramSize put: 200 asPoint;
+		at: #diagramPosition put: 150 asPoint.
 	aCanvas := self strategy diagramSizedCanvas. 
 	self 
-		assert: aCanvas origin equals: (150@150);
-		assert: aCanvas extent equals:  (200@200);
-		assert: aCanvas clipRect equals: (Rectangle origin: (0@0) corner: (50@50))
+		assert: aCanvas origin equals: 150 asPoint;
+		assert: aCanvas extent equals:  200 asPoint;
+		assert: aCanvas clipRect equals: (Rectangle origin: 0 asPoint corner: 50 asPoint)
