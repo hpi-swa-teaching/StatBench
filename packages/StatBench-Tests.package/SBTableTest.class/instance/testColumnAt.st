@@ -10,6 +10,6 @@ testColumnAt
 	self
 		assert: (self table columnAt: 1) size equals: 3;
 		assert: (self table columnAt: 1) first equals: 3;
-		assert: (self table columnAt: 1) second equals: nil;
+		assert: (self table columnAt: 1) second isNil;
 		assert: (self table columnWithoutNilValuesAt: 1) size equals: 1;
 		assert: (self table columnWithoutNilValuesAt: 1) first equals: 3

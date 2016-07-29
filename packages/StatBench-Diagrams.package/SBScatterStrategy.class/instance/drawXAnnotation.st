@@ -7,9 +7,9 @@ drawXAnnotation
 	1 to: self annotationInterval x do: [ :index |
 		axisOffset := 0 asPoint.
 		textPosition := start + ((range / self annotationInterval x * index * self entryWidth)@0).
-		annotation := self scientificNotationFor: range /  self annotationInterval x * index * self entryWidth.
+		annotation := self scientificNotationFor: range / self annotationInterval x * index * self entryWidth.
 		width := self font widthOfString: annotation.
-		annotationExtent := width @ self font height.
+		annotationExtent := width@self font height.
 		annotationPosition := textPosition + axisOffset - ((annotationExtent x / 2)@0).
 		(annotationPosition + annotationExtent) x < self axisEndPoint x
 			ifTrue: [

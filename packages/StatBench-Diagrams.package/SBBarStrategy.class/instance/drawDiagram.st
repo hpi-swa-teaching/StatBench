@@ -3,7 +3,7 @@ drawDiagram
 	| axisOffset base fromPoint toPoint |
 	base := self axisStartPoint.
 	axisOffset := self drawWidth - self axisLineWidth.
-	(self domainForStateWithMultiples: true) do: [ :element |
+	(self domainWithInjectivity: true) do: [ :element |
 		(self functionAt: element) do: [ :value |
 			base := (base x + self entryWidth)@self axisStartPoint y.
 			fromPoint := base.

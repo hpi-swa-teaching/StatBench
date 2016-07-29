@@ -8,8 +8,7 @@ testHasNumericalScaling
 		row: 2 column: 1 value: 'abc';
 		row: 2 column: 2 value: 4 raw: false.
 	self
-		assert: (self table isColumnNumeric: 1) not;
+		deny: (self table isColumnNumeric: 1);
 		assert: (self table isColumnNumeric: 2).
-		
 	(self table rowAt: 1) add: 'asd'.
 	self should: [ self table isColumnNumeric: 3 ] raise: Error

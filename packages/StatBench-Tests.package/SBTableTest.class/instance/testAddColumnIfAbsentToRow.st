@@ -12,4 +12,4 @@ testAddColumnIfAbsentToRow
 	self table addColumnIfAbsent: 10 toRow: 1.
 	self
 		assert: self table rowLength equals: 10;
-		assert: (self table row: 1 column: 5) equals: nil
+		assert: (self table row: 1 column: 5) isNil

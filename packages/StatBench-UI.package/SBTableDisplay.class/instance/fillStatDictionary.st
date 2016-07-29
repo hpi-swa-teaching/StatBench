@@ -7,4 +7,4 @@ fillStatDictionary
 			statValue := self table perform: (key asString, 'ForColumn:') asSymbol with: columnIndex.
 			(statValue isFraction and: [ statValue isInteger not ])
 				ifTrue: [ statValue := statValue asFloat ].
-			value add: statValue ]].
+			value add: statValue ]]

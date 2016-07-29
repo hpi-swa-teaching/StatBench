@@ -4,7 +4,7 @@ testReadCSVFileWithString
 		table: (SBFileParser
 			readCSVStream: (ReadStream on: 'a,b,c,d', SBFileParser unixNewline, '5asd,6,123g7,8...5.2')
 			header: true
-			seperator: SBFileParser csvSeparator);
+			separator: SBFileParser csvSeparator);
 		assert: (self table row: 1 column: 1) equals: '5asd';
 		assert: (self table row: 1 column: 2) equals: 6;
 		assert: (self table row: 1 column: 3) equals: '123g7';

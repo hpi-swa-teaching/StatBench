@@ -1,5 +1,6 @@
 table management
 addRowIfAbsent: aRowIndex
 	self columnLength < aRowIndex
-		ifTrue: [ (aRowIndex - self columnLength) timesRepeat: [
-			self addEmptyRow ]]
+		ifTrue: [
+			(aRowIndex - self columnLength) timesRepeat: [
+				self addEmptyRow ]]

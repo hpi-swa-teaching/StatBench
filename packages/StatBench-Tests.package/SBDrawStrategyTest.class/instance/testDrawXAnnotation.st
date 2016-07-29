@@ -19,4 +19,5 @@ testDrawXAnnotation
 				position := self strategy axisStartPoint + (self strategy entryWidth * value@(epsilon + (self strategy axisLineWidth / 2))).
 				tempBoolean := tempBoolean or: [ (form pixelValueAt: position) strictlyPositive ]].
 			tempBoolean ])
-		allSatisfy: [ :element | element ])
+		allSatisfy: [ :element |
+			element ])

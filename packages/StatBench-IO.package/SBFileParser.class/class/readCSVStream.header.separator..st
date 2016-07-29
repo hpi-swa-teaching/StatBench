@@ -1,5 +1,5 @@
 file input
-readCSVStream: inStream header: hasHeader seperator: seperator
+readCSVStream: inStream header: hasHeader separator: separator
 	| myLine table x y header linebreak headerOffset |
 	inStream isNil
 		ifTrue: [ ^ SBTable new ].
@@ -16,10 +16,10 @@ readCSVStream: inStream header: hasHeader seperator: seperator
 		myLine := (inStream upTo: linebreak) readStream.
 		x := 1.
 		[ myLine atEnd ] whileFalse: [ | myCell |
- 			myCell := (myLine upTo: seperator) withBlanksTrimmed.
+ 			myCell := (myLine upTo: separator) withBlanksTrimmed.
 			(y = 1 and: [ hasHeader ])
 				ifTrue: [ header add: myCell ]
-				ifFalse: [ self write: myCell to: table column: x row: y + headerOffset ].
+				ifFalse: [ self read: myCell into: table column: x row: y + headerOffset ].
 			x := x + 1 ].
 		y := y + 1 ].
 	table columnNames: header.

@@ -10,4 +10,4 @@ drawOn: aCanvas
 				extent: (canvasData at: #canvasSize);
 				reDraw: false;
 				updateContent: (self diagramCanvas contentsOfArea: (self diagramCanvas origin extent: self diagramCanvas extent)) ].
-	super drawOn: self diagramCanvas.
+	super drawOn: self diagramCanvas

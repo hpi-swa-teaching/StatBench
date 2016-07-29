@@ -18,4 +18,4 @@ testSearchForLast
 	self
 		assert: (self table searchForLast: 1 inColumn: 1) equals: (self table rowAt: 4);
 		assert: (self table searchForLast: 4 inColumn: 2) equals: (self table rowAt: 3);
-		assert: (self table searchForLast: 4 inColumn: 1) equals: nil
+		assert: (self table searchForLast: 4 inColumn: 1) isNil

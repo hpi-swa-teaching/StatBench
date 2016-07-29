@@ -12,5 +12,4 @@ addStatDescriptionMorph
 		position: self position.
 	self
 		addMorph: descriptionMorph;
-		extent: descriptionMorph extent + (self padding@0).
-	
+		extent: descriptionMorph extent + (self padding@0)

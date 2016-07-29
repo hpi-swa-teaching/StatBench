@@ -1,6 +1,5 @@
 column functions
 detectFactorsForColumn: aColumnIndex
-	| column maxValues |
+	| column |
 	column := self printColumnDataToCollection at: aColumnIndex.
-	maxValues := self defaultFactorThreshold + self columnLength log.
-	^ column asSet size <= maxValues
+	^ column asSet size <= (self defaultFactorThreshold + self columnLength log)

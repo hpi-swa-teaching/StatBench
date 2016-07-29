@@ -12,7 +12,6 @@ testWriteTSVFile
 		row: 2 column: 1 value: 3;
 		row: 2 column: 2 value: 4.
 	SBFileParser writeTable: self table toTSVFile: fileName header: true.
-	
 	readTable := SBFileParser readTSVFile: fileName, '.tsv' header: true.
 	self
 		assert: (self table row: 1 column: 1) equals: (readTable row: 1 column: 1);

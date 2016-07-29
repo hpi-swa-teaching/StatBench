@@ -4,7 +4,7 @@ drawXAnnotation
 	start := self axisStartPoint + (0@self annotationPadding).
 	textPosition := start.
 	counter := 0.
-	(self domainForStateWithMultiples: false) do: [ :element |
+	(self domainWithInjectivity: false) do: [ :element |
 		axisOffset := 0@0.
 		textPosition := self hasNumericalScaling
 			ifTrue: [ start + ((element * self entryWidth)@0) ]

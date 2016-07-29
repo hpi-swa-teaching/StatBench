@@ -18,4 +18,4 @@ testSearchForFirst
 	self
 		assert: (self table searchForFirst: 1 inColumn: 1) equals: (self table rowAt: 1);
 		assert: (self table searchForFirst: 4 inColumn: 2) equals: (self table rowAt: 2);
-		assert: (self table searchForFirst: 4 inColumn: 1) equals: nil
+		assert: (self table searchForFirst: 4 inColumn: 1) isNil

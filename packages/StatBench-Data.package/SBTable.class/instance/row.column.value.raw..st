@@ -2,7 +2,7 @@ accessing
 row: aRowIndex column: aColumnIndex value: aValue raw: aBoolean
 	| value |
 	(self isOutOfBoundsRow: aRowIndex column: aColumnIndex)
-		ifTrue: [ ^ self ].
+		ifTrue: [ self error: 'Index is out of bounds: ', aRowIndex, '@', aColumnIndex ].
 	value := aBoolean
 		ifTrue: [ aValue ]
 		ifFalse: [ Number readArbitraryPrecisionFloatFrom: aValue asString ].

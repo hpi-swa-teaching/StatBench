@@ -18,9 +18,9 @@ testDoesExist
 	self
 		assert: (self table does: 1 existInColumn: 1);
 		assert: (self table does: 1 existInColumn: 1);
-		assert: (self table does: 1 existInColumn: 2) not;
-		assert: (self table does: 1 existInColumn: 2) not;
-		assert: (self table does: 4 existInColumn: 3) not;
-		assert: (self table does: 4 existInColumn: 3) not;
+		deny: (self table does: 1 existInColumn: 2);
+		deny: (self table does: 1 existInColumn: 2);
+		deny: (self table does: 4 existInColumn: 3);
+		deny: (self table does: 4 existInColumn: 3);
 		assert: (self table does: 8.5 existInColumn: 2);
 		assert: (self table does: 8.5 existInColumn: 2)

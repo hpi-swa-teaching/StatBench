@@ -14,7 +14,8 @@ drawYAnnotation
 	1 to: self annotationInterval y do: [ :index |
 		annotation := self scientificNotationFor: (annotationValue * index).
 		annotationExtent := (self font widthOfString: annotation) @ self font height.
-		textPosition := self axisStartPoint - ((annotationExtent x + self annotationPadding)@(self drawArea y / self annotationInterval y * index + graphWidthOffset)).
+		textPosition := self axisStartPoint
+			- ((annotationExtent x + self annotationPadding)@(self drawArea y / self annotationInterval y * index + graphWidthOffset)).
 		self
 			drawString: annotation
 			in: ((self diagramPosition + textPosition) extent: annotationExtent) ]

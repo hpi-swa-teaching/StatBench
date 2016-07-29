@@ -13,4 +13,4 @@ testDetectFactors
 		factors := self table detectFactors.
 		self
 			assert: factors first;
-			assert: factors second not ]
+			deny: factors second ]

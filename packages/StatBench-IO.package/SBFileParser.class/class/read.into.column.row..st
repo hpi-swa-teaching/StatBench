@@ -1,5 +1,5 @@
 file input
-write: anEntry to: aTable column: aColumnIndex row: aRowIndex
+read: anEntry into: aTable column: aColumnIndex row: aRowIndex
 	aTable addRowIfAbsent: aRowIndex.
 	aTable columnNumberState at: aColumnIndex ifAbsentPut: [ true ].
 	(Number isStringANumber: anEntry)

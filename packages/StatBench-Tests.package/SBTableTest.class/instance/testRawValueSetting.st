@@ -12,7 +12,7 @@ testRawValueSetting
 		row: 4 column: 1 value: 3.2;
 		row: 4 column: 2 value: 'abc'.
 	self
-		assert: (self table row: 1 column: 1) class ~= String;
+		deny: (self table row: 1 column: 1) isString;
 		assert: (self table row: 1 column: 2) class equals: ArbitraryPrecisionFloat;
 		assert: (self table row: 2 column: 1) class equals: ArbitraryPrecisionFloat;
 		assert: (self table row: 2 column: 2) equals: 1;

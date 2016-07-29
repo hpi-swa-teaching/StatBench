@@ -4,7 +4,7 @@ drawDiagram
 	base := self axisStartPoint.
 	toPoint := base.
 	fromPoints := { self axisStartPoint }.
-	(self domainForStateWithMultiples: true) do: [ :element |
+	(self domainWithInjectivity: true) do: [ :element |
 		base := self hasNumericalScaling
 			ifTrue: [ (self entryWidth * element + self axisStartPoint x)@self axisStartPoint y ]
 			ifFalse: [ (base x + self entryWidth)@self axisStartPoint y ].
