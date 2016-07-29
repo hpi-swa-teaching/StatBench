@@ -1,13 +1,12 @@
 testing
 testReadTSVFile
-	| tsvString tab |
+	| tab |
 	tab := SBFileParser tsvSeparator.
-	tsvString := 'a', tab, 'b', tab, 'c', tab, 'd', SBFileParser unixNewline,
-		'1', tab, '2', tab, '3', tab, '4', SBFileParser unixNewline,
-		'5', tab, '6', tab, '7.7', tab, '8'.
 	self
 		table: (SBFileParser
-			readCSVStream: (ReadStream on: tsvString)
+			readCSVStream: (ReadStream on: 'a', tab, 'b', tab, 'c', tab, 'd', SBFileParser unixNewline,
+				'1', tab, '2', tab, '3', tab, '4', SBFileParser unixNewline,
+				'5', tab, '6', tab, '7.7', tab, '8')
 			header: true
 			seperator: tab);
 		assert: (self table row: 1 column: 1) equals: 1;

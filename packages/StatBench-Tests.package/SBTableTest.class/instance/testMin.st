@@ -9,4 +9,4 @@ testMin
 		row: 2 column: 2 value: 4.
 	self
 		assert: (self table minForColumn: 1) = 1;
-		assert: (self table minForColumn: 2) = 2.2
+		assert: (self table minForColumn: 2) = (ArbitraryPrecisionFloat readFrom: '2.2')

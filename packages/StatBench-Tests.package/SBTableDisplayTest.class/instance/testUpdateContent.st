@@ -9,8 +9,8 @@ testUpdateContent
 		row: 3 column: 1 value: 7.332;
 		row: 4 column: 1 value: 14.1.
 	self tableDisplay displayTable: aTable.
-	self assert: ((self tableDisplay table rows at: 1) at: 1) = 3.
+	self assert: (self tableDisplay table row: 1 column: 1) equals: 3.
 	aTable row: 1 column: 1 value: 7.
 	self tableDisplay table: aTable.
 	self tableDisplay updateContent.
-	self assert: ((self tableDisplay table rows at: 1) at: 1) = 7
+	self assert: (self tableDisplay table row: 1 column: 1) equals: 7

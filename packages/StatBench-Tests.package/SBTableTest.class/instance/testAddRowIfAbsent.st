@@ -12,4 +12,4 @@ testAddRowIfAbsent
 	self table addRowIfAbsent: 10.
 	self
 		assert: self table columnLength equals: 10;
-		assert: (self table row: 5 column: 1) equals: nil
+		should: [ self table row: 5 column: 1 ] raise: Error

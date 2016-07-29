@@ -1,7 +1,8 @@
 drawing
 drawDiagram
 	| base toPoint fromPoints newFromPoints |
-	base := toPoint := self axisStartPoint.
+	base := self axisStartPoint.
+	toPoint := base.
 	fromPoints := { self axisStartPoint }.
 	(self domainForStateWithMultiples: true) do: [ :element |
 		base := self hasNumericalScaling

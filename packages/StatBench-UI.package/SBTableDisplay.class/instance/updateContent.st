@@ -1,6 +1,6 @@
 display
 updateContent
 	self
-		submorphsDo: [ :currentSubmorph |
-			self removeMorph: currentSubmorph ];
+		submorphsDo: [ :element |
+			self removeMorph: element ];
 		displayTable: self table

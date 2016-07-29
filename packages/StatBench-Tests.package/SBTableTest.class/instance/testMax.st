@@ -8,6 +8,6 @@ testMax
 		row: 2 column: 1 value: 1;
 		row: 2 column: 2 value: 4.5.
 	self
-		assert: (self table maxForColumn: 1) = 3;
-		assert: (self table maxForColumn: 2) = 4.5;
+		assert: (self table maxForColumn: 1) equals: 3;
+		assert: (self table maxForColumn: 2) equals: (ArbitraryPrecisionFloat readFrom: '4.5');
 		assert: (self table maxForColumn: 3) isNil

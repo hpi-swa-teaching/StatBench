@@ -8,7 +8,7 @@
 		"testAddColumnIfAbsentToRow" : "je 7/6/2016 15:42",
 		"testAddColumnWithName" : "je 6/30/2016 14:15",
 		"testAddEmptyRow" : "je 6/30/2016 14:16",
-		"testAddRowIfAbsent" : "je 7/6/2016 15:43",
+		"testAddRowIfAbsent" : "mg 7/29/2016 16:57",
 		"testAddRowWithMaxLength" : "je 6/30/2016 14:17",
 		"testAddRowWithSize" : "je 7/4/2016 21:48",
 		"testAddRowsSize" : "je 7/4/2016 21:48",
@@ -24,10 +24,10 @@
 		"testHasNumericalScaling" : "je 7/6/2016 15:44",
 		"testIndexOfRow" : "je 7/6/2016 15:45",
 		"testIsStringANumber" : "je 7/6/2016 15:47",
-		"testMax" : "je 7/6/2016 15:51",
+		"testMax" : "mg 7/29/2016 17:00",
 		"testMean" : "je 7/6/2016 15:48",
 		"testMedian" : "je 7/6/2016 15:48",
-		"testMin" : "je 7/6/2016 15:48",
+		"testMin" : "mg 7/29/2016 17:00",
 		"testPrintColumnDataToCollection" : "je 7/6/2016 15:49",
 		"testPrintTable" : "je 7/6/2016 15:49",
 		"testRawValueSetting" : "je 7/6/2016 15:51",
@@ -39,4 +39,4 @@
 		"testTableDimensions" : "je 7/6/2016 15:54",
 		"testTupleForColumnNameFunction" : "je 6/30/2016 14:00",
 		"testVariance" : "je 7/6/2016 15:55",
-		"testinSetMedian" : "je 7/6/2016 16:13" } }
+		"testinSetMedian" : "mg 7/29/2016 17:13" } }

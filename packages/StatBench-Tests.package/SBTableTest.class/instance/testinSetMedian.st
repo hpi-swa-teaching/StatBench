@@ -10,11 +10,11 @@ testinSetMedian
 		row: 3 column: 1 value: 5;
 		row: 3 column: 2 value: 6.
 	self
-		assert: (self table inSetMedianForColumn: 1) equals: 3.5;
+		assert: (self table inSetMedianForColumn: 1) equals: (ArbitraryPrecisionFloat readFrom: '3.5');
 		assert: (self table inSetMedianForColumn: 2) equals: 4.
 	self table
 		row: 4 column: 1 value: 7;
 		row: 4 column: 2 value: 8.
 	self
-		assert: ((self table inSetMedianForColumn: 1) = 3.5 or: [ (self table inSetMedianForColumn: 1) = 5 ]);
-		assert: ((self table inSetMedianForColumn: 2) = 4 or: [ (self table inSetMedianForColumn: 2) = 6 ])
+		assert: ({ (ArbitraryPrecisionFloat readFrom: '3.5') . 5 } includes: (self table inSetMedianForColumn: 1));
+		assert: ({ 4 . 6} includes: (self table inSetMedianForColumn: 2))
