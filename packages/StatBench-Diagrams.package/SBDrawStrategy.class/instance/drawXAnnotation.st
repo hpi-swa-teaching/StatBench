@@ -12,7 +12,6 @@ drawXAnnotation
 		annotation := self hasNumericalDomain
 			ifTrue: [ self scientificNotationFor: element ]
 			ifFalse: [ element asString].
-		"Todo: fix selection of values"
 		(self functionAt: element) first positive
 			ifFalse: [ axisOffset := 0@(0 - self axisLineWidth - self annotationPadding - self font height) ].
 		width := self font widthOfString: annotation.

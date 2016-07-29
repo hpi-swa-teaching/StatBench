@@ -7,5 +7,7 @@
 		"strategy:" : "ht 7/29/2016 13:54",
 		"testColorForFactor" : "ht 7/29/2016 14:26",
 		"testDrawDiagram" : "ht 7/29/2016 15:50",
+		"testDrawLegend" : "mg 7/29/2016 16:07",
+		"testDrawXAnnotation" : "mg 7/29/2016 15:46",
 		"testGenerateColorForString" : "je 7/29/2016 15:43",
 		"testPropertySelectors" : "ht 7/29/2016 14:04" } }
