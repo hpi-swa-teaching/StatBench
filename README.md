@@ -1,13 +1,13 @@
-# SWT16-Project-10 [![Build Status](https://travis-ci.org/HPI-SWA-Teaching/SWT16-Project-10.svg?branch=master)](https://travis-ci.org/HPI-SWA-Teaching/SWT16-Project-10)[![Coverage Status](https://img.shields.io/coveralls/HPI-SWA-Teaching/SWT16-Project-10/master.svg?maxAge=0)](https://coveralls.io/github/HPI-SWA-Teaching/SWT16-Project-10?branch=master)
+# StatBench [![Build Status](https://travis-ci.org/HPI-SWA-Teaching/StatBench.svg?branch=master)](https://travis-ci.org/HPI-SWA-Teaching/StatBench)[![Coverage Status](https://img.shields.io/coveralls/HPI-SWA-Teaching/StatBench/master.svg?maxAge=0)](https://coveralls.io/github/HPI-SWA-Teaching/StatBench?branch=master)
 
 ### Requirements
 - Squeak 4.6, 5 or Trunk Image
 
 ### How to use it
 #### Import Statbench
-- clone this [GitHub Repository](https://github.com/HPI-SWA-Teaching/SWT16-Project-10)
+- clone this [GitHub Repository](https://github.com/HPI-SWA-Teaching/StatBench)
 ```
-git clone https://github.com/HPI-SWA-Teaching/SWT16-Project-10
+git clone https://github.com/HPI-SWA-Teaching/StatBench
 ```
 - import into Squeak: Tools => Monticello Browser => +Repository => filetree://
 - choose the cloned repository's folder "packages"
@@ -39,10 +39,10 @@ SBDiagramWindow openLineDiagramWithTable: table xColumn: <columnNumber> yColumn:
 - execute the following code in your Workspace
 ```
 aggregatedTable := yourTable
-	groupByColumns: { <columnNumber1> . <columnNumber2> . <...> }
-	andCalculate: {
-		table tupleForColumn: <columnNumber> name: '<columnName>' function: <block> .
-		<...> }.
+  groupByColumns: { <columnNumber1> . <columnNumber2> . <...> }
+  andCalculate: {
+    table tupleForColumn: <columnNumber> name: '<columnName>' function: <block> .
+    <...> }.
 SBTableWindow openTable: aggregatedTable.
 ```
 The parameter for groupByColumns is a collection of one or more column indices.
