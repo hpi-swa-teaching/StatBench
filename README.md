@@ -1,13 +1,13 @@
-# StatBench [![Build Status](https://travis-ci.org/HPI-SWA-Teaching/StatBench.svg?branch=master)](https://travis-ci.org/HPI-SWA-Teaching/StatBench)[![Coverage Status](https://img.shields.io/coveralls/HPI-SWA-Teaching/StatBench/master.svg?maxAge=0)](https://coveralls.io/github/HPI-SWA-Teaching/StatBench?branch=master)
+# StatBench [![Build Status](https://travis-ci.org/hpi-swa-teaching/StatBench.svg?branch=master)](https://travis-ci.org/hpi-swa-teaching/StatBench)[![Coverage Status](https://img.shields.io/coveralls/hpi-swa-teaching/StatBench/master.svg?maxAge=0)](https://coveralls.io/github/hpi-swa-teaching/StatBench?branch=master)
 
 ### Requirements
 - Squeak 4.6, 5 or Trunk Image
 
 ### How to use it
 #### Import Statbench
-- clone this [GitHub Repository](https://github.com/HPI-SWA-Teaching/StatBench)
+- clone this [GitHub Repository](https://github.com/hpi-swa-teaching/StatBench)
 ```
-git clone https://github.com/HPI-SWA-Teaching/StatBench
+git clone https://github.com/hpi-swa-teaching/StatBench
 ```
 - import into Squeak: Tools => Monticello Browser => +Repository => filetree://
 - choose the cloned repository's folder "packages"
